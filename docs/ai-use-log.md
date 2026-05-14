@@ -85,6 +85,34 @@ Conventions:
 
 ---
 
+---
+
+## W1 — Remaining launch-packet artifacts (2026-05-14)
+
+**Tool / model:** Claude (Anthropic) — Cowork desktop app, Sonnet 4.6, with `WebSearch`, `web_fetch`, and `mcp__workspace__bash` tools.
+
+**Artifacts touched.** Drafted the remaining deliverables required by the launch packet's "Suggested submission package" and the "Tools (Architectures)" evidence requirement:
+
+| File | AI contribution | Student contribution required before submission |
+|---|---|---|
+| `docs/01-launch-packet/architecture-context.md` | Mermaid system-context diagram + scope-boundary explanation; commitment notes for what the diagram pins down. | Export to static SVG/PNG via mermaid.live for Canvas attachment. Confirm the boundary lines match the charter — they should — and adjust either one if not. Revise prose into own voice. |
+| `docs/01-launch-packet/feasibility-memo.md` | Replaced earlier outline stub with substantive content: licensed-corpus options (HumanEval, MBPP), three cloud-host options with ballpark pricing, software dependency matrix, deployment expectations, time budget (~235 student hours total). Six `STUDENT DECISION` markers (D1–D6) flagging items that require student/supervisor input. | Resolve D1–D6 personally and/or at the W2 supervisor meeting. Verify all pricing at signup (ballparks were assistant-supplied based on publicly listed rates and are subject to change). |
+| `docs/01-launch-packet/w2-github-issues.md` | Pre-drafted 17 GitHub issues (W1 closeout, W2, W3, W4, W5 kickoff) with titles, labels, and bodies; intended for copy-paste into a GitHub issue tracker. | Push these into the actual issue tracker once the GitHub remote exists (see `git-push-instructions.md`). |
+| `docs/01-launch-packet/screenshots-checklist.md` | List of 5 required + 2 optional screenshots with capture commands and rationale per requirement. | Capture the screenshots. Cannot be AI-generated. |
+| `docs/01-launch-packet/git-push-instructions.md` | Two procedures (`gh` CLI and web-UI) for creating a private GitHub remote and pushing the W1 commit. | Run one of them. Cannot be AI-executed — needs GitHub credentials. |
+| `.gitattributes` | Standard line-ending and binary-file rules + linguist-generated markers. | Sanity-check; low-judgment content. |
+
+**Tools used.** `mcp__workspace__bash` for `git init`, branch configuration, `git add`, `git commit`, and `git tag` operations. The initial commit (hash `2a280e6`, tag `w1-initial`) was made by Claude on behalf of the student. Author/committer is configured to "Eric Liang <cary.wheatman@gmail.com>" per the user identity provided to Cowork.
+
+**Verification gaps.**
+- Pricing in the feasibility memo is approximate; student must re-verify Hetzner/DigitalOcean/AWS rates at signup.
+- The Mermaid diagram was not yet rendered to a static image in this session; student must export before Canvas submission.
+- No supervisor has yet reviewed any of these artifacts.
+
+**Sensitive data:** None entered into the AI system.
+
+---
+
 ## Going forward — what to log
 
 Add a new entry below for any of the following:

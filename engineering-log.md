@@ -15,7 +15,12 @@ Conventions: one heading per week; under it, dated bullets. Mark decisions with 
 - **[DECISION]** Two isolation back-ends in scope: hardened Docker (baseline, W5–W6) and gVisor (W7–W8). Firecracker microVMs are a W10 stretch goal only if ahead of schedule.
 - **[AI]** Used Claude (Sonnet 4.6 via Cowork) to scaffold repo structure, draft initial problem statement, draft project charter, draft three-candidate comparison. All AI output requires student review and revision before submission. See `docs/ai-use-log.md`.
 - **[AI]** Annotated bibliography draft populated to 7 entries (≥5 W1 minimum met) via Claude-assisted web search + web fetch. Each entry grounded in a fetched primary source with explicit verification-status line naming what the student must still verify independently. Sources span all five planned categories. See `docs/ai-use-log.md` "W1 — Annotated bibliography draft" entry for the full log of searches run and URLs fetched.
-- Next: revise charter and bibliography into own voice, complete remaining verification reading on the 7 sources, schedule supervisor meeting, run feasibility memo.
+
+### 2026-05-14
+- **[AI]** Completed remaining W1 launch-packet artifacts: architecture/context diagram (Mermaid + scope-boundary explanation), substantive feasibility memo with six explicit student decisions (D1–D6), W2 issue-tracker seed (17 pre-drafted issues), workspace-screenshots checklist, and Git-push instructions.
+- **[DECISION]** Initial commit landed locally: `2a280e6` tagged `w1-initial`. Author configured as Eric Liang <cary.wheatman@gmail.com>. **Push to GitHub remote is student-only** (needs credentials); see `docs/01-launch-packet/git-push-instructions.md`.
+- All five items in the launch packet's "Suggested submission package" are now drafted: charter, bibliography, feasibility memo, architecture/context sketch, screenshots checklist (screenshots themselves are student action).
+- Next (student-only): voice revision pass on charter + bibliography; resolve feasibility-memo decisions D1–D6; capture screenshots; push to GitHub; populate issue tracker; submit to Canvas by Sunday 2026-05-17 11:59pm.
 
 ### TODO before W1 submission (Sunday 2026-05-17, 11:59pm)
 - [ ] Review and revise `project-charter.md` into own voice

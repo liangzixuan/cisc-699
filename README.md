@@ -11,6 +11,25 @@ LLM-powered software agents increasingly execute model-generated code as part of
 
 See [`docs/01-launch-packet/problem-statement.md`](docs/01-launch-packet/problem-statement.md) for the full framing.
 
+## W1 launch packet (this directory)
+
+The W1 deliverables required by the [launch packet assignment](01%20Project%20Launch%20Packet.pdf) live under `docs/01-launch-packet/`:
+
+| Deliverable | File |
+|---|---|
+| Problem statement | [`problem-statement.md`](docs/01-launch-packet/problem-statement.md) |
+| Three-candidate comparison | [`candidate-projects.md`](docs/01-launch-packet/candidate-projects.md) |
+| Project charter | [`project-charter.md`](docs/01-launch-packet/project-charter.md) |
+| Feasibility memo | [`feasibility-memo.md`](docs/01-launch-packet/feasibility-memo.md) |
+| Annotated bibliography (7 entries) | [`annotated-bibliography.md`](docs/01-launch-packet/annotated-bibliography.md) |
+| Architecture / context diagram | [`architecture-context.md`](docs/01-launch-packet/architecture-context.md) |
+| Supervisor briefing (for W2 meeting) | [`supervisor-briefing.md`](docs/01-launch-packet/supervisor-briefing.md) |
+| W2 issue-tracker seed | [`w2-github-issues.md`](docs/01-launch-packet/w2-github-issues.md) |
+| Workspace screenshots checklist | [`screenshots-checklist.md`](docs/01-launch-packet/screenshots-checklist.md) |
+| Git push instructions | [`git-push-instructions.md`](docs/01-launch-packet/git-push-instructions.md) |
+
+AI-use disclosure for everything above: [`docs/ai-use-log.md`](docs/ai-use-log.md).
+
 ## Status
 
 | Phase | Week | Status |
