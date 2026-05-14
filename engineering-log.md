@@ -1,0 +1,39 @@
+# Engineering Log
+
+Process evidence for CISC 699. One entry per working session — terse is fine, decisions and blockers are the point.
+
+Conventions: one heading per week; under it, dated bullets. Mark decisions with **[DECISION]**, blockers with **[BLOCKER]**, scope changes with **[SCOPE]**, AI assistance with **[AI]**.
+
+---
+
+## Week 1 (2026-05-09 → 2026-05-15)
+
+### 2026-05-13
+- Repo initialized at `/Users/ericliang/PycharmProjects/CISC-699/`. Folder structure set up: `docs/`, `src/`, `tests/{functional,adversarial,performance}/`, `benchmarks/`, `deploy/`, `scripts/`.
+- **[DECISION]** Project topic selected: hardened Python execution sandbox for LLM agent tool-use. See `docs/01-launch-packet/candidate-projects.md` for the three-candidate comparison that fed this decision.
+- **[DECISION]** Initial scope locked to Python-only, no network, no GPU, single-tenant, Linux host. Rationale: keeps the threat model defensible and the 14-week timeline credible.
+- **[DECISION]** Two isolation back-ends in scope: hardened Docker (baseline, W5–W6) and gVisor (W7–W8). Firecracker microVMs are a W10 stretch goal only if ahead of schedule.
+- **[AI]** Used Claude (Sonnet 4.6 via Cowork) to scaffold repo structure, draft initial problem statement, draft project charter, draft three-candidate comparison. All AI output requires student review and revision before submission. See `docs/ai-use-log.md`.
+- **[AI]** Annotated bibliography draft populated to 7 entries (≥5 W1 minimum met) via Claude-assisted web search + web fetch. Each entry grounded in a fetched primary source with explicit verification-status line naming what the student must still verify independently. Sources span all five planned categories. See `docs/ai-use-log.md` "W1 — Annotated bibliography draft" entry for the full log of searches run and URLs fetched.
+- Next: revise charter and bibliography into own voice, complete remaining verification reading on the 7 sources, schedule supervisor meeting, run feasibility memo.
+
+### TODO before W1 submission (Sunday 2026-05-17, 11:59pm)
+- [ ] Review and revise `project-charter.md` into own voice
+- [ ] Bibliography: complete the per-entry verification-reading items for the 7 drafted sources (each entry's "Verification status" line names what's still owed); revise annotations into own voice
+- [ ] Complete `feasibility-memo.md` (data, compute, software deps, deployment, time)
+- [ ] Complete `supervisor-briefing.md` (decisions still needed from Dr. Shaalan)
+- [ ] Initialize Git repo and push to private GitHub remote
+- [ ] Create issue tracker (GitHub Issues) with W2 charter-approval tasks
+- [ ] Submit launch packet to Canvas
+
+---
+
+## Week 2 (2026-05-16 → 2026-05-22)
+
+*Pending.*
+
+---
+
+## Week 3 (2026-05-23 → 2026-05-29)
+
+*Pending.*

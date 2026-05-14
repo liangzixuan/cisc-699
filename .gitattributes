@@ -1,0 +1,15 @@
+# Force LF line endings for text files
+* text=auto eol=lf
+
+# Treat as binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.svg binary
+*.docx binary
+*.xlsx binary
+*.pptx binary
+
+# Mark vendored / generated content (excluded from language stats)
+benchmarks/results/** linguist-generated
+docs/01-launch-packet/screenshots/** linguist-generated
