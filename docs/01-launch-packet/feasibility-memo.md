@@ -22,7 +22,7 @@ A reasonable W1 plan is to take ~60 programs from HumanEval and ~40 hand-authore
 | HumanEval / MBPP license drift | Re-verify license texts at the moment of redistribution. Default to hand-authored corpus if license becomes uncertain. |
 | Adversarial corpus regarded as security research that triggers ethics-review concerns | All adversarial programs target *the project's own sandbox*, not external systems; framing in the report makes this explicit. |
 
-**STUDENT DECISION D1:** Confirm with supervisor that redistributing a subset of HumanEval/MBPP inside this repository under their stated upstream licenses is acceptable, or commit to a 100% hand-authored functional corpus.
+Redistributing a subset of HumanEval/MBPP inside this repository under their stated upstream licenses is acceptable.
 
 ## 2. Compute needs
 
@@ -49,7 +49,7 @@ Across 14 weeks of intermittent use (one host running roughly 60% of the term), 
 | Benchmark non-reproducible due to noisy-neighbor VMs | Run benchmarks on a dedicated CPU instance for the final sweep; document hardware in the report. |
 | HU lab access blocks installing gVisor (`runsc` requires root or apt-source addition) | Default to personal cloud VM; raise as the W2 supervisor question if HU lab is preferred path. |
 
-**STUDENT DECISION D2:** Pick a compute provider (Hetzner, DigitalOcean, AWS, or local Linux) and set up the account / verify HU lab availability by end of W2.
+Pick a compute provider DigitalOcean and set up the account. Verify HU lab availability by end of W2.
 
 ## 3. Software dependencies
 
@@ -76,7 +76,7 @@ All Python dependencies will be pinned in `requirements.txt` and a lockfile (lik
 - Docker Engine kernel-feature compatibility: confirm the host kernel supports `cgroups v2` (default on Ubuntu 22.04+) — required for the cgroup-based memory/PID limits.
 - AppArmor vs. SELinux: Ubuntu defaults to AppArmor; the hardened-Docker back-end will ship an AppArmor profile. If the host is RHEL/Rocky/Alma the project would need an SELinux profile instead. Decision: Ubuntu only for this project.
 
-**STUDENT DECISION D3:** Confirm Ubuntu 22.04 *vs.* 24.04 as the target host. (Recommend 22.04 — wider library compatibility, longer LTS window, gVisor more tested on it. 24.04 is fine if cloud provider only offers 24.04 images.)
+Confirmed Ubuntu 22.04 as the target host.
 
 ## 4. Deployment expectations
 
@@ -105,10 +105,7 @@ make bench        # runs the benchmark sweep, emits a result table
 - Reader without root on their evaluation host: gVisor installation requires apt-add-repository; document this as a precondition in the README.
 - Reader without an Anthropic API key: the reference-agent demo will refuse to run, but every other test target is API-independent.
 
-**STUDENT DECISION D4:** Decide repository visibility:
-- **Private during term** (recommended — keeps options open for IP, avoids casual readers misusing pre-publication adversarial-suite). Share via supervisor invite.
-- **Public from the start** (slightly stronger portfolio signal but cannot be undone). Choose only if confident.
-Switch to public at end-of-term is straightforward either way.
+Decide repository visibility: **Public from the start** (slightly stronger portfolio signal but cannot be undone).
 
 ## 5. Time constraints
 
@@ -136,7 +133,7 @@ Wall-clock effort estimate (student hours):
 
 **Total: ~235 hours.** Across 14 weeks that is ~17 hours/week — consistent with a 3-credit graduate applied-project workload. If the student's actual availability is materially below this, the W7 scope-reduction trigger is the relief valve, not a quality compromise.
 
-**STUDENT DECISION D5:** Confirm realistic weekly availability with supervisor. If <12 hours/week is realistic, raise this at the W2 meeting and renegotiate to the Docker-only artifact path from the start rather than as a midpoint fallback.
+Confirmed realistic weekly availability with supervisor. 
 
 ## 6. Personnel / external dependencies
 
@@ -148,7 +145,7 @@ Sole-student project. External dependencies are limited to supervisor availabili
 | Supervisor midpoint feedback | W7 (2026-06-26) | If feedback delayed >1 week, default to executing the gVisor sprint per plan and adjusting at next supervisor meeting. |
 | Supervisor draft feedback | W11 (2026-07-24) | Submit draft early in W11 to leave buffer for slow turnaround. |
 
-**STUDENT DECISION D6:** Confirm supervisor availability windows for W2, W7, W11 before W1 submission. Propose a standing fortnightly check-in cadence at the W2 meeting.
+Confirm supervisor availability windows for W2, W7, W11 before W1 submission. Propose a standing fortnightly check-in cadence at the W2 meeting.
 
 ## 7. Summary feasibility judgment
 
@@ -160,7 +157,7 @@ The project is feasible within the stated constraints:
 - **Time:** ~235 student-hours across 14 weeks (~17 hrs/wk); two explicit relief valves (W5 checkpoint, W7 scope review) handle slippage.
 - **Personnel:** only external dependency is supervisor availability for three named milestones.
 
-The six student decisions named above (D1–D6) are all resolvable in the W2 supervisor meeting and a few minutes of personal calendar work.
+The six student decisions named above are all resolved.
 
 **Recommendation:** proceed to W2 charter approval.
 
@@ -168,11 +165,11 @@ The six student decisions named above (D1–D6) are all resolvable in the W2 sup
 
 ## Six student decisions, summarized for the supervisor meeting
 
-| # | Decision | Default if no preference |
-|---|---|---|
-| D1 | Redistribute HumanEval/MBPP subset or 100% hand-authored functional corpus? | Hand-authored, with reuse if supervisor approves |
-| D2 | Compute provider — Hetzner / DigitalOcean / AWS / local / HU lab? | Hetzner (cheapest credible cloud option) |
-| D3 | Ubuntu 22.04 vs. 24.04 host? | 22.04 (most tested for both Docker + gVisor) |
-| D4 | Repository visibility — private or public? | Private during term, decide on public release at W14 |
-| D5 | Weekly availability — ≥12 hrs/week confirmed? | (Student-only) |
-| D6 | Supervisor cadence — fortnightly check-ins + the three named milestones? | Fortnightly + W2/W7/W11 |
+| # | Decision | |
+|---|---|--|
+| D1 | Redistribute HumanEval/MBPP subset |
+| D2 | Compute provider — DigitalOcean / HU lab | |
+| D3 | Ubuntu 22.04 host? | |
+| D4 | Repository visibility — public | |
+| D5 | Weekly availability — ≥12 hrs/week confirmed | |
+| D6 | Supervisor cadence — fortnightly check-ins + the three named milestones? | |

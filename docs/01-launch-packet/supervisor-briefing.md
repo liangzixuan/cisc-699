@@ -3,7 +3,7 @@
 > **Status:** Draft 1 (Claude-assisted). Student to revise into own voice and confirm questions before the W2 charter-approval meeting.
 
 **To:** Dr. Majid Shaalan
-**From:** Eric Liang
+**From:** Zixuan Liang
 **Subject:** CISC 699 Summer 2026 — proposed applied project (SafeExec: hardened Python execution sandbox for LLM agents)
 **Date:** *(populate before sending)*
 

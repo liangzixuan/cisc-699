@@ -2,18 +2,17 @@
 
 A Hardened, Threat-Modeled Python Execution Sandbox for LLM Agent Tool-Use
 
-> **Status:** Draft 1 (Claude-assisted). Student revision required before W1 submission for supervisor approval. The charter must reflect the student's commitments — not Claude's recommendations — once submitted.
 
-| Field | Value |
-|---|---|
-| Working title | SafeExec |
-| Student | Eric Liang (cary.wheatman@gmail.com) |
-| Program | M.S. Computer Information Sciences, Harrisburg University |
+| Field | Value                                                                        |
+|---|------------------------------------------------------------------------------|
+| Working title | SafeExec                                                                     |
+| Student | Zixuan Liang (zliang1@my.harrisburgu.edu)                                    |
+| Program | M.S. Computer Information Sciences, Harrisburg University                    |
 | Course | CISC 699-50-A-2026/Summer — Applied Project in Computer Information Sciences |
-| Supervisor | Dr. Majid Shaalan |
-| Term | 2026-05-09 → 2026-08-14 (14 weeks) |
-| Charter draft date | 2026-05-13 |
-| Charter approval target | W2 (2026-05-22) |
+| Supervisor | Dr. Majid Shaalan                                                            |
+| Term | 2026-05-09 → 2026-08-14 (14 weeks)                                           |
+| Charter draft date | 2026-05-13                                                                   |
+| Charter approval target | W2 (2026-05-22)                                                              |
 
 ## 1. Rationale
 
@@ -106,12 +105,12 @@ The scope above is fixed for the duration of W3–W8. Any proposed change must b
 
 ## 7. Stakeholders
 
-| Stakeholder | Relationship | Expectations |
-|---|---|---|
-| Student (Eric Liang) | Builder, author, reporter | Owns all decisions, produces all artifacts, manages timeline |
-| Supervisor (Dr. Majid Shaalan) | Approves charter; reviews milestones; final grader | Receives charter, midpoint demo, final report and artifact, final presentation |
-| CISC 699 program | Sets standards and rubric | Adherence to milestone calendar and submission conventions |
-| Future portfolio reviewers | Implicit audience | A defensible artifact and report suitable to discuss in a 30-minute interview |
+| Stakeholder                       | Relationship | Expectations |
+|-----------------------------------|---|---|
+| Student (Zixuan Liang)            | Builder, author, reporter | Owns all decisions, produces all artifacts, manages timeline |
+| Supervisor (Dr. Majid Shaalan)    | Approves charter; reviews milestones; final grader | Receives charter, midpoint demo, final report and artifact, final presentation |
+| CISC 699 program                  | Sets standards and rubric | Adherence to milestone calendar and submission conventions |
+| Future portfolio reviewers        | Implicit audience | A defensible artifact and report suitable to discuss in a 30-minute interview |
 | Open-source community (potential) | Downstream consumer if released | Documentation, license clarity, reproducibility |
 
 ## 8. Risks and mitigations
@@ -175,17 +174,9 @@ These are captured in detail in `supervisor-briefing.md`; summarized here for ch
 
 ## 12. Approval
 
-| Role | Name | Signature / Date |
-|---|---|---|
-| Student | Eric Liang | _________________________ |
-| Supervisor | Dr. Majid Shaalan | _________________________ |
+| Role | Name                | Signature / Date |
+|---|---------------------|---|
+| Student | Zixuan Liang        | _________________________ |
+| Supervisor | Prof. Majid Shaalan | _________________________ |
 
 ---
-
-**Revision notes for the student.**
-
-1. Read this charter end to end. Rewrite any passage that does not sound like you. The graders read across many students' work and will recognize generic AI-assisted prose.
-2. Validate every number (budget envelope, success-criteria thresholds, milestone-date alignment with the CLAUDE.md schedule). Numbers in a charter are commitments.
-3. Verify the supervisor's preferred title ("Dr.", "Prof.", etc.) before submission.
-4. If anything in section 5 (scope) makes you nervous, raise it now — not at W7.
-5. Add a one-paragraph "what would make me quit this project at W4" candor section if your supervisor is the type who appreciates candor. It is a strong signal of engineering maturity. Optional.

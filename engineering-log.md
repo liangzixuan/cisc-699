@@ -18,7 +18,7 @@ Conventions: one heading per week; under it, dated bullets. Mark decisions with 
 
 ### 2026-05-14
 - **[AI]** Completed remaining W1 launch-packet artifacts: architecture/context diagram (Mermaid + scope-boundary explanation), substantive feasibility memo with six explicit student decisions (D1–D6), W2 issue-tracker seed (17 pre-drafted issues), workspace-screenshots checklist, and Git-push instructions.
-- **[DECISION]** Initial commit landed locally: `2a280e6` tagged `w1-initial`. Author configured as Eric Liang <cary.wheatman@gmail.com>. **Push to GitHub remote is student-only** (needs credentials); see `docs/01-launch-packet/git-push-instructions.md`.
+- **[DECISION]** Initial commit landed locally: `2a280e6` tagged `w1-initial`. Author configured as Zixuan Liang <zliang1@my.harrisburgu.edu>. **Push to GitHub remote is student-only** (needs credentials); see `docs/01-launch-packet/git-push-instructions.md`.
 - All five items in the launch packet's "Suggested submission package" are now drafted: charter, bibliography, feasibility memo, architecture/context sketch, screenshots checklist (screenshots themselves are student action).
 - Next (student-only): voice revision pass on charter + bibliography; resolve feasibility-memo decisions D1–D6; capture screenshots; push to GitHub; populate issue tracker; submit to Canvas by Sunday 2026-05-17 11:59pm.
 

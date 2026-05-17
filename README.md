@@ -3,7 +3,7 @@
 > **Working title.** Project name subject to change. See [`docs/01-launch-packet/project-charter.md`](docs/01-launch-packet/project-charter.md).
 
 CISC 699 Applied Project (Summer 2026) — M.S. Computer Information Sciences, Harrisburg University.
-Student: Eric Liang · Supervisor: Dr. Majid Shaalan · Term: 2026-05-09 → 2026-08-14.
+Student: Zixuan Liang · Supervisor: Dr. Majid Shaalan · Term: 2026-05-09 → 2026-08-14.
 
 ## What this is
 
