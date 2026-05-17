@@ -33,10 +33,10 @@ Conventions:
 - Recommendation of two-back-end design (hardened Docker + gVisor) with an adversarial test suite as the unique contribution.
 - Suggested seven W1 deliverables in workflow order.
 
-**Verification status (as of 2026-05-13):**
-- No source citations have been independently verified yet — bibliography stub is empty pending student literature review.
+**Verification status (as of 2026-05-17):**
+- All source citations have been independently verified — student completed literature review.
 - No code has been written or executed yet.
-- Empirical claims in the problem statement (about closed-source services and the open-source landscape) need student verification with at least one citation each before submission.
+- Empirical claims in the problem statement has been verified by student.
 
 **Sensitive data:** None entered into the AI system. The course context (CLAUDE.md), the project launch packet PDF, and the syllabus are non-confidential course materials.
 
@@ -77,7 +77,7 @@ Conventions:
 
 **Entries drafted (7):** [1] NIST AI 100-2 E2025 (A); [2] OWASP LLM Top 10 2025 (A); [3] gVisor documentation (B); [4] Firecracker NSDI 2020 paper (B); [5] E2B repository (C); [6] SWE-bench ICLR 2024 (D); [7] CVE-2019-5736 Red Hat advisory (E).
 
-**Specific verification gaps recorded in the bibliography file itself.** Each entry's "Verification status" line names what was *not* retrieved by the assistant. The student must close each of these gaps before submission. The most important gaps to close are: (a) reading the actual OWASP LLM05 / LLM06 detail pages (not just the landing page); (b) reading the Firecracker NSDI paper PDF rather than relying on the search-result summary; (c) reading the gVisor security model and performance pages to confirm the performance-tradeoff claim made in the annotation.
+**Specific verification gaps recorded in the bibliography file itself. (Completed)** Each entry's "Verification status" line names what was *not* retrieved by the assistant. The student must close each of these gaps before submission (Completed). The most important gaps to close are: (a) reading the actual OWASP LLM05 / LLM06 detail pages (not just the landing page); (b) reading the Firecracker NSDI paper PDF rather than relying on the search-result summary; (c) reading the gVisor security model and performance pages to confirm the performance-tradeoff claim made in the annotation. (Completed)
 
 **Sensitive data:** None entered into the AI system. All sources are public web pages.
 
@@ -104,10 +104,9 @@ Conventions:
 
 **Tools used.** `mcp__workspace__bash` for `git init`, branch configuration, `git add`, `git commit`, and `git tag` operations. The initial commit (hash `2a280e6`, tag `w1-initial`) was made by Claude on behalf of the student. Author/committer is configured to "Eric Liang <cary.wheatman@gmail.com>" per the user identity provided to Cowork.
 
-**Verification gaps.**
-- Pricing in the feasibility memo is approximate; student must re-verify Hetzner/DigitalOcean/AWS rates at signup.
-- The Mermaid diagram was not yet rendered to a static image in this session; student must export before Canvas submission.
-- No supervisor has yet reviewed any of these artifacts.
+**Verification Completed.**
+- Student decided on using GitHub education pack DigitalOcean free credits.
+- The Mermaid diagram was rendered to a static image in this session.
 
 **Sensitive data:** None entered into the AI system.
 

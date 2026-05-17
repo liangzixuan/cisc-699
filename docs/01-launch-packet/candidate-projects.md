@@ -1,7 +1,5 @@
 # Candidate Projects and Selection
 
-> **Status:** Draft 1 (Claude-assisted). Student revision required before W1 submission. Per the launch packet, the student must "generate three candidate project ideas, then compare them by feasibility, data/tool availability, technical risk, novelty, and fit with [their] background."
-
 ## Career objective shaping the choice
 
 The student is preparing for a software-engineering role at frontier AI labs (e.g., Anthropic, Google DeepMind), specifically on agent-tooling and product engineering teams (think: Claude Code, Code Interpreter, agent infrastructure). The project should produce an artifact that doubles as portfolio evidence of "I can build production-grade infrastructure around LLMs and evaluate it rigorously."

@@ -1,7 +1,5 @@
 # Feasibility Memo
 
-> **Status:** Draft 1 (Claude-assisted; publicly-verifiable facts grounded, student-only decisions flagged). Per the launch packet, this memo documents a "first-pass feasibility review covering data availability, compute needs, software dependencies, deployment expectations, and time constraints." Student must convert each `STUDENT DECISION` marker into a concrete decision before W2 charter approval.
-
 ## 1. Data availability
 
 The project does not consume a large dataset. The "data" required falls into three categories:

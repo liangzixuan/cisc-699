@@ -1,8 +1,6 @@
 # Supervisor Briefing Note — Week 1
 
-> **Status:** Draft 1 (Claude-assisted). Student to revise into own voice and confirm questions before the W2 charter-approval meeting.
-
-**To:** Dr. Majid Shaalan
+**To:** Prof. Majid Shaalan
 **From:** Zixuan Liang
 **Subject:** CISC 699 Summer 2026 — proposed applied project (SafeExec: hardened Python execution sandbox for LLM agents)
 **Date:** *(populate before sending)*
@@ -41,25 +39,22 @@ The launch packet asks me to "list the decisions still needed from a Week 1 conv
 ## 4. What I have done already in W1
 
 - Drafted the project charter, problem statement, three-candidate comparison, feasibility memo, and supervisor briefing (this document).
-- Set up the project repository at `/Users/ericliang/PycharmProjects/CISC-699/` with the structure described in `README.md`.
+- Set up the project repository at `https://github.com/liangzixuan/cisc-699` with the structure described in `README.md`.
 - Started the engineering log (`engineering-log.md`) and AI-use disclosure log (`docs/ai-use-log.md`).
-- Identified five source categories for the annotated bibliography and the gaps I still need to fill (`docs/01-launch-packet/annotated-bibliography.md`).
+- Identified five source categories for the annotated bibliography and the gaps I still need to fill (`https://github.com/liangzixuan/cisc-699/blob/main/docs/01-launch-packet/annotated-bibliography.md`).
 
 ## 5. What I plan to do in W2
 
-- Revise all W1 documents into final form based on your feedback in our charter-approval meeting.
-- Initialize the GitHub repository (privately) and push the W1 artifacts.
-- Populate the annotated bibliography to ≥5 read-and-annotated sources.
-- Begin W3 work early: related-work synthesis and requirements.
+- incorporate supervisor feedback into the charter
+- expand the bibliography toward the W11 ≥15-source target
+- start W3 lit-synthesis and requirements work
 
 ## 6. Attachments
 
-- `docs/01-launch-packet/project-charter.md`
-- `docs/01-launch-packet/problem-statement.md`
-- `docs/01-launch-packet/candidate-projects.md`
-- `docs/01-launch-packet/feasibility-memo.md`
-- `docs/01-launch-packet/annotated-bibliography.md` (in-progress)
+- `https://github.com/liangzixuan/cisc-699/blob/main/docs/01-launch-packet/project-charter.md`
+- `https://github.com/liangzixuan/cisc-699/blob/main/docs/01-launch-packet/problem-statement.md`
+- `https://github.com/liangzixuan/cisc-699/blob/main/docs/01-launch-packet/candidate-projects.md`
+- `https://github.com/liangzixuan/cisc-699/blob/main/docs/01-launch-packet/feasibility-memo.md`
+- `https://github.com/liangzixuan/cisc-699/blob/main/docs/01-launch-packet/annotated-bibliography.md` (in-progress)
 
 ---
-
-**Revision notes for the student.** Before sending: trim. A supervisor's first read of this should take three minutes. Cut anything that is not strictly necessary for them to (a) approve the project, (b) answer your questions, (c) align on the W2 next steps.
