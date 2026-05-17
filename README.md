@@ -100,3 +100,14 @@ Substantial AI assistance is being used in the development of this project (proj
 ## License
 
 TBD — to be decided before public release. Default during the academic term: all rights reserved.
+
+## Workspace evidence
+
+See `docs/01-launch-packet/screenshots/` for W1 workspace screenshots.
+
+- [Repo folder structure](docs/01-launch-packet/screenshots/01-repo-folder-structure.png)
+- [GitHub repository view](docs/01-launch-packet/screenshots/02-repo-url.png)
+- [Issue tracker](docs/01-launch-packet/screenshots/03-issue-tracker.png)
+- [Development environment](docs/01-launch-packet/screenshots/04-ide.png)
+- [Architecture diagram (rendered)](docs/01-launch-packet/screenshots/05-architecture-rendered.png)
+- [Git Log Initial Commits](docs/01-launch-packet/screenshots/06-git-log-initial-commits.png)
