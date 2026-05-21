@@ -1,5 +1,7 @@
 # Annotated Bibliography
 
+> **AI-use disclosure.** Drafted with Claude Sonnet 4.6 (Cowork desktop app) using WebSearch and `web_fetch` tools to locate primary sources; annotations grounded only in fetched content (no fabricated citations). AI-drafted, student-revised. Key human-authored decisions in this document: independent verification reading of each of the seven sources; first-person verification-status statements; source-selection criteria; voice revision throughout. Full audit trail: [`docs/ai-use-log.md`](../ai-use-log.md).
+
 **Citation style:** IEEE numbered.
 **Target counts:** ≥5 by W1 submission (this draft has 7), ≥15 by W11 report draft.
 **Categories:**

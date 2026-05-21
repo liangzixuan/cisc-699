@@ -1,5 +1,7 @@
 # Supervisor Briefing Note — Week 1
 
+> **AI-use disclosure.** Drafted with Claude Sonnet 4.6 (Cowork desktop app). AI-drafted, student-revised. Key human-authored decisions in this document: choice of supervisor questions; recipient list (Profs. Shaalan and Lateef); §5 revision to reflect actual W2 commitments (the original AI draft contained stale W2 items already completed in W1). Full audit trail: [`docs/ai-use-log.md`](../ai-use-log.md).
+
 **To:** Prof. Majid Shaalan
 **From:** Zixuan Liang
 **Subject:** CISC 699 Summer 2026 — proposed applied project (SafeExec: hardened Python execution sandbox for LLM agents)

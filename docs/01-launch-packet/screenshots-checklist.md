@@ -1,6 +1,8 @@
 # Workspace Screenshots Checklist
 
-> **Purpose.** The launch packet's "Tools" table requires a "screenshot of environment, repository URL or screenshot, folder structure, and basic environment inventory" as W1 evidence. The "Extras to Help the Student Finish Properly" section names "workspace screenshots" as one of the five items in the suggested submission package. This file lists exactly which screenshots to capture and where to save them.
+> **AI-use disclosure.** Drafted with Claude Sonnet 4.6 (Cowork desktop app). AI-drafted (this checklist), Student-only (the screenshots themselves). The actual workspace screenshots in `screenshots/` were captured by Zixuan Liang — they are the only artifacts in the launch packet that involved no AI assistance in their content. Full audit trail: [`docs/ai-use-log.md`](../ai-use-log.md).
+
+**Purpose.** The launch packet's "Tools" table requires a "screenshot of environment, repository URL or screenshot, folder structure, and basic environment inventory" as W1 evidence. The "Extras to Help the Student Finish Properly" section names "workspace screenshots" as one of the five items in the suggested submission package. This file lists exactly which screenshots to capture and where to save them.
 
 **Where to save:** `docs/01-launch-packet/screenshots/` (create this folder before capturing). PNG format, downsized to ≤500 KB per file before committing. Reference in `README.md` and link in the Canvas submission.
 

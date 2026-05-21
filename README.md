@@ -95,7 +95,7 @@ Each suite is run under each isolation back-end (hardened Docker, gVisor). Full 
 
 ## AI-use disclosure
 
-Substantial AI assistance is being used in the development of this project (project framing, scaffolding, drafting). A running disclosure log is maintained at [`docs/ai-use-log.md`](docs/ai-use-log.md) and will be consolidated into the final report's AI-use appendix per the CISC 699 policy. The student remains fully responsible for the correctness, originality, and appropriateness of every submitted artifact.
+Substantial AI assistance is used in this project (project framing, scaffolding, drafting). The authoritative audit trail is at [`docs/ai-use-log.md`](docs/ai-use-log.md): a per-artifact table with tool, purpose, prompt summary, and a decision-authorship label (Student-originated / AI-drafted-student-revised / AI-advised-student-executed / Student-only), plus an explicit enumeration of decisions that were Student-only. Every substantive artifact in the repository carries a short inline AI-use block at the top pointing back to that log; commits that contain AI-assisted content carry an `AI-use:` trailer line. The student remains fully responsible for the correctness, originality, and appropriateness of every submitted artifact and will assemble the W14 final-report AI-use appendix from the audit log.
 
 ## License
 

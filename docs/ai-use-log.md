@@ -1,126 +1,121 @@
 # AI-Use Disclosure Log
 
-This document tracks every substantive use of generative AI in this project. It is the source from which the final report's AI-use appendix will be assembled. Per the CISC 699 syllabus, AI-generated text, code, analysis, or figures may not be submitted as unaided work, and all substantial AI assistance must be disclosed.
+**Owner:** Zixuan Liang
+**Course:** CISC 699 — Applied Project in Computer Information Sciences (Summer 2026)
+**Last updated:** 2026-05-18
 
-Conventions:
-- One entry per AI-assisted session (or per artifact, when assistance spans a session).
-- Record: date, tool/model, artifact affected, what was generated vs. what the student authored or revised, and a brief note on verification (did the student check correctness, edit substantively, validate against sources?).
-- Confidential, proprietary, FERPA, or HIPAA-regulated data is **not** to be entered into public AI systems.
+## 1. Purpose and policy
 
----
+This document is the authoritative audit trail of every substantive use of generative AI in this project. Per the CISC 699 syllabus, AI-generated text, code, analysis, or figures may not be submitted as unaided work, and all substantial AI assistance must be disclosed. This log is the source from which the W14 final-report AI-use appendix will be assembled.
 
-## W1 — Project initialization (2026-05-13)
+The W1 launch-packet review feedback (received 2026-05-18) flagged that the prior version of this log was descriptive rather than audit-oriented. This revision adopts an explicit audit format: per-artifact attribution, decision-authorship labels, an enumeration of human-only decisions, and an ongoing-disclosure process for W2–W14.
 
-**Tool / model:** Claude (Anthropic) — Cowork desktop app, Sonnet 4.6.
+**Excluded from AI systems at all times.** No confidential, proprietary, FERPA-regulated, HIPAA-regulated, personal, or otherwise restricted data has been entered into any AI tool used on this project. Only public course materials (the syllabus, the launch packet PDF) and student-authored project artifacts have been shared.
 
-**Artifacts touched:**
+## 2. Decision-authorship taxonomy
 
-| File | AI contribution | Student contribution required before submission |
+The per-artifact table below uses these labels:
+
+| Label | Meaning |
+|---|---|
+| **Student-originated, AI-articulated** | The student made the substantive choice; AI helped phrase or structure it. |
+| **AI-drafted, student-revised** | AI produced an initial draft; the student substantially edited it (voice, framing, factual checks, sentence-level rewrites). |
+| **AI-drafted, student-accepted** | AI produced a draft; the student reviewed and accepted with light or no changes. Used for boilerplate or technical-fact content. |
+| **AI-advised, student-executed** | AI suggested an approach or command; the student carried it out and verified outputs. Used for shell commands, configuration steps, and tool selection. |
+| **Student-only** | No AI assistance in any form. |
+
+## 3. Inline disclosure conventions
+
+Every substantive artifact in this repository carries a short AI-use block at the top of the file (immediately under the title) in the following format:
+
+```markdown
+> **AI-use disclosure.** Drafted with Claude Sonnet 4.6 (Cowork desktop app). <Authorship label>. Key human-authored decisions in this document: <list>. Full audit trail: [docs/ai-use-log.md](<relative-path>/docs/ai-use-log.md).
+```
+
+The block is intentionally short (2–3 lines) so the document remains readable; per-document detail lives in this log's audit table. Commit messages that include AI-assisted content append an `AI-use:` trailer line.
+
+## 4. Audit table — W1 launch packet (2026-05-13 to 2026-05-17)
+
+| # | Artifact | Tool | Purpose | Prompts / tasks (summary) | Authorship label | Extent of student modification |
+|---|---|---|---|---|---|---|
+| 1 | `README.md` | Claude Sonnet 4.6 (Cowork) | Initial draft of living grading-doc overview | "Initial README with project framing, status, repo layout, AI-use note" | AI-drafted, student-revised | Student edited the W1 launch-packet index, status-table dates, and license note; added the GitHub URL after creating the remote |
+| 2 | `engineering-log.md` | Claude Sonnet 4.6 (Cowork) | Initial structure + W1 seed entries | "Weekly engineering journal with W1 seed entry; conventions for [DECISION], [BLOCKER], [SCOPE], [AI] tags" | AI-drafted, student-accepted (structure); ongoing entries student-only | Student is sole author of entries from W2 onward |
+| 3 | `.gitignore` | Claude Sonnet 4.6 (Cowork) | Standard Python/IDE/Docker ignore patterns | "Standard ignore patterns" | AI-drafted, student-accepted | Boilerplate; reviewed and accepted as-is |
+| 4 | `.gitattributes` | Claude Sonnet 4.6 (Cowork) | Line-ending + binary-file rules + linguist markers | "Standard gitattributes" | AI-drafted, student-accepted | Boilerplate; reviewed and accepted as-is |
+| 5 | `docs/01-launch-packet/problem-statement.md` | Claude Sonnet 4.6 (Cowork) | One-paragraph problem statement | "Draft a one-paragraph statement framing the LLM-agent sandbox motivation; identify stakeholders and what the project does and does not claim to solve" | AI-drafted, student-revised | Student revised wording, removed verbose preamble, verified empirical claims against bibliography sources |
+| 6 | `docs/01-launch-packet/candidate-projects.md` | Claude Sonnet 4.6 (Cowork) | Three-candidate comparison + selection rationale | "Compare candidates A/B/C on feasibility, novelty, fit; argue selection of C given background and career objective" | Student-originated, AI-articulated (selection); AI-drafted, student-revised (comparison) | The choice of Candidate C was a student decision after AI presented options; AI drafted the comparison-matrix structure |
+| 7 | `docs/01-launch-packet/project-charter.md` | Claude Sonnet 4.6 (Cowork) | Full charter (rationale, artifact, users, goals, scope, assumptions, stakeholders, risks, success criteria, milestone map) | "Draft charter with all standard sections; align dates to syllabus W1–W14; include risk register" | AI-drafted, student-revised | Student verified every milestone date against syllabus; revised scope §5 to reflect final commitments; reviewed and accepted success-criteria thresholds |
+| 8 | `docs/01-launch-packet/feasibility-memo.md` | Claude Sonnet 4.6 (Cowork) | Substantive feasibility analysis flagged with 6 student-decision markers | "Replace outline stub with substantive content; flag D1–D6 as items requiring student input" | AI-drafted, student-revised | Student resolved all six decisions personally (D1–D6); student-verified cloud-provider pricing at signup; student removed verbose preamble |
+| 9 | `docs/01-launch-packet/annotated-bibliography.md` | Claude Sonnet 4.6 (Cowork) + WebSearch + web_fetch tools | 7 IEEE-formatted annotations grounded in fetched primary sources | "Search for sources across 5 categories; fetch primary sources; draft annotations grounded only in fetched content; do not fabricate citations" | AI-drafted, student-revised | Student independently re-fetched and read each of the 7 sources; updated each "Verification status" line to first-person student voice; removed verbose preamble |
+| 10 | `docs/01-launch-packet/architecture-context.md` | Claude Sonnet 4.6 (Cowork) | Mermaid system-context diagram + scope-boundary explanation | "Produce one system-context diagram + a short explanation of scope boundaries; map to charter §5" | AI-drafted, student-revised | Student exported diagram to PNG for Canvas; verified boundary alignment with charter §5 |
+| 11 | `docs/01-launch-packet/supervisor-briefing.md` | Claude Sonnet 4.6 (Cowork) | 3-minute-read briefing requesting D1–D6 input | "Draft briefing memo with decisions, clarifications, risks for supervisor's read" | AI-drafted, student-revised | Student updated salutation (Prof., not Dr.), name, recipient list (added Prof. Lateef); revised §5 to remove stale W2 items |
+| 12 | `docs/01-launch-packet/w2-github-issues.md` | Claude Sonnet 4.6 (Cowork) | 17 pre-drafted W2–W5 issues | "Pre-draft issues with titles, labels, bodies; copy-paste-ready" | AI-drafted, student-accepted | Student copy-pasted issues into the actual GitHub Issues tracker |
+| 13 | `docs/01-launch-packet/screenshots-checklist.md` | Claude Sonnet 4.6 (Cowork) | Required-screenshot list with capture commands | "List required screenshots with rationale per launch-packet evidence requirement" | AI-drafted, student-accepted | Student captured all 5+1 screenshots themselves (the artifacts are Student-only) |
+| 14 | `docs/01-launch-packet/git-push-instructions.md` | Claude Sonnet 4.6 (Cowork) | Two procedures (gh CLI, web UI) for pushing to GitHub | "Document gh CLI + web-UI push procedures" | AI-drafted, student-accepted (instructions); Student-only (execution) | Student executed the push, chose repo name `liangzixuan/cisc-699`, set public visibility |
+| 15 | `docs/ai-use-log.md` (this file) | Claude Sonnet 4.6 (Cowork) | Audit-oriented disclosure log per professor's W1 feedback | "Restructure log to per-artifact table with authorship labels; add 'human-only decisions' section; define ongoing process" | AI-drafted, student-revised | Student reviewed every row for accuracy against actual workflow; ongoing entries student-only |
+
+### Workspace screenshots (`docs/01-launch-packet/screenshots/`)
+
+| # | File | Authorship label | Notes |
+|---|---|---|---|
+| 16a | `01-repo-folder-structure.png` | Student-only | Captured by student via terminal `tree` command |
+| 16b | `02-repo-url.png` | Student-only | Browser screenshot of GitHub repo |
+| 16c | `03-issue-tracker.png` | Student-only | Browser screenshot of GitHub Issues tab |
+| 16d | `04-ide.png` | Student-only | Screenshot of student's IDE |
+| 16e | `05-architecture-rendered.png` | AI-drafted (diagram source), Student-only (export) | Mermaid source is AI-drafted (entry #10); the PNG export was performed by the student via mermaid.live |
+| 16f | `06-git-log-initial-commits.png` | Student-only | Terminal screenshot |
+
+## 5. Operational AI use (non-document)
+
+| Date | Tool / channel | Purpose | Authorship label | Outcome |
+|---|---|---|---|---|
+| 2026-05-13 | Claude (Cowork) advisory chat | Project-topic brainstorm and three-candidate scoping | Student-originated, AI-articulated | Student selected Candidate C |
+| 2026-05-13 | Claude (Cowork) via `mcp__workspace__bash` | Local `git init`, configure user, stage W1 artifacts, initial commit `2a280e6` tagged `w1-initial` | AI-advised, student-executed (student reviewed commit message before commit landed) | Initial commit created in student's name |
+| 2026-05-13 | Claude (Cowork) + WebSearch + web_fetch | Located 7 bibliography sources from primary documents | AI-advised, student-verified | Student independently re-fetched and read every source |
+| 2026-05-14 | Claude (Cowork) via `mcp__workspace__bash` | Second commit (`f2f87bd`) adding git-push instructions and README updates | AI-advised, student-executed | Student reviewed commit |
+| 2026-05-14 to 2026-05-17 | Claude (Cowork) advisory chat | DigitalOcean droplet setup choices (region, plan, OS image), Docker + gVisor installation, system-upgrade dialog handling, smoke tests | AI-advised, student-executed | Every command was typed and executed by the student on the droplet; outputs verified by the student |
+| 2026-05-17 | Claude (Cowork) advisory chat | Canvas submission package composition | Student-originated, AI-articulated | Student selected attachments and wrote text-entry blurb |
+| 2026-05-17 | Claude (Cowork) advisory chat | Discussion-01 peer-discussion pitch and one peer reply | AI-drafted, student-revised | Student reviewed before posting; voice revision applied |
+| 2026-05-18 | Claude (Cowork) advisory chat | Response to W1 grading feedback; this log restructuring | AI-drafted, student-revised | This file is the output |
+
+## 6. Decisions that were human-only (no AI assistance)
+
+The following analytical and operational decisions involved no AI assistance in any form. They were originated, weighed, and committed to by the student:
+
+- **Choice to pursue a CISC 699 applied project at all**, the course's structural constraints, and the milestone-deadline calendar.
+- **Career framing.** The decision to target frontier-AI-lab SWE roles (Anthropic, Google DeepMind) as the project's external-audience anchor.
+- **Project topic selection.** The choice to pursue Candidate C (hardened Python execution sandbox) over Candidates A and B was the student's after weighing portfolio fit, risk appetite, and background. AI presented the three options; the student chose one.
+- **Scope commitments.** Every in/out-of-scope item that the student approved as a personal commitment: Python-only, no network, no GPU, single-tenant, Linux-only, no production deployment, no multi-tenant security.
+- **Resolution of feasibility decisions D1–D6.** All six decisions were resolved by the student personally: HumanEval/MBPP reuse (D1); DigitalOcean as compute provider (D2 — chosen for student credit availability, not AI-suggested as the default); Ubuntu 22.04 (D3); public repository visibility (D4 — chosen against the AI-recommended "private during term"); weekly availability target (D5); supervisor cadence (D6, pending W2 meeting).
+- **Supervisor recipient list.** Adding Prof. Lateef alongside Prof. Shaalan on the briefing email was a student decision.
+- **All Linux-host commands.** Every command executed on the DigitalOcean droplet was reviewed and executed by the student. No commands were executed by an AI tool on the droplet.
+- **All Git commits.** The student reviewed every commit before staging and reviewed every commit message before the commit landed.
+- **DigitalOcean specifics.** The droplet's region (NYC3), plan (Premium Intel 2 vCPU / 4 GB / 120 GB NVMe / 4 TB transfer at $32/mo), OS image, and SSH-key setup were student selections informed by AI advice.
+- **Workspace screenshots.** All six screenshots were captured by the student.
+- **GitHub remote configuration.** Repo name (`liangzixuan/cisc-699`), visibility (public), and any collaborator additions were student-only.
+- **Discussion 01 peer-discussion engagement.** The choice to participate, the framing strategy (one strength / one risk / one suggestion), and the post-revision before submission were student decisions.
+- **Canvas submission package composition.** The decision to upload PDFs + screenshots + text-entry blurb, the file format for each, and the submission timing (2026-05-17 18:03 ET) were student-only.
+- **Acceptance / rejection of every AI recommendation in this project to date.** Where the student deferred to AI advice, this is reflected in the relevant `AI-advised, student-executed` rows. Where the student declined AI advice (e.g., choosing public-from-start visibility against the recommended private default), the decision is recorded as Student-only.
+
+## 7. Ongoing-disclosure process (W2 onward)
+
+The disclosure rigor introduced in W2 will be carried through to W14:
+
+1. **Inline AI-use blocks** at the top of every substantive new artifact (code, docs, figures) added to the repository.
+2. **Commit-message tags.** Commits containing AI-assisted content carry an `AI-use:` trailer line naming the tool and the authorship label, e.g.:
+   ```
+   AI-use: Claude Sonnet 4.6 (Cowork) — AI-drafted, student-revised. Re-wrote evaluation-plan §3 for clarity.
+   ```
+3. **Code-level annotations.** Code committed to `src/`, `tests/`, or `benchmarks/` carries inline comments tagging substantive AI-drafted blocks, using the conventions `# ai-drafted` (untouched AI output) and `# ai-suggested-then-rewritten` (AI seed, student-finished).
+4. **Weekly log update.** This file is updated within 24 hours of any AI-assisted work session. The audit table grows by row per artifact; the operational table grows by row per session.
+5. **W14 appendix assembly.** The final-report AI-use appendix is assembled directly from this log: a condensed version of the audit table, the human-only-decisions enumeration, and a session-count summary.
+6. **Adversarial-suite caveat.** Per §6 above, the adversarial test suite (the project's central evaluation contribution) is the most important artifact to keep student-authored. Any AI assistance with the adversarial suite will be disclosed at the program level (per individual test program) rather than only at the file level, given the suite's role as the project's intellectual contribution.
+
+## 8. Version history of this log
+
+| Date | Change | Trigger |
 |---|---|---|
-| `README.md` | Initial draft of project framing, repo layout summary, status table, evaluation paragraph. | Review, edit into own voice, confirm milestone dates against syllabus, replace working title if changed. |
-| `engineering-log.md` | Initial structure, W1 seed entries. | Take over weekly authorship; entries from W2 onward are student-written. |
-| `.gitignore` | Standard Python/IDE/Docker ignore patterns. | Sanity-check, add project-specific patterns as repo grows. Low-judgment content. |
-| `docs/01-launch-packet/problem-statement.md` | One-paragraph problem statement framing the LLM-agent sandbox motivation. | Substantively revise into own voice; verify each empirical claim (e.g., "closed-source services such as ... address these risks behind opaque infrastructure") against cited sources before submission. |
-| `docs/01-launch-packet/candidate-projects.md` | Comparison of three candidate projects (agent eval harness, multi-model router, hardened sandbox); selection rationale. | Verify the comparison reflects the student's actual reasoning; rewrite selection rationale in own voice. |
-| `docs/01-launch-packet/project-charter.md` | Full charter draft: rationale, intended artifact, users, goals, scope (in/out), assumptions, stakeholders, risks, success criteria, milestone map, approval block. | Substantively revise. Confirm all dates, budget assumptions, and risk mitigations. The charter must reflect the student's commitments, not Claude's recommendations, before being submitted for approval. |
-| `docs/01-launch-packet/feasibility-memo.md` (stub) | Section outline only. | Author all substance. |
-| `docs/01-launch-packet/annotated-bibliography.md` | (See dedicated W1 bibliography entry below — superseded.) | (See below.) |
-| `docs/01-launch-packet/supervisor-briefing.md` (stub) | Section outline. | Author content based on student's own questions for the supervisor. |
-
-**Conversational AI assistance (not written into any artifact, but shaped the project's direction):**
-- Brainstorm of three candidate projects and tradeoffs.
-- Identification of project risks (scope creep, evaluation-framing difficulty).
-- Recommendation of two-back-end design (hardened Docker + gVisor) with an adversarial test suite as the unique contribution.
-- Suggested seven W1 deliverables in workflow order.
-
-**Verification status (as of 2026-05-17):**
-- All source citations have been independently verified — student completed literature review.
-- No code has been written or executed yet.
-- Empirical claims in the problem statement has been verified by student.
-
-**Sensitive data:** None entered into the AI system. The course context (CLAUDE.md), the project launch packet PDF, and the syllabus are non-confidential course materials.
-
----
-
----
-
-## W1 — Annotated bibliography draft (2026-05-13)
-
-**Tool / model:** Claude (Anthropic) — Cowork desktop app, Sonnet 4.6, with `WebSearch` and `web_fetch` tools.
-
-**Artifact touched:** `docs/01-launch-packet/annotated-bibliography.md` (replaced earlier stub with a 7-entry IEEE-formatted draft).
-
-**Workflow used.** The assistant ran web searches for candidate sources across the five bibliography categories from the original stub, then fetched the most credible-looking primary source for each via `web_fetch` and drafted annotations grounded *only* in content actually retrieved. Each annotation ends with a "Verification status" line recording exactly what the assistant verified and what the student still must verify before submission.
-
-**Searches run (queries logged for reproducibility):**
-- "NIST AI 100-2 adversarial machine learning taxonomy 2025"
-- "OWASP Top 10 LLM applications 2025 code execution sandbox"
-- "gVisor application kernel containers Young Lacasse 2018 design paper"
-- "Firecracker lightweight virtualization serverless NSDI 2020 Agache"
-- "SWE-bench Jimenez evaluating language models software engineering ICLR 2024"
-- "runc CVE-2019-5736 container escape vulnerability technical analysis"
-- "E2B sandbox AI agent code execution architecture documentation"
-- "Greg Brockman seccomp BPF Linux kernel syscall filtering" (used to surface kernel.org primary docs; entry deferred)
-
-**URLs fetched in full:**
-- https://csrc.nist.gov/pubs/ai/100/2/e2025/final (NIST publication record — abstract, authors, DOI verified)
-- https://genai.owasp.org/llm-top-10/ (OWASP LLM Top 10 2025 landing page — categories LLM01–LLM10 verified)
-- https://github.com/SWE-bench/SWE-bench (SWE-bench README — BibTeX citation verified)
-- https://access.redhat.com/security/vulnerabilities/runcescape (Red Hat CVE-2019-5736 advisory — attack mechanism and mitigations verified)
-- https://gvisor.dev/docs/ (gVisor "What is gVisor?" page — Sentry/Gofer architecture verified)
-- https://github.com/e2b-dev/E2B (E2B repository README — license, scope, SDKs verified)
-
-**URLs attempted but not retrieved (rate-limit or empty response):**
-- https://www.usenix.org/conference/nsdi20/presentation/agache (Firecracker abstract page; cross-referenced via search-result content instead)
-- https://www.usenix.org/system/files/hotcloud19-paper-young.pdf (gVisor case study paper — deferred to W11 expansion)
-- https://arxiv.org/abs/2310.06770 (SWE-bench arXiv abstract — cross-referenced via project README instead)
-
-**Entries drafted (7):** [1] NIST AI 100-2 E2025 (A); [2] OWASP LLM Top 10 2025 (A); [3] gVisor documentation (B); [4] Firecracker NSDI 2020 paper (B); [5] E2B repository (C); [6] SWE-bench ICLR 2024 (D); [7] CVE-2019-5736 Red Hat advisory (E).
-
-**Specific verification gaps recorded in the bibliography file itself. (Completed)** Each entry's "Verification status" line names what was *not* retrieved by the assistant. The student must close each of these gaps before submission (Completed). The most important gaps to close are: (a) reading the actual OWASP LLM05 / LLM06 detail pages (not just the landing page); (b) reading the Firecracker NSDI paper PDF rather than relying on the search-result summary; (c) reading the gVisor security model and performance pages to confirm the performance-tradeoff claim made in the annotation. (Completed)
-
-**Sensitive data:** None entered into the AI system. All sources are public web pages.
-
-**What was *not* done by the AI.** The AI did not fabricate any citation. The AI did not provide annotations for any source whose page it failed to retrieve. The AI did not summarize papers from training-data knowledge alone — every annotation is grounded in fetched content, and where the assistant's training-data knowledge was used at all (e.g., for the Firecracker entry, which relied on search-result summaries rather than the paper PDF), the verification-status line records that explicitly.
-
----
-
----
-
-## W1 — Remaining launch-packet artifacts (2026-05-14)
-
-**Tool / model:** Claude (Anthropic) — Cowork desktop app, Sonnet 4.6, with `WebSearch`, `web_fetch`, and `mcp__workspace__bash` tools.
-
-**Artifacts touched.** Drafted the remaining deliverables required by the launch packet's "Suggested submission package" and the "Tools (Architectures)" evidence requirement:
-
-| File | AI contribution | Student contribution required before submission |
-|---|---|---|
-| `docs/01-launch-packet/architecture-context.md` | Mermaid system-context diagram + scope-boundary explanation; commitment notes for what the diagram pins down. | Export to static SVG/PNG via mermaid.live for Canvas attachment. Confirm the boundary lines match the charter — they should — and adjust either one if not. Revise prose into own voice. |
-| `docs/01-launch-packet/feasibility-memo.md` | Replaced earlier outline stub with substantive content: licensed-corpus options (HumanEval, MBPP), three cloud-host options with ballpark pricing, software dependency matrix, deployment expectations, time budget (~235 student hours total). Six `STUDENT DECISION` markers (D1–D6) flagging items that require student/supervisor input. | Resolve D1–D6 personally and/or at the W2 supervisor meeting. Verify all pricing at signup (ballparks were assistant-supplied based on publicly listed rates and are subject to change). |
-| `docs/01-launch-packet/w2-github-issues.md` | Pre-drafted 17 GitHub issues (W1 closeout, W2, W3, W4, W5 kickoff) with titles, labels, and bodies; intended for copy-paste into a GitHub issue tracker. | Push these into the actual issue tracker once the GitHub remote exists (see `git-push-instructions.md`). |
-| `docs/01-launch-packet/screenshots-checklist.md` | List of 5 required + 2 optional screenshots with capture commands and rationale per requirement. | Capture the screenshots. Cannot be AI-generated. |
-| `docs/01-launch-packet/git-push-instructions.md` | Two procedures (`gh` CLI and web-UI) for creating a private GitHub remote and pushing the W1 commit. | Run one of them. Cannot be AI-executed — needs GitHub credentials. |
-| `.gitattributes` | Standard line-ending and binary-file rules + linguist-generated markers. | Sanity-check; low-judgment content. |
-
-**Tools used.** `mcp__workspace__bash` for `git init`, branch configuration, `git add`, `git commit`, and `git tag` operations. The initial commit (hash `2a280e6`, tag `w1-initial`) was made by Claude on behalf of the student. Author/committer is configured to "Eric Liang <cary.wheatman@gmail.com>" per the user identity provided to Cowork.
-
-**Verification Completed.**
-- Student decided on using GitHub education pack DigitalOcean free credits.
-- The Mermaid diagram was rendered to a static image in this session.
-
-**Sensitive data:** None entered into the AI system.
-
----
-
-## Going forward — what to log
-
-Add a new entry below for any of the following:
-
-- AI assistance with drafting the final report or any of its sections
-- AI-generated code that is committed to the repository (with a pointer to the commit)
-- AI-assisted debugging that led to a non-obvious fix (commit pointer + brief explanation)
-- AI-assisted literature search or summarization (always verify the source exists and read it before citing)
-- AI-generated figures, tables, or analysis
-- AI assistance with the adversarial test suite design (this is the project's central contribution and warrants particular care — student-authored programs preferred, AI assistance disclosed)
-
-Conversely, items that do **not** require an entry: minor IDE autocomplete, grammar/spell-check, brainstorming that did not result in committed content.
+| 2026-05-13 | Initial creation with W1 description-style entries for the seven launch-packet artifacts. | Project start |
+| 2026-05-13 | Added W1 bibliography-drafting entry recording WebSearch + web_fetch usage and per-source verification gaps. | Bibliography draft completed |
+| 2026-05-14 | Added W1 entry for the remaining-W1 artifacts (architecture-context, feasibility-memo content, w2-issues, screenshots checklist, git-push instructions, .gitattributes). | W1 artifacts completed |
+| 2026-05-18 | Full restructure into audit-oriented format with per-artifact table, decision-authorship taxonomy, human-only-decisions enumeration, ongoing-process section. | W1 grading feedback (Prof. Shaalan, 2026-05-18): "Log appears more descriptive than audit-oriented; in-text attribution is inconsistent; process not systematically documented." |

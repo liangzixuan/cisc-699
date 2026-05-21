@@ -1,6 +1,8 @@
 # Architecture / System Context — Week 1
 
-> **Status:** Draft 1 (Claude-assisted). Per the launch packet's "Tools (Machine, Architectures, Computational, and API)" requirement, this document supplies the W1 architecture/context evidence: one diagram and a short explanation of scope boundaries. Detailed component design happens in W4 (`docs/design/architecture.md`); this is the initial system-context view that the supervisor approves.
+> **AI-use disclosure.** Drafted with Claude Sonnet 4.6 (Cowork desktop app). AI-drafted, student-revised. Key human-authored decisions in this document: approval of every system-boundary line against charter §5; choice of Mermaid as the diagramming notation (suited to GitHub native rendering); PNG export for Canvas submission; the four "what this diagram commits the project to" load-bearing decisions. Full audit trail: [`docs/ai-use-log.md`](../ai-use-log.md).
+
+Per the launch packet's "Tools (Machine, Architectures, Computational, and API)" requirement, this document supplies the W1 architecture/context evidence: one diagram and a short explanation of scope boundaries. Detailed component design happens in W4 (`docs/design/architecture.md`); this is the initial system-context view that the supervisor approves.
 
 ## System context diagram
 

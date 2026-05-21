@@ -79,7 +79,12 @@ spec: 1.2.1
 
 ## Week 2 (2026-05-16 → 2026-05-22)
 
-*Pending.*
+### 2026-05-18
+- **W1 launch packet graded: 90/100.** Four of five rubric dimensions at Level 1 (Advanced/Exceptional 90–100%); AI Usage Log at Level 2 (15/20). Professor's specific feedback: log was descriptive rather than audit-oriented; in-text attribution inconsistent; needs artifact-level disclosure notes, table of tool/purpose/prompts/extent, explicit statements of human-authored decisions, consistent inline acknowledgment conventions.
+- **[DECISION]** Strengthen AI-use disclosure now (regardless of whether resubmission is allowed) because (a) the log is a living document carried through W14, (b) if resubmission is permitted this is the most-worth-resubmitting artifact, (c) the disclosure rigor needs to be in place before the W11/W14 report's AI-use appendix is assembled.
+- **[AI]** Used Claude (Sonnet 4.6 via Cowork) to restructure `docs/ai-use-log.md` into audit-oriented format per the professor's specific improvement suggestions: per-artifact table with tool/purpose/prompt-summary/extent-of-modification columns, decision-authorship taxonomy (Student-originated / AI-drafted-student-revised / AI-drafted-student-accepted / AI-advised-student-executed / Student-only), explicit enumeration of Student-only decisions, ongoing-disclosure process for W2-W14 including commit-message AI-use trailers and code-level annotations.
+- Added inline AI-use disclosure blocks at the top of each W1 artifact (problem-statement, candidate-projects, project-charter, feasibility-memo, annotated-bibliography, architecture-context, supervisor-briefing, w2-github-issues, screenshots-checklist, git-push-instructions). Each block names the tool, the authorship label, the document-specific human-authored decisions, and links to the audit log.
+- Other professor improvement items captured for W3-W4 work (not addressed in this W2 sweep): explicit measurable research questions/hypotheses, quantified success metrics, formal risk register, contingency milestones for high-risk components, peer-reviewed source expansion, citation-format tightening, expanded stakeholder analysis. These belong in `docs/design/requirements.md` (W3), `docs/design/architecture.md` + `docs/design/threat-model.md` + `docs/design/evaluation-plan.md` (W4), and the bibliography expansion toward the W11 ≥15-source target.
 
 ---
 

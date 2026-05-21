@@ -1,6 +1,8 @@
 # W2 Issue Tracker Seed
 
-> **Purpose.** The launch packet requires the student to "create the project workspace: version-control repository, top-level folder structure, **issue tracker**, and a running engineering log." This file is the pre-drafted issue list to push to GitHub Issues (or a comparable tracker) once the remote exists. Copy each block into a new issue.
+> **AI-use disclosure.** Drafted with Claude Sonnet 4.6 (Cowork desktop app). AI-drafted, student-accepted. Key human-authored actions: copy-paste of these issues into the actual GitHub Issues tracker; ongoing issue prioritization and re-sequencing as W2–W5 work proceeds. Full audit trail: [`docs/ai-use-log.md`](../ai-use-log.md).
+
+**Purpose.** The launch packet requires the student to "create the project workspace: version-control repository, top-level folder structure, **issue tracker**, and a running engineering log." This file is the pre-drafted issue list to push to GitHub Issues (or a comparable tracker) once the remote exists. Copy each block into a new issue.
 
 **How to use.**
 

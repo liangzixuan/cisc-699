@@ -1,6 +1,8 @@
 # Push Local Repository to GitHub
 
-> The local Git repository was initialized and the W1 launch packet was committed as `2a280e6` and tagged `w1-initial`. This file is the 5-minute procedure for pushing it to a private GitHub remote, which is what the rubric "professional process" dimension expects to see.
+> **AI-use disclosure.** Drafted with Claude Sonnet 4.6 (Cowork desktop app). AI-drafted (instructions), Student-only (execution). The student performed every step: created the GitHub remote (`liangzixuan/cisc-699`), chose public visibility against the AI-recommended private-during-term default, ran `git push`, and configured collaborator access. Full audit trail: [`docs/ai-use-log.md`](../ai-use-log.md).
+
+The local Git repository was initialized and the W1 launch packet was committed as `2a280e6` and tagged `w1-initial`. This file is the 5-minute procedure for pushing it to a GitHub remote, which is what the rubric "professional process" dimension expects to see.
 
 ## Option A — GitHub CLI (fastest, recommended)
 

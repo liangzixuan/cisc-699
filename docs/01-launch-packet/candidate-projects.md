@@ -1,5 +1,7 @@
 # Candidate Projects and Selection
 
+> **AI-use disclosure.** Drafted with Claude Sonnet 4.6 (Cowork desktop app). AI presented the three candidates from a broader brainstorm; the **selection of Candidate C was the student's** after weighing portfolio fit, risk appetite, and background. The comparison-matrix structure is AI-drafted, student-revised. Key human-authored decisions in this document: which three candidates to consider; selection of Candidate C; the weighting applied to each comparison criterion; the worst-case-failure-mode framing for each candidate. Full audit trail: [`docs/ai-use-log.md`](../ai-use-log.md).
+
 ## Career objective shaping the choice
 
 The student is preparing for a software-engineering role at frontier AI labs (e.g., Anthropic, Google DeepMind), specifically on agent-tooling and product engineering teams (think: Claude Code, Code Interpreter, agent infrastructure). The project should produce an artifact that doubles as portfolio evidence of "I can build production-grade infrastructure around LLMs and evaluate it rigorously."

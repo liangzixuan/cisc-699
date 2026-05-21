@@ -2,6 +2,7 @@
 
 A Hardened, Threat-Modeled Python Execution Sandbox for LLM Agent Tool-Use
 
+> **AI-use disclosure.** Drafted with Claude Sonnet 4.6 (Cowork desktop app). AI-drafted, student-revised. Key human-authored decisions in this document: all scope boundaries in §5 (Python-only, no network, no GPU, single-tenant, Linux-only, no production hardening, Firecracker stretch-only); success-criteria thresholds in §9 (functional ≥99%, isolation ≥95%, reproducibility within ±10%); milestone-date alignment against syllabus; budget envelope; the project's commitment to ship the adversarial test suite as the central intellectual contribution rather than positioning a novel isolation technique as the contribution. Full audit trail: [`docs/ai-use-log.md`](../ai-use-log.md).
 
 | Field | Value                                                                        |
 |---|------------------------------------------------------------------------------|

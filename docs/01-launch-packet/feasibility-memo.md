@@ -1,5 +1,7 @@
 # Feasibility Memo
 
+> **AI-use disclosure.** Drafted with Claude Sonnet 4.6 (Cowork desktop app). AI-drafted, student-revised. Key human-authored decisions in this document: resolution of feasibility decisions D1–D6 (HumanEval/MBPP corpus reuse; DigitalOcean as compute provider; Ubuntu 22.04 host; public repository visibility; weekly availability commitment; supervisor-cadence proposal). Full audit trail: [`docs/ai-use-log.md`](../ai-use-log.md).
+
 ## 1. Data availability
 
 The project does not consume a large dataset. The "data" required falls into three categories:
