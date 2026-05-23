@@ -4,6 +4,13 @@ This directory holds the student's capstone project for **CISC 699 (SU26, 3 cred
 
 CISC 699 is the culminating applied-project studio of the M.S. program. The deliverable is **one substantial computational solution** to a meaningful technical, professional, organizational, or societal problem, plus a graduate-level technical report. It is **not** a tutorial replication, product-assembly exercise, or unscoped build. Individual project by default.
 
+## Long Session Context
+
+For long coding sessions, keep important task state in durable places such as
+issue descriptions, design notes, commits, or a short checklist file. Do not rely
+only on conversation history, since Codex may compact context during extended work.
+After compaction, continue from the durable task state when available.
+
 ## Required deliverables (graded weights)
 
 | Deliverable | Weight |
@@ -79,4 +86,6 @@ CISC 699 is the culminating applied-project studio of the M.S. program. The deli
 - Do **not** feed confidential, proprietary, personal, FERPA-protected, HIPAA-regulated, or otherwise restricted information into public AI systems without formal authorization.
 - The student remains fully responsible for correctness, originality, legality, and appropriateness of every submitted artifact.
 
-When Claude assists in this repo, keep a running note of what was generated vs. authored, so the disclosure appendix can be assembled accurately at the end.
+When Codex assists in this repo, keep a running note of what was generated vs. authored, so the disclosure appendix can be assembled accurately at the end.
+
+## Imported Claude Cowork project instructions

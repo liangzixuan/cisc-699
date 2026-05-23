@@ -2,6 +2,8 @@
 
 A Hardened, Threat-Modeled Python Execution Sandbox for LLM Agent Tool-Use
 
+> **Status:** *Superseded by [`docs/02-proposal-package/proposal.md`](../02-proposal-package/proposal.md) v1.0 (submitted 2026-05-21; approval target 2026-05-26). This W1 charter is retained as historical record per the project's audit conventions; do not edit. Substantive scope/plan/risk authority now lives in the W2 proposal document.*
+
 > **AI-use disclosure.** Drafted with Claude Sonnet 4.6 (Cowork desktop app). AI-drafted, student-revised. Key human-authored decisions in this document: all scope boundaries in §5 (Python-only, no network, no GPU, single-tenant, Linux-only, no production hardening, Firecracker stretch-only); success-criteria thresholds in §9 (functional ≥99%, isolation ≥95%, reproducibility within ±10%); milestone-date alignment against syllabus; budget envelope; the project's commitment to ship the adversarial test suite as the central intellectual contribution rather than positioning a novel isolation technique as the contribution. Full audit trail: [`docs/ai-use-log.md`](../ai-use-log.md).
 
 | Field | Value                                                                        |

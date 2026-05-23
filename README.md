@@ -11,7 +11,24 @@ LLM-powered software agents increasingly execute model-generated code as part of
 
 See [`docs/01-launch-packet/problem-statement.md`](docs/01-launch-packet/problem-statement.md) for the full framing.
 
-## W1 launch packet (this directory)
+## W2 Proposal Approval Package (Hard Stop 1)
+
+The W2 deliverables required by the [Proposal Approval Package assignment](02%20Proposal%20Approval%20Package.pdf) live under `docs/02-proposal-package/`. Canvas submission target: 2026-05-24 23:59 ET.
+
+| Deliverable | File |
+|---|---|
+| **Consolidated Canvas submission (.docx)** | [`Proposal-Approval-Package.docx`](docs/02-proposal-package/Proposal-Approval-Package.docx) |
+| **Consolidated Canvas submission (.pdf, 53 pp)** | [`Proposal-Approval-Package.pdf`](docs/02-proposal-package/Proposal-Approval-Package.pdf) |
+| Formal proposal (Markdown master) | [`proposal.md`](docs/02-proposal-package/proposal.md) |
+| Project plan (phases, Gantt, dependency view, gates) | [`project-plan.md`](docs/02-proposal-package/project-plan.md) |
+| Work breakdown structure (per-task → week → SC traceability) | [`wbs.md`](docs/02-proposal-package/wbs.md) |
+| One-page approval brief | [`approval-brief.md`](docs/02-proposal-package/approval-brief.md) |
+| Recorded-walkthrough script (~15 min; 50-pt rubric item) | [`walkthrough-script.md`](docs/02-proposal-package/walkthrough-script.md) |
+| Rendered Gantt chart (PNG) | [`screenshots/gantt.png`](docs/02-proposal-package/screenshots/gantt.png) |
+
+This package *supersedes* the W1 charter as the project's authoritative scope-and-plan document; the W1 charter is retained as historical record.
+
+## W1 launch packet
 
 The W1 deliverables required by the [launch packet assignment](01%20Project%20Launch%20Packet.pdf) live under `docs/01-launch-packet/`:
 
@@ -34,7 +51,8 @@ AI-use disclosure for everything above: [`docs/ai-use-log.md`](docs/ai-use-log.m
 
 | Phase | Week | Status |
 |---|---|---|
-| Launch packet (W1–W2) | 2026-05-09 → 2026-05-22 | In progress |
+| Launch packet (W1) | 2026-05-09 → 2026-05-17 | **Done** — graded 90/100 |
+| Proposal approval package (W2) | 2026-05-16 → 2026-05-26 | **Submitted 2026-05-21**, pending supervisor approval |
 | Design review (W3–W4) | 2026-05-23 → 2026-06-05 | Pending |
 | Implementation sprints (W5–W8) | 2026-06-06 → 2026-07-03 | Pending |
 | Midpoint demo (W7) | 2026-06-26 | Pending |
@@ -51,7 +69,8 @@ Detailed milestone map: [`CLAUDE.md`](CLAUDE.md) and [`docs/01-launch-packet/pro
 ├── README.md                 This file — living overview, graded artifact
 ├── Syllabus.pdf              Course syllabus (reference)
 ├── docs/
-│   ├── 01-launch-packet/     W1–W2 deliverables (charter, bibliography, etc.)
+│   ├── 01-launch-packet/     W1 deliverables (charter, bibliography, etc.)
+│   ├── 02-proposal-package/  W2 deliverables (proposal, plan, WBS, walkthrough)
 │   ├── design/               W3–W4 architecture, threat model, eval plan
 │   ├── reports/              Midpoint & final technical report
 │   └── ai-use-log.md         Running AI-use disclosure (graded appendix source)

@@ -2,7 +2,7 @@
 
 **Owner:** Zixuan Liang
 **Course:** CISC 699 — Applied Project in Computer Information Sciences (Summer 2026)
-**Last updated:** 2026-05-18
+**Last updated:** 2026-05-21
 
 ## 1. Purpose and policy
 
@@ -54,6 +54,18 @@ The block is intentionally short (2–3 lines) so the document remains readable;
 | 14 | `docs/01-launch-packet/git-push-instructions.md` | Claude Sonnet 4.6 (Cowork) | Two procedures (gh CLI, web UI) for pushing to GitHub | "Document gh CLI + web-UI push procedures" | AI-drafted, student-accepted (instructions); Student-only (execution) | Student executed the push, chose repo name `liangzixuan/cisc-699`, set public visibility |
 | 15 | `docs/ai-use-log.md` (this file) | Claude Sonnet 4.6 (Cowork) | Audit-oriented disclosure log per professor's W1 feedback | "Restructure log to per-artifact table with authorship labels; add 'human-only decisions' section; define ongoing process" | AI-drafted, student-revised | Student reviewed every row for accuracy against actual workflow; ongoing entries student-only |
 
+## 4a. Audit table — W2 proposal-approval package (2026-05-21)
+
+| # | Artifact | Tool | Purpose | Prompts / tasks (summary) | Authorship label | Extent of student modification |
+|---|---|---|---|---|---|---|
+| 17 | `docs/02-proposal-package/proposal.md` | Claude Sonnet 4.6 (Cowork) | Formal proposal document superseding W1 charter; W2 rubric-aligned; MACP-framed | "Restructure W1 charter for W2 rubric and MACP framing; add measurable RQs and hypotheses; add contingency milestones; add formal risk register columns (likelihood/impact/owner/contingency); expand stakeholder analysis per W1 grading feedback; add Gantt and WBS pointers" | AI-drafted, student-revised | Student set every scope boundary in §8, every numeric threshold in §7, every risk likelihood/impact rating in §12, the W7 scope-renegotiation checkpoint, and every contingency date in §10.5 |
+| 18 | `docs/02-proposal-package/project-plan.md` | Claude Sonnet 4.6 (Cowork) | Project plan appendix — Gantt source, dependency graph, gates, critical path | "Produce phase overview, Mermaid gantt source, dependency view, completion-gate table, critical path narrative" | AI-drafted, student-revised | Student approved gate dates against the syllabus and W1 charter; student is sole authority on the W7 'only sanctioned scope-renegotiation point' framing |
+| 19 | `docs/02-proposal-package/wbs.md` | Claude Sonnet 4.6 (Cowork) | Work-breakdown structure with traceability to success criteria | "Produce WBS with per-task hour estimate, week, deliverable, success-criterion mapping, blocking dependencies; verify every task traces to a success criterion" | AI-drafted, student-revised | Student approved hour estimates against the W1 feasibility-memo total; student approved the SC mapping for every row |
+| 20 | `docs/02-proposal-package/approval-brief.md` | Claude Sonnet 4.6 (Cowork) | One-page approval brief (rubric task 8) | "Produce one-page approval brief: what's approved, what's conditional, what evidence is expected by next checkpoint (W4)" | AI-drafted, student-revised | Student set which items belong in 'Approved', 'Conditional', and 'Evidence expected'; these are commitments to the supervisor |
+| 21 | `docs/02-proposal-package/walkthrough-script.md` | Claude Sonnet 4.6 (Cowork) | ~15-minute script for the rubric's 50-pt recorded walkthrough | "Produce a per-segment script with minute budget, on-screen cues, narration text; cover problem framing, charter, scope, MACP feasibility, project plan, risks/ethics, AI-use, ask" | AI-drafted, student-revised | Student pace-tested the timing in a rehearsal pass; student is sole speaker on the recording (Authorship label for the recording itself is Student-only for delivery) |
+| 22 | `docs/02-proposal-package/Proposal-Approval-Package.docx` | docx-js via `mcp__workspace__bash` | Consolidated Canvas-submission DOCX | "Assemble single submission-ready DOCX from proposal.md + appendices using the docx skill's docx-js patterns" | AI-advised, student-executed (file generation by tool); content authorship per rows 17–21 | Student reviews the rendered DOCX/PDF before Canvas upload; student is responsible for the final submission file |
+| 23 | `docs/02-proposal-package/Proposal-Approval-Package.pdf` | LibreOffice (`soffice` headless) | PDF export of the consolidated DOCX | "Convert DOCX to PDF for Canvas attachment" | AI-advised, student-executed | Same as row 22 |
+
 ### Workspace screenshots (`docs/01-launch-packet/screenshots/`)
 
 | # | File | Authorship label | Notes |
@@ -77,6 +89,9 @@ The block is intentionally short (2–3 lines) so the document remains readable;
 | 2026-05-17 | Claude (Cowork) advisory chat | Canvas submission package composition | Student-originated, AI-articulated | Student selected attachments and wrote text-entry blurb |
 | 2026-05-17 | Claude (Cowork) advisory chat | Discussion-01 peer-discussion pitch and one peer reply | AI-drafted, student-revised | Student reviewed before posting; voice revision applied |
 | 2026-05-18 | Claude (Cowork) advisory chat | Response to W1 grading feedback; this log restructuring | AI-drafted, student-revised | This file is the output |
+| 2026-05-21 | Claude (Cowork) advisory chat + Read tool on uploaded `02 Proposal Approval Package.pdf` | Read the W2 assignment brief; map its 9 tasks and 6 rubric dimensions to the W1 artifacts that already exist; identify gaps to fill | AI-advised, student-executed | Student selected the four "recommended" options in the clarifying-question round (consolidated DOCX, full script with timing, Gantt+table, fresh formal proposal that supersedes the charter) |
+| 2026-05-21 | Claude (Cowork) via Write tool | Draft the five W2 markdown artifacts (proposal, project-plan, wbs, approval-brief, walkthrough-script) | AI-drafted, student-revised | See rows 17–21 in §4a for per-artifact extent of student modification |
+| 2026-05-21 | Claude (Cowork) via `mcp__workspace__bash` | Generate consolidated DOCX with `docx-js`; validate; convert to PDF with `soffice` | AI-advised, student-executed | See rows 22–23 in §4a |
 
 ## 6. Decisions that were human-only (no AI assistance)
 
@@ -119,3 +134,4 @@ The disclosure rigor introduced in W2 will be carried through to W14:
 | 2026-05-13 | Added W1 bibliography-drafting entry recording WebSearch + web_fetch usage and per-source verification gaps. | Bibliography draft completed |
 | 2026-05-14 | Added W1 entry for the remaining-W1 artifacts (architecture-context, feasibility-memo content, w2-issues, screenshots checklist, git-push instructions, .gitattributes). | W1 artifacts completed |
 | 2026-05-18 | Full restructure into audit-oriented format with per-artifact table, decision-authorship taxonomy, human-only-decisions enumeration, ongoing-process section. | W1 grading feedback (Prof. Shaalan, 2026-05-18): "Log appears more descriptive than audit-oriented; in-text attribution is inconsistent; process not systematically documented." |
+| 2026-05-21 | Appended §4a (W2 audit rows 17–23) and three rows in §5 (operational AI use); bumped Last-updated to 2026-05-21. | W2 proposal-approval package preparation. |
