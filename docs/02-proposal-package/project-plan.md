@@ -15,7 +15,7 @@ W5 - W6  | Phase III — Sprint I/II   | Docker baseline + hardened Docker
 W7       | Phase III — MIDPOINT      | demo, taxonomy lock, scope-renegotiation gate
 W8       | Phase III — Sprint III    | gVisor back-end + adversarial suite to ≥40
 W9 - W10 | Phase IV — Results/harden | results draft + clean-VM repro test
-W11- W12 | Phase V  — Reporting      | full draft to supervisor + revision cycle
+W11- W12 | Phase V  — Reporting      | full draft to advisor + revision cycle
 W13- W14 | Phase VI — Defense        | rehearsal + final submission
 ```
 
@@ -45,7 +45,7 @@ gantt
     W10 artifact hardening & repro test       :         p4b, 2026-07-11, 2026-07-17
     section Phase V — Reporting
     W11 report draft                          :crit,    p5a, 2026-07-18, 2026-07-24
-    W11 FULL DRAFT to supervisor              :milestone, m2, 2026-07-24, 0d
+    W11 FULL DRAFT to advisor                 :milestone, m2, 2026-07-24, 0d
     W12 revision; deck & demo script          :         p5b, 2026-07-25, 2026-07-31
     section Phase VI — Defense
     W13 rehearsal + AI-use appendix           :         p6a, 2026-08-01, 2026-08-07
@@ -59,11 +59,11 @@ A static PNG export of this chart is stored at `screenshots/gantt.png` so Canvas
 
 | Gate | Week | Target date | Pass condition |
 |---|---|---|---|
-| G1: Proposal approval | W2 | 2026-05-26 | Supervisor returns approval block in `approval-brief.md` |
+| G1: Proposal approval | W2 | 2026-05-26 | Advisor returns approval block in `approval-brief.md` |
 | G2: Design review approval | W4 | 2026-06-05 | `docs/design/architecture.md`, `threat-model.md`, `evaluation-plan.md` v1.0 accepted |
 | G3: First execution | W5 | 2026-06-12 | `POST /execute` returns correct stdout for `print('hello world')` |
-| G4: Midpoint demo | W7 | 2026-06-26 | ≥100 functional pass; ≥20 adversarial pass; taxonomy locked; supervisor reviews |
-| G5: Full report draft | W11 | 2026-07-24 | Draft v0.9 delivered to supervisor |
+| G4: Midpoint demo | W7 | 2026-06-26 | ≥100 functional pass; ≥20 adversarial pass; taxonomy locked; advisor reviews |
+| G5: Full report draft | W11 | 2026-07-24 | Draft v0.9 delivered to advisor |
 | G6: Final submission | W14 | 2026-08-14 | Canvas final package complete |
 
 ## 4. Critical path
@@ -139,7 +139,7 @@ flowchart LR
 | Student wall-clock | ~17 hrs/week, 14 weeks → ~235 hours | Front-loaded W5–W8 (~40+25 hrs implementation); W11 (~30 hrs draft); W12 (~20 hrs revision) |
 | DigitalOcean droplet | 24/7, billed monthly | Active development W5–W14; idle W1–W4 (~$32/mo × 4) |
 | Anthropic API budget | $30–$50 | Reference-agent demo only; Haiku during dev, Sonnet for final |
-| Supervisor time | W2 approval, W7 midpoint, W11 draft feedback + fortnightly check-ins | Three named milestones plus check-ins |
+| Advisor time | W2 approval, W7 midpoint, W11 draft feedback + fortnightly check-ins | Three named milestones plus check-ins |
 
 Total wall-clock effort estimate from the W1 feasibility memo: ~235 student-hours across 14 weeks, ≈17 hrs/week. Consistent with a 3-credit graduate applied-project workload. If actual availability falls materially below this, the W7 scope-reduction trigger is the relief valve.
 
@@ -148,21 +148,21 @@ Total wall-clock effort estimate from the W1 feasibility memo: ~235 student-hour
 | Cadence | Audience | Channel | Purpose |
 |---|---|---|---|
 | Weekly | Self | `engineering-log.md` | Process evidence; one entry per working session |
-| Fortnightly | Supervisor | 30-min check-in | Status, blockers, scope concerns; cadence proposed in supervisor-briefing |
-| W2, W7, W11 | Supervisor | Longer dedicated session | Proposal approval; midpoint scope-renegotiation; draft feedback |
-| W13 | Self + supervisor (optional) | Rehearsal recording | Presentation rehearsal; ≤20 minutes |
+| Fortnightly | Advisor | 30-min check-in | Status, blockers, scope concerns; cadence proposed in advisor briefing |
+| W2, W7, W11 | Advisor | Longer dedicated session | Proposal approval; midpoint scope-renegotiation; draft feedback |
+| W13 | Self + advisor (optional) | Rehearsal recording | Presentation rehearsal; ≤20 minutes |
 | Continuous | Public | GitHub commits + Issues | Process evidence; reproducibility |
 
-## 8. What changes after W2 supervisor approval
+## 8. What changes after W2 advisor approval
 
-Once the supervisor returns the approval block in `approval-brief.md`:
+Once the advisor returns the approval block in `approval-brief.md`:
 
 1. The `Status` column in `README.md` updates from `In progress` to `Approved` for Phase I.
 2. `docs/01-launch-packet/project-charter.md` gets a top-of-file note: *"Superseded by `docs/02-proposal-package/proposal.md` v1.0 (approved YYYY-MM-DD). Retained for W1 historical record."*
 3. The W3 work begins: lit-synthesis expansion and requirements-document drafting.
 4. Any conditional approval items are tracked in `approval-brief.md` "Conditional items" and resolved before W4 begins.
 
-If approval is delayed past 2026-05-29 (end of W3), the project begins W3 lit-synthesis on the assumption of approval and revises the requirements scope if approval comes back with material changes — same approach as planned in the W1 supervisor briefing.
+If approval is delayed past 2026-05-29 (end of W3), the project begins W3 lit-synthesis on the assumption of approval and revises the requirements scope if approval comes back with material changes — same approach as planned in the W1 advisor briefing.
 
 ---
 

@@ -1,8 +1,9 @@
-# Supervisor Briefing Note — Week 1
+# Advisor Briefing Note — Week 1
 
-> **AI-use disclosure.** Drafted with Claude Sonnet 4.6 (Cowork desktop app). AI-drafted, student-revised. Key human-authored decisions in this document: choice of supervisor questions; recipient list (Profs. Shaalan and Lateef); §5 revision to reflect actual W2 commitments (the original AI draft contained stale W2 items already completed in W1). Full audit trail: [`docs/ai-use-log.md`](../ai-use-log.md).
+> **AI-use disclosure.** Drafted with Claude Sonnet 4.6 (Cowork desktop app). AI-drafted, student-revised. Key human-authored decisions in this document: choice of advisor questions; recipient list (Prof. Khalid Lateef as project advisor and Dr. Majid Shaalan as course instructor); §5 revision to reflect actual W2 commitments (the original AI draft contained stale W2 items already completed in W1). Full audit trail: [`docs/ai-use-log.md`](../ai-use-log.md).
 
-**To:** Prof. Majid Shaalan
+**To:** Prof. Khalid Lateef
+**CC:** Dr. Majid Shaalan
 **From:** Zixuan Liang
 **Subject:** CISC 699 Summer 2026 — proposed applied project (SafeExec: hardened Python execution sandbox for LLM agents)
 **Date:** *(populate before sending)*
@@ -28,7 +29,7 @@ The launch packet asks me to "list the decisions still needed from a Week 1 conv
 
 ### Clarifications / preferences
 
-5. **Repository / version-control arrangement.** Is a private GitHub repo with a final share link to the supervisor acceptable, or does the program have a preferred host (HU GitLab, etc.)?
+5. **Repository / version-control arrangement.** Is a private GitHub repo with a final share link to the advisor acceptable, or does the program have a preferred host (HU GitLab, etc.)?
 6. **Report and presentation templates.** Are there CISC 699 templates (Word, LaTeX, Beamer) you expect me to use, or am I free to choose?
 7. **Citation style.** IEEE, ACM, APA — any preference?
 8. **Meeting cadence.** How often would you like to meet? My default proposal: standing 30-minute check-in every two weeks, plus dedicated longer sessions at W2 (charter approval), W4 (design review), W7 (midpoint), W11 (draft feedback).
@@ -40,14 +41,14 @@ The launch packet asks me to "list the decisions still needed from a Week 1 conv
 
 ## 4. What I have done already in W1
 
-- Drafted the project charter, problem statement, three-candidate comparison, feasibility memo, and supervisor briefing (this document).
+- Drafted the project charter, problem statement, three-candidate comparison, feasibility memo, and advisor briefing (this document).
 - Set up the project repository at `https://github.com/liangzixuan/cisc-699` with the structure described in `README.md`.
 - Started the engineering log (`engineering-log.md`) and AI-use disclosure log (`docs/ai-use-log.md`).
 - Identified five source categories for the annotated bibliography and the gaps I still need to fill (`https://github.com/liangzixuan/cisc-699/blob/main/docs/01-launch-packet/annotated-bibliography.md`).
 
 ## 5. What I plan to do in W2
 
-- incorporate supervisor feedback into the charter
+- incorporate advisor feedback into the charter
 - expand the bibliography toward the W11 ≥15-source target
 - start W3 lit-synthesis and requirements work
 

@@ -26,11 +26,11 @@ Conventions: one heading per week; under it, dated bullets. Mark decisions with 
 - [x] Review and revise `project-charter.md` into own voice
 - [x] Bibliography: complete the per-entry verification-reading items for the 7 drafted sources (each entry's "Verification status" line names what's still owed); revise annotations into own voice
 - [x] Complete `feasibility-memo.md` (data, compute, software deps, deployment, time)
-- [x] Complete `supervisor-briefing.md` (decisions still needed from Dr. Shaalan)
+- [x] Complete `supervisor-briefing.md` (advisor briefing; decisions still needed from Prof. Lateef)
 - [x] Initialize Git repo and push to private GitHub remote
 - [x] Create issue tracker (GitHub Issues) with W2 charter-approval tasks
 - [x] Submit launch packet to Canvas
-- [x] the supervisor briefing was emailed to Profs. Shaalan and Lateef on the same day
+- [x] the advisor briefing was emailed to Prof. Lateef and Dr. Shaalan on the same day
 
 DigitalOcean droplet
 ```
@@ -93,7 +93,7 @@ spec: 1.2.1
 - **[DECISION]** Pre-rendered the Gantt chart as a static PNG with matplotlib (`scripts/render_gantt.py` to land in the repo at next commit) rather than relying on Mermaid; the rendered chart is embedded in the consolidated DOCX/PDF and the Mermaid source is preserved in `project-plan.md` §2 for graders who prefer to re-render.
 - **[AI]** Used Claude (Sonnet 4.6 via Cowork) to draft the five W2 Markdown artifacts (proposal, project-plan, wbs, approval-brief, walkthrough-script) and to produce the consolidated DOCX via pandoc + the docx skill's pack/validate scripts. Authorship rows 17–23 in `docs/ai-use-log.md` §4a. Student-revised every numeric threshold, every contingency date, every risk rating, the W7 explicit scope-renegotiation framing, and the choice of which items in `approval-brief.md` belong in Approved / Conditional / Evidence-expected.
 - **[DECISION]** The recorded walkthrough video (50 pts of the 100-pt rubric) will be recorded by the student against `walkthrough-script.md` before the Canvas deadline. The script is paced for 14:30–15:30; the production checklist is at the bottom of that file.
-- Next: capture the recording; commit the W2 package; submit to Canvas before 2026-05-24 23:59 ET; await supervisor sign-off by 2026-05-26.
+- Next: capture the recording; commit the W2 package; submit to Canvas before 2026-05-24 23:59 ET; await advisor sign-off by 2026-05-26.
 
 ---
 

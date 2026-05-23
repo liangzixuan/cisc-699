@@ -15,19 +15,20 @@
 | Student | Zixuan Liang (zliang1@my.harrisburgu.edu) |
 | Program | M.S. Computer Information Sciences, Harrisburg University |
 | Course | CISC 699-50-A-2026/Summer — Applied Project in Computer Information Sciences |
-| Supervisor | Dr. Majid Shaalan |
+| Project advisor | Prof. Khalid Lateef |
+| Course instructor | Dr. Majid Shaalan |
 | Term | 2026-05-09 → 2026-08-14 (14 weeks) |
 | Proposal version | 1.0 |
 | Proposal date | 2026-05-21 |
 | Submission target | 2026-05-24 (Canvas, before 11:59pm ET) |
-| Approval target | 2026-05-26 (post supervisor review) |
+| Approval target | 2026-05-26 (post advisor review) |
 | Supersedes | `docs/01-launch-packet/project-charter.md` (W1 charter; retained as historical record) |
 
 ---
 
 ## 1. Executive summary
 
-LLM-powered software agents — Claude Code, Code Interpreter, Cursor, Devin, and a growing open-source ecosystem — increasingly execute model-generated Python code as part of their tool-use loop. In production, that execution layer is the part most often built quickly and revisited never; the open-source landscape today consists of either heavyweight commercial platforms or lightweight wrappers with weak isolation guarantees and no published threat models tied to reproducible benchmarks. SafeExec closes a measurable slice of that gap. It is a small HTTP execution service that accepts Python source and runs it inside an isolated environment, with two pluggable isolation back-ends — a hardened Docker configuration and a gVisor-backed configuration — exposed through a single `POST /execute` API. The intellectual contribution is a curated **adversarial test suite** of ≥40 programs across ≥6 categories with documented expected-contained-outcome labels, plus an empirical comparison of isolation strength and performance overhead across the two back-ends, reported with 95% confidence intervals. The artifact ships with a documented threat model, ≥100 functional test programs, a performance benchmark harness, reproducibility materials (pinned Dockerfiles, Makefile targets, deterministic test runner), a minimal reference agent for end-to-end demo, and a 15–25 page graduate-level technical report. Project supervisor approval is requested at the scope described in §8.
+LLM-powered software agents — Claude Code, Code Interpreter, Cursor, Devin, and a growing open-source ecosystem — increasingly execute model-generated Python code as part of their tool-use loop. In production, that execution layer is the part most often built quickly and revisited never; the open-source landscape today consists of either heavyweight commercial platforms or lightweight wrappers with weak isolation guarantees and no published threat models tied to reproducible benchmarks. SafeExec closes a measurable slice of that gap. It is a small HTTP execution service that accepts Python source and runs it inside an isolated environment, with two pluggable isolation back-ends — a hardened Docker configuration and a gVisor-backed configuration — exposed through a single `POST /execute` API. The intellectual contribution is a curated **adversarial test suite** of ≥40 programs across ≥6 categories with documented expected-contained-outcome labels, plus an empirical comparison of isolation strength and performance overhead across the two back-ends, reported with 95% confidence intervals. The artifact ships with a documented threat model, ≥100 functional test programs, a performance benchmark harness, reproducibility materials (pinned Dockerfiles, Makefile targets, deterministic test runner), a minimal reference agent for end-to-end demo, and a 15–25 page graduate-level technical report. Project advisor approval is requested at the scope described in §8.
 
 ## 2. Background and significance
 
@@ -144,7 +145,7 @@ Per the W2 rubric expectation that success criteria be measurable indicators, ev
 
 | Indicator | Threshold | Measurement |
 |---|---|---|
-| Final report rubric dimension scores | Level 1 (Advanced/Exceptional, 90–100%) on all RU-01 dimensions | Self-assessment + supervisor feedback at W11 |
+| Final report rubric dimension scores | Level 1 (Advanced/Exceptional, 90–100%) on all RU-01 dimensions | Self-assessment + advisor feedback at W11 |
 | Final presentation runtime | ≤20 minutes | Rehearsal at W13 |
 | Live demo runtime | ≤5 minutes | Rehearsal at W13 |
 
@@ -187,7 +188,7 @@ Per the W2 rubric expectation that success criteria be measurable indicators, ev
 
 ### 8.3 Scope-fence policy
 
-The scope above is fixed for the duration of W3–W8. Any proposed change must be reviewed against the milestone map and approved by the supervisor in writing. The W7 midpoint review is the explicit checkpoint for scope renegotiation; outside of that checkpoint, the default is no change. Scope-fence violations are tracked as risk R1 in §12.
+The scope above is fixed for the duration of W3–W8. Any proposed change must be reviewed against the milestone map and approved by the advisor in writing. The W7 midpoint review is the explicit checkpoint for scope renegotiation; outside of that checkpoint, the default is no change. Scope-fence violations are tracked as risk R1 in §12.
 
 ## 9. Technical feasibility — MACP framing
 
@@ -255,10 +256,10 @@ The plan splits the 14 weeks into six phases. Each phase has a fixed completion 
 2. **Phase II — Design (W3–W4).** Lit synthesis, requirements, architecture, threat model, evaluation plan.
 3. **Phase III — Implementation sprints (W5–W8).** Docker back-end, hardened Docker, gVisor back-end. Functional and adversarial suites grown in parallel.
 4. **Phase IV — Results and hardening (W9–W10).** Results, limitations, broader impact draft; artifact hardening; reproducibility self-test on a clean VM.
-5. **Phase V — Reporting (W11–W12).** Full report draft to supervisor; revision cycle; deck and demo script.
+5. **Phase V — Reporting (W11–W12).** Full report draft to advisor; revision cycle; deck and demo script.
 6. **Phase VI — Defense (W13–W14).** Presentation rehearsal; final package; submission and reflection.
 
-Hard checkpoints are W2 (proposal approval), W5 (first hello-world execution), W7 (midpoint demo and explicit scope renegotiation), W11 (full draft for supervisor feedback), and W13 (no new feature work).
+Hard checkpoints are W2 (proposal approval), W5 (first hello-world execution), W7 (midpoint demo and explicit scope renegotiation), W11 (full draft for advisor feedback), and W13 (no new feature work).
 
 ### 10.2 Milestone table (aligned to course hard stops)
 
@@ -274,7 +275,7 @@ Hard checkpoints are W2 (proposal approval), W5 (first hello-world execution), W
 | W8 | 2026-06-27 → 2026-07-03 | Implementation sprint III — gVisor back-end | gVisor back-end fully integrated; ≥40 adversarial programs across ≥6 categories | III |
 | W9 | 2026-07-04 → 2026-07-10 | Results, limitations, broader-impact draft | First full results table; W9 results section drafted | IV |
 | W10 | 2026-07-11 → 2026-07-17 | Artifact hardening; reproducibility self-test | Clean-droplet repro within ±10% of dev-droplet numbers | IV |
-| W11 | 2026-07-18 → 2026-07-24 | Full report draft to supervisor | `docs/reports/final-report.md` v0.9, ≥15-page main body, bibliography ≥15 sources | V |
+| W11 | 2026-07-18 → 2026-07-24 | Full report draft to advisor | `docs/reports/final-report.md` v0.9, ≥15-page main body, bibliography ≥15 sources | V |
 | W12 | 2026-07-25 → 2026-07-31 | Revision cycle; deck + demo script | Final report v1.0; slide deck v0.9 | V |
 | W13 | 2026-08-01 → 2026-08-07 | Presentation rehearsal; AI-use appendix | Rehearsal ≤20 min; AI-use appendix consolidated from `docs/ai-use-log.md` | VI |
 | W14 | 2026-08-08 → 2026-08-14 | Final submission + reflection | Canvas final package: report PDF, repo link, slides, demo recording | VI |
@@ -304,7 +305,7 @@ gantt
     W9 results, limitations, impact draft    :         p4a, 2026-07-04, 2026-07-10
     W10 artifact hardening & repro test      :         p4b, 2026-07-11, 2026-07-17
     section Phase V — Reporting
-    W11 FULL DRAFT to supervisor             :milestone, m2, 2026-07-24, 0d
+    W11 FULL DRAFT to advisor                :milestone, m2, 2026-07-24, 0d
     W11 report draft                         :crit,    p5a, 2026-07-18, 2026-07-24
     W12 revision; deck & demo script         :         p5b, 2026-07-25, 2026-07-31
     section Phase VI — Defense
@@ -317,7 +318,7 @@ A rendered PNG of this Gantt is exported to `docs/02-proposal-package/screenshot
 
 ### 10.4 Critical path
 
-The critical-path chain is: **W2 proposal approval → W4 design review approval → W5 first execution → W7 midpoint scope decision → W8 gVisor integration → W11 full draft → W14 final submission.** Any slippage on any link is a slip risk for the deliverable. Two relief valves are built in: (a) the W5 hello-world checkpoint, which if missed triggers the W7 fallback (drop gVisor, ship Docker-only) per risk R4; (b) the W7 midpoint review, which is the only point at which scope can be renegotiated without supervisor sign-off.
+The critical-path chain is: **W2 proposal approval → W4 design review approval → W5 first execution → W7 midpoint scope decision → W8 gVisor integration → W11 full draft → W14 final submission.** Any slippage on any link is a slip risk for the deliverable. Two relief valves are built in: (a) the W5 hello-world checkpoint, which if missed triggers the W7 fallback (drop gVisor, ship Docker-only) per risk R4; (b) the W7 midpoint review, which is the only point at which scope can be renegotiated without advisor sign-off.
 
 ### 10.5 Contingency milestones
 
@@ -328,7 +329,7 @@ Per the W1 grading-feedback list and the W2 rubric expectation that "milestones,
 | Hello-world execution misses W5 gate (2026-06-12) | W5 sprint I | 2026-06-19 (end of W6) | Defer hardening to W7; treat W6 as combined "first execution + first hardening"; raise as a W7 midpoint topic |
 | W7 midpoint shows <50 functional programs or <10 adversarial programs working | W7 midpoint demo (2026-06-26) | 2026-07-03 (end of W8) | Scope fallback: drop gVisor; ship Docker-only artifact; redirect W8 to adversarial-suite expansion |
 | Adversarial taxonomy not lockable by W7 | W7 taxonomy lock | 2026-07-03 | Use the working subset (≥6 categories, ≥5 each) as the locked taxonomy; document the gaps as known limitations |
-| W11 full draft not deliverable to supervisor by 2026-07-24 | W11 draft | 2026-07-28 (early W12) | Compresses the W12 revision window; flag explicitly to supervisor; submit a partial draft with named placeholders rather than missing the gate |
+| W11 full draft not deliverable to advisor by 2026-07-24 | W11 draft | 2026-07-28 (early W12) | Compresses the W12 revision window; flag explicitly to advisor; submit a partial draft with named placeholders rather than missing the gate |
 | Reproducibility self-test fails on clean VM at W10 | W10 repro gate | 2026-07-21 (mid-W11) | Add a "Reproducibility caveats" section in the report and document the specific failure mode; rerun on a third VM before W14 |
 
 These contingency dates are not invitations to slip; they are pre-committed responses if slippage occurs, named here so the response is not improvised under pressure.
@@ -356,7 +357,7 @@ A lightweight WBS lives in [`wbs.md`](wbs.md). Every leaf task maps to a week, t
 | WBS-3.6 | Adversarial corpus seed (≥10 programs, ≥3 categories) | W6 | `tests/adversarial/` | §7.2 isolation |
 | WBS-3.7 | Functional corpus to ≥100 programs | W7 | `tests/functional/` | §7.1 functional |
 | WBS-3.8 | Adversarial taxonomy locked; ≥20 programs | W7 | `tests/adversarial/` README; `docs/design/threat-model.md` | §7.2 isolation |
-| WBS-3.9 | Midpoint demo + scope renegotiation | W7 | Demo recording; supervisor decision log | §7.5 communication |
+| WBS-3.9 | Midpoint demo + scope renegotiation | W7 | Demo recording; advisor decision log | §7.5 communication |
 | WBS-3.10 | gVisor back-end integration | W8 | gVisor commits; both back-ends executable | §7.2 isolation |
 | WBS-3.11 | Adversarial corpus to ≥40 programs across ≥6 categories | W8 | `tests/adversarial/` | §7.2 isolation |
 | WBS-3.12 | Performance benchmark harness | W8 | `benchmarks/` first sweep results | §7.3 performance |
@@ -364,9 +365,9 @@ A lightweight WBS lives in [`wbs.md`](wbs.md). Every leaf task maps to a week, t
 | WBS-4.2 | Results, limitations, broader-impact draft | W9 | Report sections drafted | §7.5 communication |
 | WBS-4.3 | Reproducibility materials (README, Makefile, setup.sh) | W10 | `deploy/`, root | §7.4 reproducibility |
 | WBS-4.4 | Clean-VM reproducibility self-test | W10 | Fresh droplet results within ±10% | §7.4 reproducibility |
-| WBS-5.1 | Full report draft to supervisor | W11 | `docs/reports/final-report.md` v0.9 | §7.5 communication |
+| WBS-5.1 | Full report draft to advisor | W11 | `docs/reports/final-report.md` v0.9 | §7.5 communication |
 | WBS-5.2 | Bibliography to ≥15 sources | W11 | Annotated bibliography | §7.6 process |
-| WBS-5.3 | Revision cycle on supervisor feedback | W12 | Final report v1.0 | §7.5 communication |
+| WBS-5.3 | Revision cycle on advisor feedback | W12 | Final report v1.0 | §7.5 communication |
 | WBS-5.4 | Slide deck + demo script | W12 | Slides v0.9 | §7.5 communication |
 | WBS-6.1 | Presentation rehearsal | W13 | Rehearsal ≤20 min | §7.5 communication |
 | WBS-6.2 | AI-use appendix consolidated | W13 | Report appendix | §7.6 process |
@@ -382,16 +383,16 @@ The risk register is formal — each row has a likelihood, impact, mitigation, m
 |---|---|---|---|---|---|---|
 | R1 | Scope creep into multi-language or persistence features | Medium | High | Hard scope-fence in this proposal; W7 explicit scope-renegotiation checkpoint | Student | Drop scope-creep additions; document as "explored but not pursued" |
 | R2 | gVisor performance penalty too variable for meaningful comparison | Medium | Medium | Benchmark protocol defined in W4 (`evaluation-plan.md`); pre-registered sample sizes; percentile + 95% CI reporting | Student | Report null result as a finding with per-percentile breakdown |
-| R3 | Adversarial suite too small or unrepresentative | Medium | High | Category taxonomy locked at W3–W4 design phase; commit to ≥40 programs across ≥6 categories; midpoint peer review with supervisor | Student + Supervisor | Ship the ≥6 categories at lower per-category counts; document gaps in §"Limitations" |
+| R3 | Adversarial suite too small or unrepresentative | Medium | High | Category taxonomy locked at W3–W4 design phase; commit to ≥40 programs across ≥6 categories; midpoint peer review with advisor | Student + Advisor | Ship the ≥6 categories at lower per-category counts; document gaps in §"Limitations" |
 | R4 | Time loss to container-runtime debugging | Medium | Medium | W5 hard hello-world deadline; if missed, contingency 2026-06-19 activates; W7 fallback is Docker-only | Student | Drop gVisor to stretch; release Docker-only artifact; reframe §RQ1 around configuration variants of Docker |
 | R5 | Linux host/kernel mismatch between dev and grading environments | Low | Medium | Pin Ubuntu 22.04 LTS; document in README; test on fresh droplet at W10 | Student | Provide a pre-built Docker image of the host environment as fallback |
 | R6 | API cost overrun on Anthropic Claude (reference-agent demo) | Low | Low | Cap demo runs; cache transcripts; switch to Haiku during development | Student | Replay pre-recorded transcripts; skip live LLM-call in the W14 demo |
 | R7 | AI-use disclosure gaps if log is not kept current | Low | High | Update `docs/ai-use-log.md` at end of every AI-assisted session; commit-message `AI-use:` trailer; weekly audit during W11 drafting | Student | Reconstruct from chat history before W13 freeze; flag any unrecoverable gaps in the W14 reflection |
-| R8 | Supervisor expectations diverge from this proposal | Low | High | W2 explicit approval gate; this proposal lists conditional items in `approval-brief.md`; W7 midpoint review | Student + Supervisor | Adjust at W7; document the divergence in the engineering log |
+| R8 | Advisor expectations diverge from this proposal | Low | High | W2 explicit approval gate; this proposal lists conditional items in `approval-brief.md`; W7 midpoint review | Student + Advisor | Adjust at W7; document the divergence in the engineering log |
 | R9 | Reproducibility fails for the grader (e.g., they cannot run Docker) | Low | Medium | Recorded demo + pre-rendered result tables as fallback; document hardware/host requirements in README | Student | Make the pre-recorded demo and result tables primary artifacts; flag the repro caveat in the report |
 | R10 | Negative or null result in performance comparison | Medium | Low | Plan W9 results section to interpret null results as findings (per RQ pre-registration) | Student | Frame the null result as the headline finding; relate to gVisor case-study expectations |
 | R11 | DigitalOcean droplet outage / billing issue mid-term | Low | Medium | Backup compute path (local UTM VM); credit-funded balance; alternate provider (Hetzner) on file | Student | Activate backup compute path; document the host swap in the report |
-| R12 | Personal availability falls below ~17 hrs/week | Low | High | Front-load risky implementation work to W5–W6; named relief valve at W7 | Student | Activate W7 scope reduction; communicate availability change to supervisor in writing |
+| R12 | Personal availability falls below ~17 hrs/week | Low | High | Front-load risky implementation work to W5–W6; named relief valve at W7 | Student | Activate W7 scope reduction; communicate availability change to advisor in writing |
 
 ## 13. Assumptions and constraints
 
@@ -404,7 +405,7 @@ The risk register is formal — each row has a likelihood, impact, mitigation, m
 - No regulated or proprietary data is processed through the sandbox during evaluation.
 - The student is the sole author of code committed to the repository, with AI assistance disclosed in `docs/ai-use-log.md` per the audit-table format in place since 2026-05-18.
 - Frontier-model APIs remain available and behave consistently enough across the term to support a small reference demo.
-- Supervisor availability for the three named milestones (W2 approval, W7 midpoint, W11 draft feedback).
+- Advisor availability for the three named milestones (W2 approval, W7 midpoint, W11 draft feedback).
 
 ### 13.2 Constraints
 
@@ -450,8 +451,9 @@ Per the W1 grading feedback (specifically the call for expanded stakeholder anal
 | Stakeholder | Relationship | Expectations of the project | What this project provides |
 |---|---|---|---|
 | Student (Zixuan Liang) | Builder, author, reporter | Owns all decisions; produces all artifacts; manages timeline; takes responsibility for correctness and disclosure | A defensible portfolio artifact aligned to frontier-AI-lab SWE roles |
-| Supervisor (Dr. Majid Shaalan) | Approves proposal; reviews milestones; final grader | This proposal, midpoint demo, final report and artifact, final presentation | All listed deliverables on the milestone calendar; the W2 supervisor briefing and this approval package have already been submitted |
-| CISC 699 program | Sets standards and grading rubric | Adherence to milestone calendar; submission conventions; rubric coverage | All graded deliverables (W1 packet, W2 proposal package, W7 midpoint, W14 final report, artifact, presentation) |
+| Project advisor (Prof. Khalid Lateef) | Approves proposal scope; reviews milestones; provides project feedback | This proposal, midpoint demo, final report and artifact, final presentation | All listed deliverables on the milestone calendar; the W2 advisor briefing and this approval package have already been submitted |
+| Course instructor (Dr. Majid Shaalan) | Sets course standards, assignment requirements, and grading rubric | Adherence to milestone calendar; submission conventions; rubric coverage | All graded deliverables (W1 packet, W2 proposal package, W7 midpoint, W14 final report, artifact, presentation) |
+| CISC 699 program | Sets graduate applied-project expectations | Adherence to milestone calendar; submission conventions; rubric coverage | All graded deliverables (W1 packet, W2 proposal package, W7 midpoint, W14 final report, artifact, presentation) |
 | Future portfolio reviewers (hiring managers, engineers on agent-tooling teams at frontier AI labs) | Implicit audience for the public repo and report | A defensible artifact that can be discussed in a 30-minute interview; clean reproducibility; honest AI-use disclosure | Public GitHub repository, technical report, the adversarial benchmark as a citable contribution |
 | LLM-agent developers (open-source ecosystem) | Potential downstream consumers if SafeExec is open-sourced | An adoptable isolation layer with documented threat model and license clarity | The artifact under a permissive open-source license at W14 (license decision deferred until then) |
 | Security engineers evaluating agent platforms | Potential users of the benchmark methodology | A reusable methodology and category taxonomy for evaluating agent sandboxes | The adversarial benchmark, threat model document, and methodology section of the report |
@@ -494,8 +496,8 @@ Substantive prompting summary (see `docs/ai-use-log.md` for the full audit table
 
 - Tool: Claude Sonnet 4.6 via Cowork desktop app.
 - Purpose: Restructure the W1 charter for the W2 rubric and MACP framing; add measurable research questions; add contingency milestones; add formal risk register columns; expand stakeholder analysis per W1 grading feedback; draft the Gantt and WBS sections.
-- Inputs to the tool: This repository's own W1 artifacts (charter, problem statement, candidate comparison, feasibility memo, supervisor briefing, AI-use log, engineering log, annotated bibliography, architecture context); the W2 assignment brief (2026 Canvas assignment "02 Hard Stop 1: Proposal Approval Package").
-- Inputs not provided to the tool: any confidential or restricted data; any supervisor communication beyond what is already publicly recorded in the engineering log; any third-party material that would conflict with the course AI-use policy.
+- Inputs to the tool: This repository's own W1 artifacts (charter, problem statement, candidate comparison, feasibility memo, advisor briefing, AI-use log, engineering log, annotated bibliography, architecture context); the W2 assignment brief (2026 Canvas assignment "02 Hard Stop 1: Proposal Approval Package").
+- Inputs not provided to the tool: any confidential or restricted data; any advisor communication beyond what is already publicly recorded in the engineering log; any third-party material that would conflict with the course AI-use policy.
 - Outputs reviewed: Every section of this document was reviewed by the student; every numeric threshold, every contingency date, and every risk rating was approved or revised by the student before this file was committed.
 
 The expected weight under the W2 rubric for AI Usage Log and Academic Integrity is 10 points; the post-W1-feedback restructuring of `docs/ai-use-log.md` plus the explicit per-document inline disclosure block adopted across the W1 packet and continued here is the project's response to the W1 grading note.
@@ -504,10 +506,11 @@ The expected weight under the W2 rubric for AI Usage Log and Academic Integrity 
 
 | Role | Name | Decision | Date | Notes |
 |---|---|---|---|---|
-| Student | Zixuan Liang | Submitted | 2026-05-21 | Submitted for supervisor review |
-| Supervisor | Dr. Majid Shaalan | _pending_ | _____________ | Approval block to be returned by 2026-05-26 |
+| Student | Zixuan Liang | Submitted | 2026-05-23 | Submitted for advisor review |
+| Project advisor | Prof. Khalid Lateef | _pending_ | _____________ | Approval block to be returned by 2026-05-26 |
+| Course instructor | Dr. Majid Shaalan | _not required for scope sign-off_ | _____________ | Course instructor / grader |
 
-If the supervisor's review identifies items that require revision, the revisions are tracked in `approval-brief.md` (Appendix A) under "Conditional items" and re-submitted before W3 begins.
+If the advisor's review identifies items that require revision, the revisions are tracked in `approval-brief.md` (Appendix A) under "Conditional items" and re-submitted before W3 begins.
 
 ---
 
@@ -522,7 +525,7 @@ If the supervisor's review identifies items that require revision, the revisions
 | E | Annotated bibliography (≥7 sources, IEEE) | [`../01-launch-packet/annotated-bibliography.md`](../01-launch-packet/annotated-bibliography.md) |
 | F | Architecture / system-context diagram | [`../01-launch-packet/architecture-context.md`](../01-launch-packet/architecture-context.md) |
 | G | AI-use disclosure log (audit table) | [`../ai-use-log.md`](../ai-use-log.md) |
-| H | W1 supervisor briefing | [`../01-launch-packet/supervisor-briefing.md`](../01-launch-packet/supervisor-briefing.md) |
+| H | W1 advisor briefing | [`../01-launch-packet/supervisor-briefing.md`](../01-launch-packet/supervisor-briefing.md) |
 
 ### References (proposal-internal citation)
 

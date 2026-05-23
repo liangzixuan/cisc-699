@@ -2,7 +2,7 @@
 
 A Hardened, Threat-Modeled Python Execution Sandbox for LLM Agent Tool-Use
 
-> **Status:** *Superseded by [`docs/02-proposal-package/proposal.md`](../02-proposal-package/proposal.md) v1.0 (submitted 2026-05-21; approval target 2026-05-26). This W1 charter is retained as historical record per the project's audit conventions; do not edit. Substantive scope/plan/risk authority now lives in the W2 proposal document.*
+> **Status:** *Superseded by [`docs/02-proposal-package/proposal.md`](../02-proposal-package/proposal.md) v1.0 (prepared 2026-05-21; submitted 2026-05-23; approval target 2026-05-26). This W1 charter is retained as historical record per the project's audit conventions; do not edit. Substantive scope/plan/risk authority now lives in the W2 proposal document.*
 
 > **AI-use disclosure.** Drafted with Claude Sonnet 4.6 (Cowork desktop app). AI-drafted, student-revised. Key human-authored decisions in this document: all scope boundaries in §5 (Python-only, no network, no GPU, single-tenant, Linux-only, no production hardening, Firecracker stretch-only); success-criteria thresholds in §9 (functional ≥99%, isolation ≥95%, reproducibility within ±10%); milestone-date alignment against syllabus; budget envelope; the project's commitment to ship the adversarial test suite as the central intellectual contribution rather than positioning a novel isolation technique as the contribution. Full audit trail: [`docs/ai-use-log.md`](../ai-use-log.md).
 
@@ -12,7 +12,8 @@ A Hardened, Threat-Modeled Python Execution Sandbox for LLM Agent Tool-Use
 | Student | Zixuan Liang (zliang1@my.harrisburgu.edu)                                    |
 | Program | M.S. Computer Information Sciences, Harrisburg University                    |
 | Course | CISC 699-50-A-2026/Summer — Applied Project in Computer Information Sciences |
-| Supervisor | Dr. Majid Shaalan                                                            |
+| Project advisor | Prof. Khalid Lateef                                                         |
+| Course instructor | Dr. Majid Shaalan                                                           |
 | Term | 2026-05-09 → 2026-08-14 (14 weeks)                                           |
 | Charter draft date | 2026-05-13                                                                   |
 | Charter approval target | W2 (2026-05-22)                                                              |
@@ -45,7 +46,7 @@ The project will deliver a single integrated artifact comprising:
 - **Primary.** LLM-agent developers in industry or academia who need a defensible Python execution layer and currently roll their own.
 - **Secondary.** Security engineers evaluating agent platforms; researchers extending the adversarial benchmark; instructors teaching agent-systems courses.
 - **Implicit.** The student's future hiring audience — engineers and managers on agent-tooling and product teams at AI labs, who will examine the artifact and report as part of portfolio review.
-- **Course audience.** Supervisor (Dr. Shaalan), CISC 699 graders, and final-presentation attendees.
+- **Course audience.** Project advisor (Prof. Khalid Lateef), course instructor (Dr. Majid Shaalan), CISC 699 graders, and final-presentation attendees.
 
 ## 4. Goals
 
@@ -94,7 +95,7 @@ The project will deliver a single integrated artifact comprising:
 
 ### Scope-fence policy
 
-The scope above is fixed for the duration of W3–W8. Any proposed change must be reviewed against the milestone map and approved by the supervisor in writing. The W7 midpoint review is the explicit checkpoint for scope renegotiation; outside of that checkpoint, the default is no change.
+The scope above is fixed for the duration of W3–W8. Any proposed change must be reviewed against the milestone map and approved by the advisor in writing. The W7 midpoint review is the explicit checkpoint for scope renegotiation; outside of that checkpoint, the default is no change.
 
 ## 6. Assumptions
 
@@ -111,7 +112,8 @@ The scope above is fixed for the duration of W3–W8. Any proposed change must b
 | Stakeholder                       | Relationship | Expectations |
 |-----------------------------------|---|---|
 | Student (Zixuan Liang)            | Builder, author, reporter | Owns all decisions, produces all artifacts, manages timeline |
-| Supervisor (Dr. Majid Shaalan)    | Approves charter; reviews milestones; final grader | Receives charter, midpoint demo, final report and artifact, final presentation |
+| Project advisor (Prof. Khalid Lateef) | Approves charter scope; reviews milestones; provides project feedback | Receives charter, midpoint demo, final report and artifact, final presentation |
+| Course instructor (Dr. Majid Shaalan) | Sets assignment requirements and grading rubric | Receives graded submissions through Canvas |
 | CISC 699 program                  | Sets standards and rubric | Adherence to milestone calendar and submission conventions |
 | Future portfolio reviewers        | Implicit audience | A defensible artifact and report suitable to discuss in a 30-minute interview |
 | Open-source community (potential) | Downstream consumer if released | Documentation, license clarity, reproducibility |
@@ -122,12 +124,12 @@ The scope above is fixed for the duration of W3–W8. Any proposed change must b
 |---|---|---|---|---|---|
 | R1 | Scope creep into multi-language or persistence features | Medium | High | Hard scope-fence in this charter; W7 explicit checkpoint | Student |
 | R2 | gVisor performance penalty too variable for meaningful comparison | Medium | Medium | Define benchmark protocol in design phase (W3–W4); pre-register sample sizes and percentile-based reporting | Student |
-| R3 | Adversarial suite too small or unrepresentative | Medium | High | Define category taxonomy at W3; commit to ≥40 programs across ≥6 categories; midpoint peer review | Student + Supervisor |
+| R3 | Adversarial suite too small or unrepresentative | Medium | High | Define category taxonomy at W3; commit to ≥40 programs across ≥6 categories; midpoint peer review | Student + Advisor |
 | R4 | Time loss to container-runtime debugging | Medium | Medium | W5 hard deadline for "hello world execution"; if missed, pivot to Docker-only and drop gVisor to stretch | Student |
 | R5 | Linux host/kernel mismatch between dev and grader environments | Low | Medium | Pin a single Ubuntu LTS image; document environment in README | Student |
 | R6 | API cost overrun for reference-agent demo | Low | Low | Cap demo runs; cache transcripts; switch to Haiku if needed | Student |
 | R7 | AI-use disclosure gaps if log isn't kept current | Low | High | Update `docs/ai-use-log.md` at end of every AI-assisted session; weekly check during W11 report-drafting | Student |
-| R8 | Supervisor expectations diverge from charter | Low | High | W2 explicit charter approval meeting; W7 mid-course review | Student + Supervisor |
+| R8 | Advisor expectations diverge from charter | Low | High | W2 explicit charter approval meeting; W7 mid-course review | Student + Advisor |
 | R9 | Reproducibility fails for the grader (e.g., they can't run Docker) | Low | Medium | Provide a recorded demo + pre-rendered result tables as fallback artifacts | Student |
 | R10 | Negative or null results in performance comparison | Medium | Low | Plan the report's W9 section to interpret null results as findings rather than failures | Student |
 
@@ -151,7 +153,7 @@ The project will be considered successful if all of the following hold at submis
 
 | Week | Date range | Deliverable |
 |---|---|---|
-| W1 | 2026-05-09 → 2026-05-15 | Launch packet: charter, problem statement, candidates, feasibility memo, bibliography starter (≥5), supervisor briefing |
+| W1 | 2026-05-09 → 2026-05-15 | Launch packet: charter, problem statement, candidates, feasibility memo, bibliography starter (≥5), advisor briefing |
 | W2 | 2026-05-16 → 2026-05-22 | Charter approval; project plan submitted; success criteria finalized |
 | W3 | 2026-05-23 → 2026-05-29 | Related-work synthesis; requirements & use cases; data/source notes |
 | W4 | 2026-05-30 → 2026-06-05 | Design review: architecture, threat model, evaluation plan approved |
@@ -161,17 +163,17 @@ The project will be considered successful if all of the following hold at submis
 | W8 | 2026-06-27 → 2026-07-03 | Implementation sprint III — gVisor back-end, full adversarial suite ≥40 programs |
 | W9 | 2026-07-04 → 2026-07-10 | Results, limitations, error analysis, broader-impact draft |
 | W10 | 2026-07-11 → 2026-07-17 | Artifact hardening: README, setup, reproducibility check on clean VM |
-| W11 | 2026-07-18 → 2026-07-24 | Full draft of technical report due for supervisor feedback |
+| W11 | 2026-07-18 → 2026-07-24 | Full draft of technical report due for advisor feedback |
 | W12 | 2026-07-25 → 2026-07-31 | Revision cycle; presentation deck; demo script |
 | W13 | 2026-08-01 → 2026-08-07 | Presentation rehearsal; final package check; AI-use appendix consolidated |
 | W14 | 2026-08-08 → 2026-08-14 | Final report, artifact, and presentation submission; reflection |
 
-## 11. Open questions for supervisor (W2 charter-approval meeting)
+## 11. Open questions for advisor (W2 charter-approval meeting)
 
 These are captured in detail in `supervisor-briefing.md`; summarized here for charter visibility.
 
 - Is the scope (Python-only, two back-ends, ≥40-program adversarial suite) sized correctly for CISC 699 expectations, or should it be widened/narrowed?
-- Is the adversarial-suite-as-contribution framing acceptable as the project's "intellectual contribution" dimension, or does the supervisor prefer a different angle?
+- Is the adversarial-suite-as-contribution framing acceptable as the project's "intellectual contribution" dimension, or does the advisor prefer a different angle?
 - Are there preferred citation conventions, deck templates, or report templates for the program?
 - Is a private GitHub repository acceptable for the artifact submission, or does the program prefer a different version-control arrangement?
 
@@ -180,6 +182,7 @@ These are captured in detail in `supervisor-briefing.md`; summarized here for ch
 | Role | Name                | Signature / Date |
 |---|---------------------|---|
 | Student | Zixuan Liang        | _________________________ |
-| Supervisor | Prof. Majid Shaalan | _________________________ |
+| Project advisor | Prof. Khalid Lateef | _________________________ |
+| Course instructor | Dr. Majid Shaalan | _________________________ |
 
 ---

@@ -3,7 +3,7 @@
 > **Working title.** Project name subject to change. See [`docs/01-launch-packet/project-charter.md`](docs/01-launch-packet/project-charter.md).
 
 CISC 699 Applied Project (Summer 2026) — M.S. Computer Information Sciences, Harrisburg University.
-Student: Zixuan Liang · Supervisor: Dr. Majid Shaalan · Term: 2026-05-09 → 2026-08-14.
+Student: Zixuan Liang · Project advisor: Prof. Khalid Lateef · Course instructor: Dr. Majid Shaalan · Term: 2026-05-09 → 2026-08-14.
 
 ## What this is
 
@@ -40,7 +40,7 @@ The W1 deliverables required by the [launch packet assignment](01%20Project%20La
 | Feasibility memo | [`feasibility-memo.md`](docs/01-launch-packet/feasibility-memo.md) |
 | Annotated bibliography (7 entries) | [`annotated-bibliography.md`](docs/01-launch-packet/annotated-bibliography.md) |
 | Architecture / context diagram | [`architecture-context.md`](docs/01-launch-packet/architecture-context.md) |
-| Supervisor briefing (for W2 meeting) | [`supervisor-briefing.md`](docs/01-launch-packet/supervisor-briefing.md) |
+| Advisor briefing (for W2 meeting) | [`supervisor-briefing.md`](docs/01-launch-packet/supervisor-briefing.md) |
 | W2 issue-tracker seed | [`w2-github-issues.md`](docs/01-launch-packet/w2-github-issues.md) |
 | Workspace screenshots checklist | [`screenshots-checklist.md`](docs/01-launch-packet/screenshots-checklist.md) |
 | Git push instructions | [`git-push-instructions.md`](docs/01-launch-packet/git-push-instructions.md) |
@@ -52,7 +52,7 @@ AI-use disclosure for everything above: [`docs/ai-use-log.md`](docs/ai-use-log.m
 | Phase | Week | Status |
 |---|---|---|
 | Launch packet (W1) | 2026-05-09 → 2026-05-17 | **Done** — graded 90/100 |
-| Proposal approval package (W2) | 2026-05-16 → 2026-05-26 | **Submitted 2026-05-21**, pending supervisor approval |
+| Proposal approval package (W2) | 2026-05-16 → 2026-05-26 | **Prepared 2026-05-21; submitted 2026-05-23**, pending advisor approval |
 | Design review (W3–W4) | 2026-05-23 → 2026-06-05 | Pending |
 | Implementation sprints (W5–W8) | 2026-06-06 → 2026-07-03 | Pending |
 | Midpoint demo (W7) | 2026-06-26 | Pending |

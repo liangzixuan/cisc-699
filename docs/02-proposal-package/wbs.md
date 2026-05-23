@@ -107,7 +107,7 @@ Phase IV subtotal: **~34 hours**.
 |---|---|---|---|---|---|---|---|
 | WBS-5.1 | Full report draft to supervisor (G5 gate) | W11 | 22 | `docs/reports/final-report.md` v0.9 | 7.5 | WBS-5.3 | pending |
 | WBS-5.2 | Bibliography to ≥15 sources | W11 | 8 | `annotated-bibliography.md` updated | 7.6 | WBS-5.1 | pending |
-| WBS-5.3 | Revision cycle on supervisor feedback | W12 | 14 | Final report v1.0 | 7.5 | WBS-6.1 | pending |
+| WBS-5.3 | Revision cycle on advisor feedback | W12 | 14 | Final report v1.0 | 7.5 | WBS-6.1 | pending |
 | WBS-5.4 | Slide deck + demo script | W12 | 6 | `docs/reports/slides.pptx` v0.9; `scripts/demo_script.md` | 7.5 | WBS-6.1 | pending |
 
 Phase V subtotal: **~50 hours**.
