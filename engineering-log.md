@@ -99,4 +99,8 @@ spec: 1.2.1
 
 ## Week 3 (2026-05-23 → 2026-05-29)
 
-*Pending.*
+### 2026-05-25
+- **W3 Literature and Requirements Brief assembled.** Created `docs/03-lit-req-brief/literature-and-requirements-brief.md` plus DOCX/PDF Canvas-submission artifacts. The brief expands the source base to 18 references and includes synthesis themes, gap analysis, functional and non-functional requirements, use cases, domain constraints, source/data inventory, and a requirements traceability matrix.
+- **[DECISION]** Kept W3 requirements aligned to the W2-approved scope: Python 3.11 only; single-tenant; no network egress; no GPU; ephemeral per-request filesystem; hardened Docker plus gVisor as the planned comparison; W7 remains the only sanctioned scope-negotiation point.
+- **[DECISION]** Framed SafeExec's W3 contribution as "threat-modeled measurement of sandbox behavior for Python LLM-agent tool-use" rather than as a replacement for managed products such as OpenAI Code Interpreter, Anthropic code execution, E2B, or Modal Sandboxes.
+- **[AI]** Used Codex (GPT-5, Codex desktop app) to synthesize public sources, draft the brief, create a local DOCX builder, export the PDF with LibreOffice, and visually QA rendered PDF pages with Poppler. Public web sources only; no confidential or regulated data entered into AI tools. Updated `docs/ai-use-log.md` with W3 rows.

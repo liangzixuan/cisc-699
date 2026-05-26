@@ -2,7 +2,7 @@
 
 **Owner:** Zixuan Liang
 **Course:** CISC 699 — Applied Project in Computer Information Sciences (Summer 2026)
-**Last updated:** 2026-05-21
+**Last updated:** 2026-05-25
 
 ## 1. Purpose and policy
 
@@ -66,6 +66,15 @@ The block is intentionally short (2–3 lines) so the document remains readable;
 | 22 | `docs/02-proposal-package/Proposal-Approval-Package.docx` | docx-js via `mcp__workspace__bash` | Consolidated Canvas-submission DOCX | "Assemble single submission-ready DOCX from proposal.md + appendices using the docx skill's docx-js patterns" | AI-advised, student-executed (file generation by tool); content authorship per rows 17–21 | Student reviews the rendered DOCX/PDF before Canvas upload; student is responsible for the final submission file |
 | 23 | `docs/02-proposal-package/Proposal-Approval-Package.pdf` | LibreOffice (`soffice` headless) | PDF export of the consolidated DOCX | "Convert DOCX to PDF for Canvas attachment" | AI-advised, student-executed | Same as row 22 |
 
+## 4b. Audit table — W3 literature and requirements brief (2026-05-25)
+
+| # | Artifact | Tool | Purpose | Prompts / tasks (summary) | Authorship label | Extent of student modification |
+|---|---|---|---|---|---|---|
+| 24 | `docs/03-lit-req-brief/literature-and-requirements-brief.md` | Codex (GPT-5, Codex desktop app) + public web browsing | Literature synthesis, requirements, use cases, constraints, source/data inventory, and traceability matrix for the W3 assignment | "Use the Canvas assignment screenshot and existing W1/W2 artifacts to produce the Literature and Requirements Brief; expand sources; map literature to requirements and evidence; preserve advisor/instructor roles" | AI-drafted, student-revised | Student must verify final source inclusion, every requirement threshold, acceptance-evidence mappings, and advisor-review checklist before Canvas submission |
+| 25 | `scripts/build_lit_req_brief.py` | Codex (GPT-5, Codex desktop app) | Local builder that converts the W3 Markdown master into DOCX with tables and embedded architecture image | "Generate a simple python-docx builder for the W3 brief, preserving headings, tables, bullets, code spans, links, and image insertion" | AI-drafted, student-accepted | Utility script only; student reviews generated DOCX/PDF rather than submitting the script |
+| 26 | `docs/03-lit-req-brief/Literature-and-Requirements-Brief.docx` | `python-docx` via `scripts/build_lit_req_brief.py` | Canvas-ready DOCX for the W3 brief | "Build DOCX from Markdown master and visually inspect output" | AI-advised, student-executed (file generation by tool); content authorship per row 24 | Student reviews rendered document before Canvas upload |
+| 27 | `docs/03-lit-req-brief/Literature-and-Requirements-Brief.pdf` | LibreOffice (`soffice` headless) + Poppler (`pdftoppm`) | PDF export and page-render QA of the W3 brief | "Convert DOCX to PDF; render representative pages to PNG to verify layout" | AI-advised, student-executed | Student reviews PDF before Canvas upload; render QA checked title/control, diagram/use-case, requirements, inventory, traceability, and references pages |
+
 ### Workspace screenshots (`docs/01-launch-packet/screenshots/`)
 
 | # | File | Authorship label | Notes |
@@ -92,6 +101,7 @@ The block is intentionally short (2–3 lines) so the document remains readable;
 | 2026-05-21 | Claude (Cowork) advisory chat + Read tool on uploaded `02 Proposal Approval Package.pdf` | Read the W2 assignment brief; map its 9 tasks and 6 rubric dimensions to the W1 artifacts that already exist; identify gaps to fill | AI-advised, student-executed | Student selected the four "recommended" options in the clarifying-question round (consolidated DOCX, full script with timing, Gantt+table, fresh formal proposal that supersedes the charter) |
 | 2026-05-21 | Claude (Cowork) via Write tool | Draft the five W2 markdown artifacts (proposal, project-plan, wbs, approval-brief, walkthrough-script) | AI-drafted, student-revised | See rows 17–21 in §4a for per-artifact extent of student modification |
 | 2026-05-21 | Claude (Cowork) via `mcp__workspace__bash` | Generate consolidated DOCX with `docx-js`; validate; convert to PDF with `soffice` | AI-advised, student-executed | See rows 22–23 in §4a |
+| 2026-05-25 | Codex (GPT-5, Codex desktop app) + public web browsing + local shell | Prepare W3 Literature and Requirements Brief; browse public sources; create DOCX builder; export PDF; render PDF pages for QA | AI-drafted, student-revised | See rows 24–27 in §4b |
 
 ## 6. Decisions that were human-only (no AI assistance)
 
@@ -135,3 +145,4 @@ The disclosure rigor introduced in W2 will be carried through to W14:
 | 2026-05-14 | Added W1 entry for the remaining-W1 artifacts (architecture-context, feasibility-memo content, w2-issues, screenshots checklist, git-push instructions, .gitattributes). | W1 artifacts completed |
 | 2026-05-18 | Full restructure into audit-oriented format with per-artifact table, decision-authorship taxonomy, human-only-decisions enumeration, ongoing-process section. | W1 grading feedback (Prof. Shaalan, 2026-05-18): "Log appears more descriptive than audit-oriented; in-text attribution is inconsistent; process not systematically documented." |
 | 2026-05-21 | Appended §4a (W2 audit rows 17–23) and three rows in §5 (operational AI use); bumped Last-updated to 2026-05-21. | W2 proposal-approval package preparation. |
+| 2026-05-25 | Appended §4b (W3 audit rows 24–27) and one row in §5 (operational AI use); bumped Last-updated to 2026-05-25. | W3 literature and requirements brief preparation. |
