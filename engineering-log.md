@@ -104,3 +104,10 @@ spec: 1.2.1
 - **[DECISION]** Kept W3 requirements aligned to the W2-approved scope: Python 3.11 only; single-tenant; no network egress; no GPU; ephemeral per-request filesystem; hardened Docker plus gVisor as the planned comparison; W7 remains the only sanctioned scope-negotiation point.
 - **[DECISION]** Framed SafeExec's W3 contribution as "threat-modeled measurement of sandbox behavior for Python LLM-agent tool-use" rather than as a replacement for managed products such as OpenAI Code Interpreter, Anthropic code execution, E2B, or Modal Sandboxes.
 - **[AI]** Used Codex (GPT-5, Codex desktop app) to synthesize public sources, draft the brief, create a local DOCX builder, export the PDF with LibreOffice, and visually QA rendered PDF pages with Poppler. Public web sources only; no confidential or regulated data entered into AI tools. Updated `docs/ai-use-log.md` with W3 rows.
+
+### 2026-05-27
+- **[DECISION]** Prof. Khalid Lateef confirmed the W3 requirements and the W7 gVisor fallback plan.
+- **[DECISION]** Functional corpus will use subsets of HumanEval and MBPP, plus student-authored functional tests where needed for SafeExec-specific coverage.
+- **[DECISION]** Requirement thresholds remain unchanged: >=99% functional pass rate; >=90% adversarial containment for hardened Docker; >=95% adversarial containment for gVisor; >=30 benchmark samples per condition.
+- **[DECISION]** Adversarial-suite disclosure plan confirmed: publish category taxonomy early, publish full program details later with containment context.
+- **[DECISION]** License/data handling: prefer upstream HumanEval and MBPP sources, record task IDs and provenance, preserve required license notices with any copied subset, and avoid vendoring full datasets unless needed for reproducibility.

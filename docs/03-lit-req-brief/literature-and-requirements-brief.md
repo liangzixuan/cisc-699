@@ -15,18 +15,19 @@
 | Course instructor | Dr. Majid Shaalan |
 | Term | 2026-05-09 to 2026-08-14 |
 | Assignment | 03 Literature and Requirements Brief |
-| Brief version | 1.0 draft |
-| Brief date | 2026-05-25 |
+| Brief version | 1.1 advisor-reviewed decisions recorded |
+| Brief date | 2026-05-27 |
 | Submission target | Sunday, 2026-05-31, before 11:59pm |
 | Supersedes / refines | W1 annotated bibliography and W2 proposal scope |
+| Advisor-review status | Confirmed with Prof. Khalid Lateef on 2026-05-27 |
 
 ## 1. Executive Synthesis
 
 SafeExec addresses a narrow but increasingly important systems-security problem: LLM agents can now generate code, route it to tools, and receive execution results as part of an autonomous loop. In that loop, the code-execution layer is where generated text becomes real process execution. The literature and technical sources reviewed here converge on three claims. First, prompt injection, excessive agency, and unsafe output handling make LLM tool-use applications structurally exposed to hostile or malformed instructions [1], [2], [3]. Second, standard containers are useful isolation units but are not, by themselves, a complete answer to adversarial code execution; historical runc escapes and current runtime advisories show that container boundaries need explicit hardening, measured assumptions, and defense in depth [7], [8]. Third, stronger isolation approaches such as gVisor and Firecracker shift the attack surface and cost profile, which means SafeExec's evaluation must measure both containment and overhead rather than claim one backend is simply "better" [4], [5], [6], [9].
 
-The resulting project fit is therefore not "build another code interpreter." OpenAI, Anthropic, E2B, and Modal already provide managed code-execution or sandbox products with richer production feature sets [10], [11], [12], [13]. The gap SafeExec targets is the absence of a small, reproducible, openly inspected artifact that ties a threat model, a requirements table, and an adversarial benchmark to two concrete isolation backends. SafeExec's contribution is a measurement-oriented sandbox: a `POST /execute` API for Python 3.11, a hardened-Docker backend, a gVisor backend, a functional corpus, a hand-authored adversarial corpus, and a benchmark harness that reports isolation and performance evidence.
+The resulting project fit is therefore not "build another code interpreter." OpenAI, Anthropic, E2B, and Modal already provide managed code-execution or sandbox products with richer production feature sets [10], [11], [12], [13]. The gap SafeExec targets is the absence of a small, reproducible, openly inspected artifact that ties a threat model, a requirements table, and an adversarial benchmark to two concrete isolation backends. SafeExec's contribution is a measurement-oriented sandbox: a `POST /execute` API for Python 3.11, a hardened-Docker backend, a gVisor backend, a HumanEval/MBPP-informed functional corpus, a hand-authored adversarial corpus, and a benchmark harness that reports isolation and performance evidence.
 
-This brief translates the literature into implementable requirements, use cases, constraints, and source/data decisions. The requirements below preserve the W2 approved scope: Python-only, single-tenant, no network egress, no GPU, ephemeral per-request filesystem, Linux x86_64 host, and two isolation backends unless the W7 midpoint review activates the documented fallback.
+This brief translates the literature into implementable requirements, use cases, constraints, and source/data decisions. The requirements below preserve the W2 approved scope: Python-only, single-tenant, no network egress, no GPU, ephemeral per-request filesystem, Linux x86_64 host, and two isolation backends unless the W7 midpoint review activates the documented fallback. These W3 requirements, thresholds, and the W7 fallback plan were confirmed with Prof. Khalid Lateef on 2026-05-27.
 
 ## 2. Source Strategy and Quality Screen
 
@@ -152,7 +153,7 @@ The approved system context remains the controlling architecture for requirement
 | Persistence | Per-request filesystem is ephemeral. | No session state, packages installed by user code, or persistent volumes in core scope. |
 | Language/runtime | Python 3.11 only. | Functional suite and adversarial suite are Python programs; no Bash/JS/R support. |
 | Data | No personal, FERPA, HIPAA, proprietary, or confidential data. | Evaluation uses public benchmark tasks, synthetic tasks, and student-authored probes. |
-| Legal/licensing | Upstream corpus licenses must be recorded before vendoring or redistributing data. | Use hand-authored fallback if HumanEval/MBPP reuse creates ambiguity. |
+| Legal/licensing | Upstream corpus licenses must be recorded before vendoring or redistributing data. | Use HumanEval/MBPP subsets from upstream sources, record task IDs and provenance, preserve required license notices, and avoid vendoring full datasets unless needed for reproducibility. |
 | Ethics/security | Adversarial programs are dual-use. | Publish category taxonomy early; publish program details only as part of controlled project artifact with containment context. |
 | Schedule | W7 is the sanctioned scope-negotiation point. | If backend work slips, advisor-approved fallback can drop gVisor and preserve benchmark/adversarial contribution. |
 | API dependency | Anthropic API is demo-only. | No core requirement depends on cloud LLM availability. |
@@ -163,8 +164,8 @@ SafeExec is not data-driven in the machine-learning sense, but it depends on pro
 
 | Source / dataset | Type | Provenance | Fields / structure | Quality concerns | Decision |
 |---|---|---|---|---|---|
-| HumanEval | Functional programming tasks | OpenAI GitHub repository and associated paper [17] | Task ID, prompt, canonical solution, tests | The repository warns that model-generated code is untrusted; license and exact reuse terms must be preserved. | Candidate seed for functional tests; use subset only after license file is recorded. |
-| MBPP | Functional programming tasks | Google Research repository [18] | JSONL tasks with prompt, code solution, tests, train/validation/test split | Crowd-sourced tasks may be simpler than realistic agent code; license/provenance must be carried. | Optional functional seed; not required if hand-authored suite reaches 100. |
+| HumanEval | Functional programming tasks | OpenAI GitHub repository and associated paper [17] | Task ID, prompt, canonical solution, tests | The repository warns that model-generated code is untrusted; MIT license and exact reuse terms must be preserved. | Use a documented subset as a functional-test seed; include upstream citation and MIT license notice with any copied task material. |
+| MBPP | Functional programming tasks | Google Research repository [18] | JSONL tasks with prompt, code solution, tests, train/validation/test split | Crowd-sourced tasks may be simpler than realistic agent code; Google Research repository is Apache-2.0 at the repo level, so provenance/license handling must be explicit. | Use a documented subset as a second functional-test seed; prefer upstream Google Research source and include Apache-2.0 notice with any copied task material. |
 | Student-authored functional tests | Functional correctness | Authored in repo | Python source, expected stdout/stderr/exit, category | Risk of shallow coverage unless categories are reviewed. | Required; should cover stdlib, files, imports, errors, timeouts. |
 | Student-authored adversarial tests | Security evaluation | Authored in repo from threat categories and CVE-inspired behaviors | Program ID, category, expected-contained label, rationale, backend outcomes | Dual-use and overfitting risks; avoid copying exploit code. | Required central contribution; program-level AI-use disclosure if AI assists. |
 | Benchmark measurements | Performance/reproducibility evidence | Generated by `make bench` on named hosts | Backend, program ID, cold/warm flag, duration, memory, exit, timestamp, host metadata | Host variability and warm-cache effects. | Required; report medians, CIs, and host specs. |
@@ -190,14 +191,14 @@ SafeExec is not data-driven in the machine-learning sense, but it depends on pro
 
 ## 11. Advisor Review Checklist
 
-The following items should be reviewed with Prof. Khalid Lateef before implementation details harden in W4:
+The following items were reviewed after the W3 draft and recorded on 2026-05-27:
 
-1. Confirm that the narrowed scope remains acceptable: Python-only, no network, no GPU, single-tenant, Linux x86_64.
-2. Confirm that the adversarial-suite contribution is framed as a defensive benchmark and not as exploit publication.
-3. Confirm that the W7 fallback remains acceptable if gVisor integration slips.
-4. Review whether the functional corpus should use HumanEval/MBPP subsets or remain fully hand-authored.
-5. Review numeric thresholds for contained-outcome rates and benchmark sample counts.
-6. Identify any missing domain constraints before `docs/design/architecture.md`, `threat-model.md`, and `evaluation-plan.md` are written in W4.
+1. Prof. Khalid Lateef confirmed that the W3 requirements and W7 fallback plan are acceptable.
+2. The functional corpus will use documented HumanEval and MBPP subsets, supplemented by student-authored functional tests.
+3. The numeric targets remain unchanged: >=99% functional pass rate, >=90% Docker adversarial containment, >=95% gVisor adversarial containment, and >=30 benchmark samples per condition.
+4. The gVisor fallback is confirmed: if integration slips, W7 is the decision point for dropping gVisor and preserving the Docker-plus-benchmark contribution.
+5. The adversarial-suite disclosure plan is confirmed: publish category taxonomy early, then publish full program details later with containment context.
+6. License/data reuse decision: use upstream HumanEval/MBPP subsets conservatively, record task IDs and provenance, preserve required license notices, and avoid vendoring full datasets unless necessary for reproducibility.
 
 ## 12. AI-Use and Academic Integrity Note
 
