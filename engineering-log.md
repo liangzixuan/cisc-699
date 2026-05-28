@@ -111,3 +111,8 @@ spec: 1.2.1
 - **[DECISION]** Requirement thresholds remain unchanged: >=99% functional pass rate; >=90% adversarial containment for hardened Docker; >=95% adversarial containment for gVisor; >=30 benchmark samples per condition.
 - **[DECISION]** Adversarial-suite disclosure plan confirmed: publish category taxonomy early, publish full program details later with containment context.
 - **[DECISION]** License/data handling: prefer upstream HumanEval and MBPP sources, record task IDs and provenance, preserve required license notices with any copied subset, and avoid vendoring full datasets unless needed for reproducibility.
+
+### 2026-05-28
+- **W2 proposal approval feedback received.** Feedback describes the package as exceptionally strong and likely mid-to-high Level 1 if walkthrough delivery matches the written materials. Strengths named: measurable success criteria, threat-model framing, disciplined scope boundaries, evaluation-first methodology, risk planning, reproducibility, contingency planning, and walkthrough-script ownership.
+- **[RISK]** Primary concern is execution risk, not conceptual weakness: gVisor integration, adversarial benchmarking, and hardened runtime behavior are substantial for a single-student 14-week project.
+- **[DECISION]** Treat the W2 proposal scope as approved and shift operating posture from documentation growth to execution discipline. W4 work should define benchmark rules and implementation details tightly; W5-W7 should prioritize runnable code, containment tests, and early fallback signals.

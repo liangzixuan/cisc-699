@@ -2,7 +2,7 @@
 
 **Owner:** Zixuan Liang
 **Course:** CISC 699 — Applied Project in Computer Information Sciences (Summer 2026)
-**Last updated:** 2026-05-27
+**Last updated:** 2026-05-28
 
 ## 1. Purpose and policy
 
@@ -103,6 +103,7 @@ The block is intentionally short (2–3 lines) so the document remains readable;
 | 2026-05-21 | Claude (Cowork) via `mcp__workspace__bash` | Generate consolidated DOCX with `docx-js`; validate; convert to PDF with `soffice` | AI-advised, student-executed | See rows 22–23 in §4a |
 | 2026-05-25 | Codex (GPT-5, Codex desktop app) + public web browsing + local shell | Prepare W3 Literature and Requirements Brief; browse public sources; create DOCX builder; export PDF; render PDF pages for QA | AI-drafted, student-revised | See rows 24–27 in §4b |
 | 2026-05-27 | Codex (GPT-5, Codex desktop app) + public web browsing | Record student/advisor W3 decisions and make a conservative license/data-reuse call for HumanEval/MBPP subsets | Student-originated, AI-articulated; AI-advised, student-executed | W3 brief, engineering log, and generated DOCX/PDF updated to reflect confirmed decisions |
+| 2026-05-28 | Codex (GPT-5, Codex desktop app) | Record W2 proposal approval feedback and update project status markers | AI-advised, student-executed | README, W2 approval brief, and engineering log updated to reflect approval feedback and execution-risk focus |
 
 ## 6. Decisions that were human-only (no AI assistance)
 
@@ -148,3 +149,4 @@ The disclosure rigor introduced in W2 will be carried through to W14:
 | 2026-05-21 | Appended §4a (W2 audit rows 17–23) and three rows in §5 (operational AI use); bumped Last-updated to 2026-05-21. | W2 proposal-approval package preparation. |
 | 2026-05-25 | Appended §4b (W3 audit rows 24–27) and one row in §5 (operational AI use); bumped Last-updated to 2026-05-25. | W3 literature and requirements brief preparation. |
 | 2026-05-27 | Recorded advisor/student W3 decisions and updated the W3 brief package; bumped Last-updated to 2026-05-27. | Advisor review decisions confirmed. |
+| 2026-05-28 | Recorded W2 proposal approval feedback and execution-risk follow-up; bumped Last-updated to 2026-05-28. | W2 feedback received. |

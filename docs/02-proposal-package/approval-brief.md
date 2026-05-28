@@ -9,11 +9,11 @@
 **Course:** CISC 699-50-A-2026/Summer.
 **Term:** 2026-05-09 → 2026-08-14.
 **Brief date:** 2026-05-21.
-**Status:** Pending advisor approval (target return date: 2026-05-26).
+**Status:** Approved / strong Level 1 feedback received 2026-05-28. Main follow-up: prioritize execution discipline, benchmark definition, and implementation-risk control over additional documentation growth.
 
 ---
 
-## What was approved (assuming advisor sign-off on `proposal.md`)
+## What was approved
 
 - **Scope.** Python-only execution; two isolation back-ends (hardened Docker + gVisor); single-tenant; no network; no GPU; Linux x86-64 host (Ubuntu 22.04 LTS). The full in/out-of-scope list is `proposal.md` §8.
 - **Central contribution.** Adversarial test suite of ≥40 programs across ≥6 categories with documented expected-contained-outcome labels, paired with an empirical isolation-vs-overhead comparison across the two back-ends.
@@ -23,20 +23,20 @@
 - **AI-use disclosure.** Audit-table format adopted 2026-05-18 in response to W1 grading feedback; inline disclosure block on every substantive artifact; W14 appendix will be consolidated from `docs/ai-use-log.md`.
 - **Reproducibility commitment.** `make setup && make test && make bench` on stock Ubuntu 22.04/24.04; numbers within ±10% on equivalent hardware; pre-rendered result tables and a pre-recorded demo as fallbacks.
 
-## What remains conditional (pending advisor input at W2 meeting)
+## What remains conditional after approval feedback
 
-The W1 advisor briefing (`docs/01-launch-packet/supervisor-briefing.md`) named ten advisor questions. The four that materially shape the project, restated here for the W2 approval gate:
+The W2 feedback identified no conceptual blocker. The remaining conditional items are execution-control items to carry into W4-W7:
 
-1. **Project framing.** The adversarial test suite plus methodology is the project's intellectual contribution — *not* a novel isolation primitive. Acceptable framing for CISC 699?
-2. **Open-source release timing.** The plan is a public GitHub repository from the start (already executed) and an Apache-2.0 license at W14. Acceptable, or should release be deferred?
-3. **Reference-agent demo.** A ≤50-LOC Claude-API-driven agent that uses the sandbox as a tool, used strictly for the W14 integration demo. Acceptable, or no third-party API in the demo path?
-4. **Meeting cadence.** Standing 30-minute fortnightly check-in, plus dedicated sessions at W2 (this), W4 (design review), W7 (midpoint), W11 (draft feedback). Acceptable cadence?
+1. **Implementation burden.** gVisor integration, hardened runtime behavior, and adversarial benchmarking are substantial for one student. Keep both backends in plan, but preserve W7 fallback and front-load runnable code.
+2. **Benchmark definition.** W4 must operationalize containment labels, pass/fail rules, sample counts, overhead metrics, and reporting format before implementation expands.
+3. **Scope discipline.** Keep Python-only, no network, no GPU, single-tenant, and no persistence. Treat additional features as out of scope unless they directly reduce implementation risk.
+4. **Walkthrough delivery.** Written materials are strong; graded walkthrough/presentation quality still depends on concise delivery and rehearsal against timing.
 
-If the advisor signals any of these should change, the affected sections of `proposal.md` are revised before W3 begins and re-circulated. The revisions live in `engineering-log.md` under W2/W3.
+Any follow-up change is tracked in `engineering-log.md`; no concept-level rescope is required by the W2 feedback.
 
 ## Evidence expected by the next checkpoint (W4 design review, 2026-06-05)
 
-Between this approval (target 2026-05-26) and the W4 design review, the following artifacts will be produced:
+Between this approval feedback (received 2026-05-28) and the W4 design review, the following artifacts will be produced:
 
 - `docs/design/requirements.md` v1.0 — functional and non-functional requirements with traceability to the success criteria in `proposal.md` §7.
 - `docs/design/architecture.md` — component-level design beyond the W1 system-context view: API request lifecycle, executor-interface contract, back-end-specific component layouts, cgroup hierarchy, seccomp filter scope.
@@ -45,7 +45,7 @@ Between this approval (target 2026-05-26) and the W4 design review, the followin
 - Annotated bibliography expanded to ≥10 entries (current 7), with category balance (≥1 prompt-injection source, ≥1 seccomp primary source, ≥1 academic gVisor performance source).
 - Engineering-log entries for W3 and W4 documenting decisions, blockers, and any scope notes.
 
-The advisor's W4 design-review approval (G2) is the gate that allows Phase III implementation to begin.
+The advisor's W4 design-review approval (G2) is the gate that allows Phase III implementation to begin. The W2 feedback changes the emphasis: the W4 package should define implementation and benchmark details clearly, then stop expanding documentation and move toward runnable code.
 
 ## What success looks like at this hard stop
 
@@ -67,7 +67,7 @@ Total: 100 pts. Target: Level 1 (Advanced/Exceptional, 90–100%) on every dimen
 | Role | Name | Decision | Date |
 |---|---|---|---|
 | Student | Zixuan Liang | Submitted | 2026-05-23 |
-| Project advisor | Prof. Khalid Lateef | _pending_ | ___________________ |
+| Project advisor | Prof. Khalid Lateef | Approved / strong Level 1 feedback | 2026-05-28 |
 | Course instructor | Dr. Majid Shaalan | _not required for scope sign-off_ | ___________________ |
 
 *End of approval brief.*

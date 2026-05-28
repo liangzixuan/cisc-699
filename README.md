@@ -13,7 +13,7 @@ See [`docs/01-launch-packet/problem-statement.md`](docs/01-launch-packet/problem
 
 ## W2 Proposal Approval Package (Hard Stop 1)
 
-The W2 deliverables required by the [Proposal Approval Package assignment](02%20Proposal%20Approval%20Package.pdf) live under `docs/02-proposal-package/`. Canvas submission target: 2026-05-24 23:59 ET.
+The W2 deliverables required by the [Proposal Approval Package assignment](02%20Proposal%20Approval%20Package.pdf) live under `docs/02-proposal-package/`. Submitted 2026-05-23; proposal approval feedback received 2026-05-28.
 
 | Deliverable | File |
 |---|---|
@@ -64,7 +64,7 @@ AI-use disclosure for everything above: [`docs/ai-use-log.md`](docs/ai-use-log.m
 | Phase | Week | Status |
 |---|---|---|
 | Launch packet (W1) | 2026-05-09 → 2026-05-17 | **Done** — graded 90/100 |
-| Proposal approval package (W2) | 2026-05-16 → 2026-05-26 | **Prepared 2026-05-21; submitted 2026-05-23**, pending advisor approval |
+| Proposal approval package (W2) | 2026-05-16 → 2026-05-26 | **Approved / strong Level 1 feedback received 2026-05-28** |
 | Literature and requirements brief (W3) | 2026-05-23 → 2026-05-31 | **Prepared 2026-05-25**, pending Canvas submission |
 | Design review (W4) | 2026-05-30 → 2026-06-05 | Pending |
 | Implementation sprints (W5–W8) | 2026-06-06 → 2026-07-03 | Pending |
