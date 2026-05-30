@@ -116,3 +116,12 @@ spec: 1.2.1
 - **W2 proposal approval feedback received.** Feedback describes the package as exceptionally strong and likely mid-to-high Level 1 if walkthrough delivery matches the written materials. Strengths named: measurable success criteria, threat-model framing, disciplined scope boundaries, evaluation-first methodology, risk planning, reproducibility, contingency planning, and walkthrough-script ownership.
 - **[RISK]** Primary concern is execution risk, not conceptual weakness: gVisor integration, adversarial benchmarking, and hardened runtime behavior are substantial for a single-student 14-week project.
 - **[DECISION]** Treat the W2 proposal scope as approved and shift operating posture from documentation growth to execution discipline. W4 work should define benchmark rules and implementation details tightly; W5-W7 should prioritize runnable code, containment tests, and early fallback signals.
+
+---
+
+## Week 4 (2026-05-30 → 2026-06-05)
+
+### 2026-05-30
+- **W4 Design Review Package assembled.** Created `docs/04-design-review-package/design-review-package.md`, generated architecture/evaluation diagrams, and exported DOCX/PDF Canvas-submission artifacts. The package covers component responsibilities, build order, execution/data flow, API contract, Docker/gVisor method, environment/toolchain plan, corpus validation, benchmark protocol, risk controls, and W4 approval checklist.
+- **[DECISION]** Kept the package implementation-facing per W2 feedback: W5 target is a first `POST /execute` hello-world request through the Docker backend; optional feature growth remains out of scope.
+- **[AI]** Used Codex (GPT-5, Codex desktop app) to draft the package, generate diagrams with a local Python/Pillow builder, generate the DOCX/PDF, and render page PNGs for visual QA. Public course and repository artifacts only; no confidential or regulated data entered into AI tools.

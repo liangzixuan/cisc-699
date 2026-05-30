@@ -2,7 +2,7 @@
 
 **Owner:** Zixuan Liang
 **Course:** CISC 699 — Applied Project in Computer Information Sciences (Summer 2026)
-**Last updated:** 2026-05-28
+**Last updated:** 2026-05-30
 
 ## 1. Purpose and policy
 
@@ -75,6 +75,16 @@ The block is intentionally short (2–3 lines) so the document remains readable;
 | 26 | `docs/03-lit-req-brief/Literature-and-Requirements-Brief.docx` | `python-docx` via `scripts/build_lit_req_brief.py` | Canvas-ready DOCX for the W3 brief | "Build DOCX from Markdown master and visually inspect output" | AI-advised, student-executed (file generation by tool); content authorship per row 24 | Student reviews rendered document before Canvas upload |
 | 27 | `docs/03-lit-req-brief/Literature-and-Requirements-Brief.pdf` | LibreOffice (`soffice` headless) + Poppler (`pdftoppm`) | PDF export and page-render QA of the W3 brief | "Convert DOCX to PDF; render representative pages to PNG to verify layout" | AI-advised, student-executed | Student reviews PDF before Canvas upload; render QA checked title/control, diagram/use-case, requirements, inventory, traceability, and references pages |
 
+## 4c. Audit table — W4 design review package (2026-05-30)
+
+| # | Artifact | Tool | Purpose | Prompts / tasks (summary) | Authorship label | Extent of student modification |
+|---|---|---|---|---|---|---|
+| 28 | `docs/04-design-review-package/design-review-package.md` | Codex (GPT-5, Codex desktop app) | Consolidated W4 design review package covering architecture, method, environment, API, testing/evaluation, risk controls, and AI-use note | "Use the W4 Canvas assignment screenshot, W2 approval feedback, W2 proposal, and W3 requirements to produce an implementation-facing design review package" | AI-drafted, student-revised | Student should verify final API contract, benchmark protocol, and W5 execution target before Canvas submission |
+| 29 | `scripts/build_design_review_package.py` | Codex (GPT-5, Codex desktop app) | Local builder that generates diagrams and converts the W4 Markdown master into DOCX | "Create reproducible Python builder using python-docx and Pillow; apply standard business brief styling; render diagrams as PNGs" | AI-drafted, student-accepted | Utility script; student reviews generated artifacts rather than submitting the script |
+| 30 | `docs/04-design-review-package/diagrams/*.png` | Codex-generated Python/Pillow drawing script | Component architecture and evaluation-flow diagrams | "Generate simple architecture and evaluation diagrams from the W4 package design" | AI-drafted, student-revised | Diagrams visually QA'd in rendered DOCX pages |
+| 31 | `docs/04-design-review-package/Design-Review-Package.docx` | `python-docx` via local builder | Canvas-ready DOCX for W4 Hard Stop 2 | "Build DOCX from Markdown master and generated diagrams" | AI-advised, student-executed; content authorship per rows 28-30 | Rendered to PNG pages for layout QA |
+| 32 | `docs/04-design-review-package/Design-Review-Package.pdf` | LibreOffice (`soffice` headless) | PDF export of W4 design review package | "Convert DOCX to PDF for Canvas submission" | AI-advised, student-executed | `qpdf --check` passed; 11 pages |
+
 ### Workspace screenshots (`docs/01-launch-packet/screenshots/`)
 
 | # | File | Authorship label | Notes |
@@ -104,6 +114,7 @@ The block is intentionally short (2–3 lines) so the document remains readable;
 | 2026-05-25 | Codex (GPT-5, Codex desktop app) + public web browsing + local shell | Prepare W3 Literature and Requirements Brief; browse public sources; create DOCX builder; export PDF; render PDF pages for QA | AI-drafted, student-revised | See rows 24–27 in §4b |
 | 2026-05-27 | Codex (GPT-5, Codex desktop app) + public web browsing | Record student/advisor W3 decisions and make a conservative license/data-reuse call for HumanEval/MBPP subsets | Student-originated, AI-articulated; AI-advised, student-executed | W3 brief, engineering log, and generated DOCX/PDF updated to reflect confirmed decisions |
 | 2026-05-28 | Codex (GPT-5, Codex desktop app) | Record W2 proposal approval feedback and update project status markers | AI-advised, student-executed | README, W2 approval brief, and engineering log updated to reflect approval feedback and execution-risk focus |
+| 2026-05-30 | Codex (GPT-5, Codex desktop app) + local shell | Prepare W4 Design Review Package; generate diagrams; create DOCX/PDF; render pages for visual QA; update README/logs | AI-drafted, student-revised | See rows 28-32 in §4c |
 
 ## 6. Decisions that were human-only (no AI assistance)
 
@@ -150,3 +161,4 @@ The disclosure rigor introduced in W2 will be carried through to W14:
 | 2026-05-25 | Appended §4b (W3 audit rows 24–27) and one row in §5 (operational AI use); bumped Last-updated to 2026-05-25. | W3 literature and requirements brief preparation. |
 | 2026-05-27 | Recorded advisor/student W3 decisions and updated the W3 brief package; bumped Last-updated to 2026-05-27. | Advisor review decisions confirmed. |
 | 2026-05-28 | Recorded W2 proposal approval feedback and execution-risk follow-up; bumped Last-updated to 2026-05-28. | W2 feedback received. |
+| 2026-05-30 | Appended §4c (W4 audit rows 28-32) and one row in §5; bumped Last-updated to 2026-05-30. | W4 design review package preparation. |

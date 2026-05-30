@@ -40,6 +40,19 @@ The W3 deliverables required by the Literature and Requirements Brief assignment
 
 This brief expands the W1 bibliography into an 18-source design source base and derives the W3 functional requirements, non-functional requirements, use cases, domain constraints, data/source inventory, and requirements traceability matrix.
 
+## W4 Design Review Package (Hard Stop 2)
+
+The W4 deliverables required by the Design Review Package assignment live under `docs/04-design-review-package/`. Canvas submission target: 2026-06-07 23:59.
+
+| Deliverable | File |
+|---|---|
+| **Canvas submission (.docx)** | [`Design-Review-Package.docx`](docs/04-design-review-package/Design-Review-Package.docx) |
+| **Canvas submission (.pdf, 11 pp)** | [`Design-Review-Package.pdf`](docs/04-design-review-package/Design-Review-Package.pdf) |
+| Editable Markdown master | [`design-review-package.md`](docs/04-design-review-package/design-review-package.md) |
+| Architecture and evaluation diagrams | [`diagrams/`](docs/04-design-review-package/diagrams/) |
+
+This package translates the approved W3 requirements into component architecture, API contract, computational method, environment/toolchain plan, corpus-validation plan, benchmark protocol, and implementation-risk controls for W5-W8.
+
 ## W1 launch packet
 
 The W1 deliverables required by the [launch packet assignment](01%20Project%20Launch%20Packet.pdf) live under `docs/01-launch-packet/`:
@@ -66,7 +79,7 @@ AI-use disclosure for everything above: [`docs/ai-use-log.md`](docs/ai-use-log.m
 | Launch packet (W1) | 2026-05-09 → 2026-05-17 | **Done** — graded 90/100 |
 | Proposal approval package (W2) | 2026-05-16 → 2026-05-26 | **Approved / strong Level 1 feedback received 2026-05-28** |
 | Literature and requirements brief (W3) | 2026-05-23 → 2026-05-31 | **Prepared 2026-05-25**, pending Canvas submission |
-| Design review (W4) | 2026-05-30 → 2026-06-05 | Pending |
+| Design review package (W4) | 2026-05-30 → 2026-06-07 | **Prepared 2026-05-30**, pending Canvas submission |
 | Implementation sprints (W5–W8) | 2026-06-06 → 2026-07-03 | Pending |
 | Midpoint demo (W7) | 2026-06-26 | Pending |
 | Hardening & report (W9–W11) | 2026-07-11 → 2026-07-31 | Pending |
@@ -85,6 +98,7 @@ Detailed milestone map: [`CLAUDE.md`](CLAUDE.md) and [`docs/01-launch-packet/pro
 │   ├── 01-launch-packet/     W1 deliverables (charter, bibliography, etc.)
 │   ├── 02-proposal-package/  W2 deliverables (proposal, plan, WBS, walkthrough)
 │   ├── 03-lit-req-brief/     W3 literature synthesis, requirements, use cases
+│   ├── 04-design-review-package/ W4 design review package
 │   ├── design/               W3–W4 architecture, threat model, eval plan
 │   ├── reports/              Midpoint & final technical report
 │   └── ai-use-log.md         Running AI-use disclosure (graded appendix source)
