@@ -53,6 +53,21 @@ The W4 deliverables required by the Design Review Package assignment live under 
 
 This package translates the approved W3 requirements into component architecture, API contract, computational method, environment/toolchain plan, corpus-validation plan, benchmark protocol, and implementation-risk controls for W5-W8.
 
+## W5 Implementation Sprint I Check-in
+
+The W5 deliverables required by the Implementation Sprint I Check-in assignment live under `docs/05-implementation-sprint-i/`. Canvas submission target: 2026-06-15 23:59.
+
+| Deliverable | File |
+|---|---|
+| **Canvas submission (.docx)** | [`Implementation-Sprint-I-Check-in.docx`](docs/05-implementation-sprint-i/Implementation-Sprint-I-Check-in.docx) |
+| **Canvas submission (.pdf)** | [`Implementation-Sprint-I-Check-in.pdf`](docs/05-implementation-sprint-i/Implementation-Sprint-I-Check-in.pdf) |
+| Editable Markdown master | [`implementation-sprint-i-check-in.md`](docs/05-implementation-sprint-i/implementation-sprint-i-check-in.md) |
+| Smoke-test evidence | [`smoke-output.txt`](docs/05-implementation-sprint-i/smoke-output.txt) |
+| Unit-test evidence | [`test-output.txt`](docs/05-implementation-sprint-i/test-output.txt) |
+| Benchmark smoke evidence | [`benchmark-smoke-output.txt`](docs/05-implementation-sprint-i/benchmark-smoke-output.txt) |
+
+This sprint establishes the first runnable baseline: `src/safeexec/` now contains request/result models, a backend interface, a development local-subprocess backend, Docker/gVisor command construction, a CLI, and a JSON `POST /execute` API shell. The local backend is explicitly a development smoke-test shim, not a security boundary; Docker hardening execution on the Ubuntu droplet remains the W6 target.
+
 ## W1 launch packet
 
 The W1 deliverables required by the [launch packet assignment](01%20Project%20Launch%20Packet.pdf) live under `docs/01-launch-packet/`:
@@ -80,7 +95,8 @@ AI-use disclosure for everything above: [`docs/ai-use-log.md`](docs/ai-use-log.m
 | Proposal approval package (W2) | 2026-05-16 → 2026-05-26 | **Approved / strong Level 1 feedback received 2026-05-28** |
 | Literature and requirements brief (W3) | 2026-05-23 → 2026-05-31 | **Prepared 2026-05-25**, pending Canvas submission |
 | Design review package (W4) | 2026-05-30 → 2026-06-07 | **Prepared 2026-05-30**, pending Canvas submission |
-| Implementation sprints (W5–W8) | 2026-06-06 → 2026-07-03 | Pending |
+| Implementation sprint I check-in (W5) | 2026-06-06 → 2026-06-15 | **Baseline implemented 2026-06-09**, DOCX/PDF package prepared |
+| Implementation sprints II-IV (W6–W8) | 2026-06-13 → 2026-07-03 | Pending |
 | Midpoint demo (W7) | 2026-06-26 | Pending |
 | Hardening & report (W9–W11) | 2026-07-11 → 2026-07-31 | Pending |
 | Revision & defense (W12–W14) | 2026-08-01 → 2026-08-14 | Pending |
@@ -99,6 +115,7 @@ Detailed milestone map: [`CLAUDE.md`](CLAUDE.md) and [`docs/01-launch-packet/pro
 │   ├── 02-proposal-package/  W2 deliverables (proposal, plan, WBS, walkthrough)
 │   ├── 03-lit-req-brief/     W3 literature synthesis, requirements, use cases
 │   ├── 04-design-review-package/ W4 design review package
+│   ├── 05-implementation-sprint-i/ W5 implementation check-in package
 │   ├── design/               W3–W4 architecture, threat model, eval plan
 │   ├── reports/              Midpoint & final technical report
 │   └── ai-use-log.md         Running AI-use disclosure (graded appendix source)
@@ -115,20 +132,35 @@ Detailed milestone map: [`CLAUDE.md`](CLAUDE.md) and [`docs/01-launch-packet/pro
 
 ## Setup, run, test
 
-> **Not yet implemented.** Targets for W5 milestone.
-
 ```bash
-# (Planned) bring up the sandbox service
-docker compose -f deploy/docker-compose.yaml up
+# run one local smoke execution through the service layer
+make smoke
 
-# (Planned) run the functional + adversarial suites
+# run the committed baseline test suite
 make test
 
-# (Planned) run the performance benchmark and emit a result table
-make bench
+# start the local JSON API shell
+make api
+
+# optional: wrap the API shell in Docker for service inspection
+docker compose -f deploy/docker-compose.yaml up
 ```
 
-Reproducibility is a graded dimension; setup commands and pinned versions will be added as components land.
+Manual CLI example:
+
+```bash
+PYTHONPATH=src python3 -m safeexec --backend local --code "print('hello')"
+```
+
+Manual API example after `make api`:
+
+```bash
+curl -s http://127.0.0.1:8080/execute \
+  -H 'Content-Type: application/json' \
+  -d '{"code":"print(2 + 2)"}'
+```
+
+W5 caveat: the `local` backend is a development smoke-test shim, not a security boundary. It exists to stabilize the request/result/API/test harness before the Docker and gVisor backends are exercised on the Linux target host. Reproducibility is a graded dimension; setup commands and pinned versions will continue to be tightened as components land.
 
 ## Evaluation (planned)
 

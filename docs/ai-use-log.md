@@ -2,7 +2,7 @@
 
 **Owner:** Zixuan Liang
 **Course:** CISC 699 — Applied Project in Computer Information Sciences (Summer 2026)
-**Last updated:** 2026-05-30
+**Last updated:** 2026-06-09
 
 ## 1. Purpose and policy
 
@@ -85,6 +85,16 @@ The block is intentionally short (2–3 lines) so the document remains readable;
 | 31 | `docs/04-design-review-package/Design-Review-Package.docx` | `python-docx` via local builder | Canvas-ready DOCX for W4 Hard Stop 2 | "Build DOCX from Markdown master and generated diagrams" | AI-advised, student-executed; content authorship per rows 28-30 | Rendered to PNG pages for layout QA |
 | 32 | `docs/04-design-review-package/Design-Review-Package.pdf` | LibreOffice (`soffice` headless) | PDF export of W4 design review package | "Convert DOCX to PDF for Canvas submission" | AI-advised, student-executed | `qpdf --check` passed; 11 pages |
 
+## 4d. Audit table — W5 implementation sprint I check-in (2026-06-09)
+
+| # | Artifact | Tool | Purpose | Prompts / tasks (summary) | Authorship label | Extent of student modification |
+|---|---|---|---|---|---|---|
+| 33 | `src/safeexec/`, `tests/functional/`, `scripts/smoke_safeexec.py`, `benchmarks/smoke_baseline.py` | Codex (GPT-5, Codex desktop app) | First runnable implementation baseline: models, backend interface, dev subprocess backend, Docker/gVisor command builder, API shell, CLI, smoke script, tests, and benchmark seed | "Use the W5 Canvas assignment and W4 design package to create the smallest credible runnable baseline and smoke evidence" | AI-drafted, student-revised | Student must review every code path, especially the local-backend limitation and Docker/gVisor command controls, before relying on results in the report |
+| 34 | `Makefile`, `pyproject.toml`, `requirements.txt`, `deploy/docker-compose.yaml`, `deploy/README.md` | Codex (GPT-5, Codex desktop app) | Reproducible setup/run/test commands and service wrapper for Sprint I | "Add setup/run/test targets and minimal deployment notes without adding unnecessary dependencies" | AI-drafted, student-revised | Student should verify on both local authoring machine and Ubuntu target host as W6 begins |
+| 35 | `docs/05-implementation-sprint-i/implementation-sprint-i-check-in.md` | Codex (GPT-5, Codex desktop app) | W5 Canvas-facing check-in narrative with setup, evidence, risks, and forward plan | "Draft the Implementation Sprint I check-in package from actual repo changes and command outputs" | AI-drafted, student-revised | Student should revise into personal voice and confirm Canvas submission contents |
+| 36 | `docs/05-implementation-sprint-i/smoke-output.txt`, `test-output.txt`, `benchmark-smoke-output.txt` | Local shell commands advised by Codex | Captured command evidence for smoke execution, unit tests, and benchmark seed | "Run make smoke, make test, and benchmark smoke; save exact outputs" | AI-advised, student-executed | Outputs were generated locally from committed code; student should inspect before submission |
+| 37 | `docs/05-implementation-sprint-i/Implementation-Sprint-I-Check-in.docx`, `Implementation-Sprint-I-Check-in.pdf` | `python-docx`, LibreOffice, and render QA | Canvas-ready DOCX/PDF export of the W5 check-in | "Generate DOCX/PDF from the Markdown master and visually verify rendered pages" | AI-advised, student-executed; content authorship per row 35 | Student reviews the final rendered package before Canvas upload |
+
 ### Workspace screenshots (`docs/01-launch-packet/screenshots/`)
 
 | # | File | Authorship label | Notes |
@@ -115,6 +125,7 @@ The block is intentionally short (2–3 lines) so the document remains readable;
 | 2026-05-27 | Codex (GPT-5, Codex desktop app) + public web browsing | Record student/advisor W3 decisions and make a conservative license/data-reuse call for HumanEval/MBPP subsets | Student-originated, AI-articulated; AI-advised, student-executed | W3 brief, engineering log, and generated DOCX/PDF updated to reflect confirmed decisions |
 | 2026-05-28 | Codex (GPT-5, Codex desktop app) | Record W2 proposal approval feedback and update project status markers | AI-advised, student-executed | README, W2 approval brief, and engineering log updated to reflect approval feedback and execution-risk focus |
 | 2026-05-30 | Codex (GPT-5, Codex desktop app) + local shell | Prepare W4 Design Review Package; generate diagrams; create DOCX/PDF; render pages for visual QA; update README/logs | AI-drafted, student-revised | See rows 28-32 in §4c |
+| 2026-06-09 | Codex (GPT-5, Codex desktop app) + local shell | Prepare W5 Implementation Sprint I baseline; add source/tests/Makefile/deploy notes; run smoke and unit tests; prepare check-in package | AI-drafted, student-revised | See rows 33-37 in §4d |
 
 ## 6. Decisions that were human-only (no AI assistance)
 
@@ -162,3 +173,4 @@ The disclosure rigor introduced in W2 will be carried through to W14:
 | 2026-05-27 | Recorded advisor/student W3 decisions and updated the W3 brief package; bumped Last-updated to 2026-05-27. | Advisor review decisions confirmed. |
 | 2026-05-28 | Recorded W2 proposal approval feedback and execution-risk follow-up; bumped Last-updated to 2026-05-28. | W2 feedback received. |
 | 2026-05-30 | Appended §4c (W4 audit rows 28-32) and one row in §5; bumped Last-updated to 2026-05-30. | W4 design review package preparation. |
+| 2026-06-09 | Appended §4d (W5 audit rows 33-37), added the W5 operational-use row, and bumped Last-updated to 2026-06-09. | W5 implementation sprint I baseline and check-in package preparation. |

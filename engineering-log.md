@@ -125,3 +125,17 @@ spec: 1.2.1
 - **W4 Design Review Package assembled.** Created `docs/04-design-review-package/design-review-package.md`, generated architecture/evaluation diagrams, and exported DOCX/PDF Canvas-submission artifacts. The package covers component responsibilities, build order, execution/data flow, API contract, Docker/gVisor method, environment/toolchain plan, corpus validation, benchmark protocol, risk controls, and W4 approval checklist.
 - **[DECISION]** Kept the package implementation-facing per W2 feedback: W5 target is a first `POST /execute` hello-world request through the Docker backend; optional feature growth remains out of scope.
 - **[AI]** Used Codex (GPT-5, Codex desktop app) to draft the package, generate diagrams with a local Python/Pillow builder, generate the DOCX/PDF, and render page PNGs for visual QA. Public course and repository artifacts only; no confidential or regulated data entered into AI tools.
+
+---
+
+## Week 5 (2026-06-06 → 2026-06-12)
+
+### 2026-06-09
+- **Implementation Sprint I baseline created.** Added `src/safeexec/` package with execution models, backend interface, dev-only local subprocess backend, Docker/gVisor command builder, service layer, CLI, and a stdlib JSON API shell for `POST /execute`.
+- **[DECISION]** Use the `local` backend only as a reproducible development smoke-test shim. It is not a security boundary and cannot support containment claims. Docker/gVisor remain the approved target isolation path for W6-W8.
+- **[DECISION]** Keep W5 dependency-free (Python standard library only) so `make smoke` and `make test` are reliable on the authoring machine before adding external framework or benchmark dependencies.
+- Added baseline tests under `tests/functional/`: local execution success, timeout handling, API response shape, hardened-Docker command controls, and gVisor `runsc` runtime selection.
+- Added `Makefile` targets: `make smoke`, `make test`, and `make api`. Captured W5 evidence in `docs/05-implementation-sprint-i/smoke-output.txt`, `test-output.txt`, and `benchmark-smoke-output.txt`.
+- **[RISK]** Docker execution has not yet been run from this local workspace. W6 must run the Docker backend on the Ubuntu droplet and capture the first real containerized `POST /execute` evidence.
+- **[RISK]** Functional corpus and adversarial suite are still seeds. W6 should add the first HumanEval/MBPP manifest entries and initial student-authored adversarial programs only after the Docker boundary is exercised.
+- **[AI]** Used Codex (GPT-5, Codex desktop app) to scaffold the W5 code baseline, tests, check-in Markdown, README/log updates, and local evidence capture. Student must review command output and the generated DOCX/PDF before Canvas submission.

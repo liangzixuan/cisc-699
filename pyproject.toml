@@ -1,0 +1,10 @@
+[project]
+name = "safeexec"
+version = "0.1.0"
+description = "Hardened Python execution sandbox prototype for CISC 699."
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.safeexec]
+default_backend = "local"
+target_python = "3.11"
