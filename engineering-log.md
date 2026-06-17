@@ -139,3 +139,10 @@ spec: 1.2.1
 - **[RISK]** Docker execution has not yet been run from this local workspace. W6 must run the Docker backend on the Ubuntu droplet and capture the first real containerized `POST /execute` evidence.
 - **[RISK]** Functional corpus and adversarial suite are still seeds. W6 should add the first HumanEval/MBPP manifest entries and initial student-authored adversarial programs only after the Docker boundary is exercised.
 - **[AI]** Used Codex (GPT-5, Codex desktop app) to scaffold the W5 code baseline, tests, check-in Markdown, README/log updates, and local evidence capture. Student must review command output and the generated DOCX/PDF before Canvas submission.
+
+### 2026-06-17
+- **W5 grading feedback received: 71/100.** Feedback judged the technical baseline coherent, but reduced credit because the Canvas upload did not include independently verifiable repository evidence, setup files, smoke/test logs, commit/tag information, full risk/issue tracking, engineering log, or AI-use log.
+- **[DECISION]** Treat this as a submission-packaging failure rather than a technical-direction failure. Prepare a resubmission evidence addendum if revision is allowed.
+- Added `w5-baseline` tag to commit `3475ccf` and captured `git-log-w5.txt`, `repository-snapshot.txt`, fresh smoke/test output files, architecture notes, changelog, enhanced known-issues/risk log, evidence index, and Canvas resubmission checklist.
+- Generated `Implementation-Sprint-I-Evidence-Addendum.docx` and `.pdf`; `qpdf --check` passed and rendered DOCX pages were visually inspected.
+- **[AI]** Used Codex (GPT-5, Codex desktop app) to translate W5 feedback into a concrete evidence addendum and attachment checklist. Student remains responsible for requesting/confirming whether revision or resubmission is allowed.

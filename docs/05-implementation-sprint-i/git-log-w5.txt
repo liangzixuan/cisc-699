@@ -1,0 +1,12 @@
+3475ccf (tag: w5-baseline) Add W5 implementation sprint baseline
+b5b2702 Add W4 design review package
+a9d9e76 Record W2 proposal feedback
+075bcc3 Record W3 advisor decisions
+38da239 w2
+38affc3 w2
+0a1982b w2
+9cf9342 (tag: w1-ai-use-strengthened) Strengthen AI-use disclosure per W1 grading feedback
+bedf77d docs
+dd75943 w1
+bb2903a screenshots w1
+f2f87bd Add git-push instructions; link new artifacts in README; update logs

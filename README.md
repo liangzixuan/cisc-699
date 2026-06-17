@@ -61,12 +61,15 @@ The W5 deliverables required by the Implementation Sprint I Check-in assignment 
 |---|---|
 | **Canvas submission (.docx)** | [`Implementation-Sprint-I-Check-in.docx`](docs/05-implementation-sprint-i/Implementation-Sprint-I-Check-in.docx) |
 | **Canvas submission (.pdf)** | [`Implementation-Sprint-I-Check-in.pdf`](docs/05-implementation-sprint-i/Implementation-Sprint-I-Check-in.pdf) |
+| **Evidence addendum (.docx)** | [`Implementation-Sprint-I-Evidence-Addendum.docx`](docs/05-implementation-sprint-i/Implementation-Sprint-I-Evidence-Addendum.docx) |
+| **Evidence addendum (.pdf)** | [`Implementation-Sprint-I-Evidence-Addendum.pdf`](docs/05-implementation-sprint-i/Implementation-Sprint-I-Evidence-Addendum.pdf) |
 | Editable Markdown master | [`implementation-sprint-i-check-in.md`](docs/05-implementation-sprint-i/implementation-sprint-i-check-in.md) |
+| Evidence index | [`evidence-index.md`](docs/05-implementation-sprint-i/evidence-index.md) |
 | Smoke-test evidence | [`smoke-output.txt`](docs/05-implementation-sprint-i/smoke-output.txt) |
 | Unit-test evidence | [`test-output.txt`](docs/05-implementation-sprint-i/test-output.txt) |
 | Benchmark smoke evidence | [`benchmark-smoke-output.txt`](docs/05-implementation-sprint-i/benchmark-smoke-output.txt) |
 
-This sprint establishes the first runnable baseline: `src/safeexec/` now contains request/result models, a backend interface, a development local-subprocess backend, Docker/gVisor command construction, a CLI, and a JSON `POST /execute` API shell. The local backend is explicitly a development smoke-test shim, not a security boundary; Docker hardening execution on the Ubuntu droplet remains the W6 target.
+This sprint establishes the first runnable baseline: `src/safeexec/` now contains request/result models, a backend interface, a development local-subprocess backend, Docker/gVisor command construction, a CLI, and a JSON `POST /execute` API shell. The local backend is explicitly a development smoke-test shim, not a security boundary; Docker hardening execution on the Ubuntu droplet remains the W6 target. After grading feedback on the original upload, an evidence addendum was prepared on 2026-06-17 with the repository URL, commit `3475ccf`, tag `w5-baseline`, setup files, direct smoke/test outputs, architecture notes, enhanced known-issues log, changelog, engineering log, and AI-use log.
 
 ## W1 launch packet
 

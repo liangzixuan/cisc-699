@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import re
+import argparse
 from pathlib import Path
 
 from docx import Document
@@ -16,8 +17,8 @@ from docx.shared import Inches, Pt, RGBColor
 
 ROOT = Path(__file__).resolve().parents[1]
 PKG = ROOT / "docs" / "05-implementation-sprint-i"
-SRC = PKG / "implementation-sprint-i-check-in.md"
-OUT = PKG / "Implementation-Sprint-I-Check-in.docx"
+DEFAULT_SRC = PKG / "implementation-sprint-i-check-in.md"
+DEFAULT_OUT = PKG / "Implementation-Sprint-I-Check-in.docx"
 
 COLORS = {
     "navy": "17365D",
@@ -157,10 +158,10 @@ def add_code_block(doc: Document, code: list[str]) -> None:
     run.font.size = Pt(8.5)
 
 
-def build() -> None:
+def build(source: Path = DEFAULT_SRC, output: Path = DEFAULT_OUT) -> None:
     doc = Document()
     set_document_style(doc)
-    lines = SRC.read_text(encoding="utf-8").splitlines()
+    lines = source.read_text(encoding="utf-8").splitlines()
     i = 0
     in_code = False
     code_buffer: list[str] = []
@@ -233,10 +234,14 @@ def build() -> None:
         add_inline_markdown(paragraph, stripped)
         i += 1
 
-    OUT.parent.mkdir(parents=True, exist_ok=True)
-    doc.save(OUT)
-    print(OUT)
+    output.parent.mkdir(parents=True, exist_ok=True)
+    doc.save(output)
+    print(output)
 
 
 if __name__ == "__main__":
-    build()
+    parser = argparse.ArgumentParser(description="Build W5 DOCX artifacts.")
+    parser.add_argument("--source", type=Path, default=DEFAULT_SRC)
+    parser.add_argument("--output", type=Path, default=DEFAULT_OUT)
+    args = parser.parse_args()
+    build(args.source, args.output)

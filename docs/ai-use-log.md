@@ -2,7 +2,7 @@
 
 **Owner:** Zixuan Liang
 **Course:** CISC 699 — Applied Project in Computer Information Sciences (Summer 2026)
-**Last updated:** 2026-06-09
+**Last updated:** 2026-06-17
 
 ## 1. Purpose and policy
 
@@ -94,6 +94,9 @@ The block is intentionally short (2–3 lines) so the document remains readable;
 | 35 | `docs/05-implementation-sprint-i/implementation-sprint-i-check-in.md` | Codex (GPT-5, Codex desktop app) | W5 Canvas-facing check-in narrative with setup, evidence, risks, and forward plan | "Draft the Implementation Sprint I check-in package from actual repo changes and command outputs" | AI-drafted, student-revised | Student should revise into personal voice and confirm Canvas submission contents |
 | 36 | `docs/05-implementation-sprint-i/smoke-output.txt`, `test-output.txt`, `benchmark-smoke-output.txt` | Local shell commands advised by Codex | Captured command evidence for smoke execution, unit tests, and benchmark seed | "Run make smoke, make test, and benchmark smoke; save exact outputs" | AI-advised, student-executed | Outputs were generated locally from committed code; student should inspect before submission |
 | 37 | `docs/05-implementation-sprint-i/Implementation-Sprint-I-Check-in.docx`, `Implementation-Sprint-I-Check-in.pdf` | `python-docx`, LibreOffice, and render QA | Canvas-ready DOCX/PDF export of the W5 check-in | "Generate DOCX/PDF from the Markdown master and visually verify rendered pages" | AI-advised, student-executed; content authorship per row 35 | Student reviews the final rendered package before Canvas upload |
+| 38 | `docs/05-implementation-sprint-i/resubmission-evidence-addendum.md`, `evidence-index.md`, `architecture-notes.md`, `known-issues-risk-log.md`, `CHANGELOG.md`, `canvas-resubmission-checklist.md` | Codex (GPT-5, Codex desktop app) | W5 evidence addendum responding to grading feedback about missing verifiable artifacts | "Map the W5 grading feedback to concrete repository evidence, add missing risk fields, and create a resubmission checklist" | AI-drafted, student-revised | Student should verify the repository URL, commit hash, tag, attachment list, and whether resubmission is allowed |
+| 39 | `docs/05-implementation-sprint-i/git-log-w5.txt`, `repository-snapshot.txt`, `smoke-output-2026-06-17.txt`, `test-output-2026-06-17.txt` | Local shell commands advised by Codex | Captured direct evidence for the W5 addendum | "Capture git log, repository file snapshot, fresh smoke output, and fresh test output" | AI-advised, student-executed | Outputs were generated locally from the repository and should be attached if resubmitting |
+| 40 | `docs/05-implementation-sprint-i/Implementation-Sprint-I-Evidence-Addendum.docx`, `Implementation-Sprint-I-Evidence-Addendum.pdf` | `python-docx`, LibreOffice, `qpdf`, and render QA | Canvas-ready evidence addendum DOCX/PDF | "Build and visually verify the revised W5 evidence addendum" | AI-advised, student-executed; content authorship per row 38 | Student reviews the final rendered addendum before Canvas upload |
 
 ### Workspace screenshots (`docs/01-launch-packet/screenshots/`)
 
@@ -126,6 +129,7 @@ The block is intentionally short (2–3 lines) so the document remains readable;
 | 2026-05-28 | Codex (GPT-5, Codex desktop app) | Record W2 proposal approval feedback and update project status markers | AI-advised, student-executed | README, W2 approval brief, and engineering log updated to reflect approval feedback and execution-risk focus |
 | 2026-05-30 | Codex (GPT-5, Codex desktop app) + local shell | Prepare W4 Design Review Package; generate diagrams; create DOCX/PDF; render pages for visual QA; update README/logs | AI-drafted, student-revised | See rows 28-32 in §4c |
 | 2026-06-09 | Codex (GPT-5, Codex desktop app) + local shell | Prepare W5 Implementation Sprint I baseline; add source/tests/Makefile/deploy notes; run smoke and unit tests; prepare check-in package | AI-drafted, student-revised | See rows 33-37 in §4d |
+| 2026-06-17 | Codex (GPT-5, Codex desktop app) + local shell | Respond to W5 grading feedback by preparing a verifiable evidence addendum, enhanced risk log, architecture notes, changelog, and fresh command-output evidence | AI-drafted, student-revised | See rows 38-40 in §4d |
 
 ## 6. Decisions that were human-only (no AI assistance)
 
@@ -174,3 +178,4 @@ The disclosure rigor introduced in W2 will be carried through to W14:
 | 2026-05-28 | Recorded W2 proposal approval feedback and execution-risk follow-up; bumped Last-updated to 2026-05-28. | W2 feedback received. |
 | 2026-05-30 | Appended §4c (W4 audit rows 28-32) and one row in §5; bumped Last-updated to 2026-05-30. | W4 design review package preparation. |
 | 2026-06-09 | Appended §4d (W5 audit rows 33-37), added the W5 operational-use row, and bumped Last-updated to 2026-06-09. | W5 implementation sprint I baseline and check-in package preparation. |
+| 2026-06-17 | Extended §4d with W5 resubmission-evidence rows 38-40 and added a W5 feedback-response operational-use row. | W5 grading feedback response and evidence addendum preparation. |
