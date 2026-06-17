@@ -1,0 +1,384 @@
+{
+  "api_trace": {
+    "duration_ms": 552.313,
+    "passed": true,
+    "request": {
+      "code": "print('api validation')",
+      "limits": {
+        "wall_seconds": 2.0
+      }
+    },
+    "response": {
+      "backend": "local",
+      "contained": true,
+      "containment_reason": "dev_subprocess_completed",
+      "duration_ms": 38.541,
+      "exit_code": 0,
+      "limits": {
+        "cpus": 1.0,
+        "memory_mb": 128,
+        "output_limit_bytes": 20000,
+        "pids": 64,
+        "tmpfs_mb": 64,
+        "wall_seconds": 2.0
+      },
+      "status": "ok",
+      "stderr": "",
+      "stdout": "api validation\n"
+    },
+    "status_code": 200,
+    "url": "http://127.0.0.1:50779/execute"
+  },
+  "captured_at": "2026-06-17T23:55:12.898310+00:00",
+  "include_docker": false,
+  "records": [
+    {
+      "backend": "local",
+      "case": "hello_stdout",
+      "expectation": {
+        "expect_status": "ok",
+        "expect_stdout": "hello validation\n"
+      },
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 58.681,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "hello validation\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "deterministic_arithmetic",
+      "expectation": {
+        "expect_status": "ok",
+        "expect_stdout": "285\n"
+      },
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 37.838,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "285\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "stderr_and_exit_code",
+      "expectation": {
+        "expect_exit_code": 3,
+        "expect_status": "error",
+        "expect_stderr": "warn\n"
+      },
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 34.277,
+        "exit_code": 3,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "error",
+        "stderr": "warn\n",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "local",
+      "case": "timeout_control",
+      "expectation": {
+        "expect_status": "timeout"
+      },
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "wall_timeout",
+        "duration_ms": 206.334,
+        "exit_code": null,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 0.2
+        },
+        "status": "timeout",
+        "stderr": "",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "local",
+      "case": "hello_stdout",
+      "expectation": {
+        "expect_status": "ok",
+        "expect_stdout": "hello validation\n"
+      },
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 52.995,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "hello validation\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "deterministic_arithmetic",
+      "expectation": {
+        "expect_status": "ok",
+        "expect_stdout": "285\n"
+      },
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 35.776,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "285\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "stderr_and_exit_code",
+      "expectation": {
+        "expect_exit_code": 3,
+        "expect_status": "error",
+        "expect_stderr": "warn\n"
+      },
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 36.831,
+        "exit_code": 3,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "error",
+        "stderr": "warn\n",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "local",
+      "case": "timeout_control",
+      "expectation": {
+        "expect_status": "timeout"
+      },
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "wall_timeout",
+        "duration_ms": 205.398,
+        "exit_code": null,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 0.2
+        },
+        "status": "timeout",
+        "stderr": "",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "local",
+      "case": "hello_stdout",
+      "expectation": {
+        "expect_status": "ok",
+        "expect_stdout": "hello validation\n"
+      },
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 34.501,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "hello validation\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "deterministic_arithmetic",
+      "expectation": {
+        "expect_status": "ok",
+        "expect_stdout": "285\n"
+      },
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 42.118,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "285\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "stderr_and_exit_code",
+      "expectation": {
+        "expect_exit_code": 3,
+        "expect_status": "error",
+        "expect_stderr": "warn\n"
+      },
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 48.602,
+        "exit_code": 3,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "error",
+        "stderr": "warn\n",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "local",
+      "case": "timeout_control",
+      "expectation": {
+        "expect_status": "timeout"
+      },
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "wall_timeout",
+        "duration_ms": 205.128,
+        "exit_code": null,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 0.2
+        },
+        "status": "timeout",
+        "stderr": "",
+        "stdout": ""
+      }
+    }
+  ],
+  "summary": {
+    "all_passed": true,
+    "api_trace_passed": true,
+    "by_backend": {
+      "local": {
+        "failed": 0,
+        "passed": 12,
+        "total": 12
+      }
+    },
+    "total_records": 12
+  }
+}

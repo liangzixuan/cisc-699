@@ -29,7 +29,7 @@ COLORS = {
 }
 
 
-def set_document_style(doc: Document) -> None:
+def set_document_style(doc: Document, footer_label: str = "SafeExec W5 Check-in") -> None:
     section = doc.sections[0]
     section.top_margin = Inches(1)
     section.bottom_margin = Inches(1)
@@ -59,7 +59,7 @@ def set_document_style(doc: Document) -> None:
 
     footer = section.footer.paragraphs[0]
     footer.alignment = WD_ALIGN_PARAGRAPH.RIGHT
-    run = footer.add_run("SafeExec W5 Check-in")
+    run = footer.add_run(footer_label)
     run.font.size = Pt(9)
     run.font.color.rgb = RGBColor(100, 100, 100)
 
@@ -158,9 +158,13 @@ def add_code_block(doc: Document, code: list[str]) -> None:
     run.font.size = Pt(8.5)
 
 
-def build(source: Path = DEFAULT_SRC, output: Path = DEFAULT_OUT) -> None:
+def build(
+    source: Path = DEFAULT_SRC,
+    output: Path = DEFAULT_OUT,
+    footer_label: str = "SafeExec W5 Check-in",
+) -> None:
     doc = Document()
-    set_document_style(doc)
+    set_document_style(doc, footer_label)
     lines = source.read_text(encoding="utf-8").splitlines()
     i = 0
     in_code = False
@@ -243,5 +247,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Build W5 DOCX artifacts.")
     parser.add_argument("--source", type=Path, default=DEFAULT_SRC)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUT)
+    parser.add_argument("--footer-label", default="SafeExec W5 Check-in")
     args = parser.parse_args()
-    build(args.source, args.output)
+    build(args.source, args.output, args.footer_label)

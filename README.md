@@ -71,6 +71,23 @@ The W5 deliverables required by the Implementation Sprint I Check-in assignment 
 
 This sprint establishes the first runnable baseline: `src/safeexec/` now contains request/result models, a backend interface, a development local-subprocess backend, Docker/gVisor command construction, a CLI, and a JSON `POST /execute` API shell. The local backend is explicitly a development smoke-test shim, not a security boundary; Docker hardening execution on the Ubuntu droplet remains the W6 target. After grading feedback on the original upload, an evidence addendum was prepared on 2026-06-17 with the repository URL, commit `3475ccf`, tag `w5-baseline`, setup files, direct smoke/test outputs, architecture notes, enhanced known-issues log, changelog, engineering log, and AI-use log.
 
+## W6 Hard Stop 3: Early Implementation Validation Package
+
+The W6 deliverables required by the Early Implementation Validation Package assignment live under `docs/06-hard-stop-3/`. Canvas submission target: 2026-06-22 23:59.
+
+| Deliverable | File |
+|---|---|
+| **Canvas submission (.docx)** | [`Early-Implementation-Validation-Package.docx`](docs/06-hard-stop-3/Early-Implementation-Validation-Package.docx) |
+| **Canvas submission (.pdf)** | [`Early-Implementation-Validation-Package.pdf`](docs/06-hard-stop-3/Early-Implementation-Validation-Package.pdf) |
+| Editable Markdown master | [`early-implementation-validation-package.md`](docs/06-hard-stop-3/early-implementation-validation-package.md) |
+| Local evidence | [`evidence/`](docs/06-hard-stop-3/evidence/) |
+| Target-host first run evidence | [`evidence-target/`](docs/06-hard-stop-3/evidence-target/) |
+| Target-host clean rerun evidence | [`evidence-target-rerun/`](docs/06-hard-stop-3/evidence-target-rerun/) |
+| W6 risk/issue log | [`known-issues-risk-log.md`](docs/06-hard-stop-3/known-issues-risk-log.md) |
+| Canvas checklist | [`canvas-submission-checklist.md`](docs/06-hard-stop-3/canvas-submission-checklist.md) |
+
+This package validates that SafeExec is technically alive beyond scaffold: local service/API validation passed, target-host unit tests passed, and the Ubuntu droplet clean rerun passed local 12/12, Docker 6/6, gVisor 6/6, and API trace. The first target-host Docker run exposed a reproducibility defect: the timed run included the first `python:3.11-slim` image pull and hit the wall-time limit. The rerun after image caching passed and the image digest is recorded.
+
 ## W1 launch packet
 
 The W1 deliverables required by the [launch packet assignment](01%20Project%20Launch%20Packet.pdf) live under `docs/01-launch-packet/`:
@@ -99,7 +116,8 @@ AI-use disclosure for everything above: [`docs/ai-use-log.md`](docs/ai-use-log.m
 | Literature and requirements brief (W3) | 2026-05-23 → 2026-05-31 | **Prepared 2026-05-25**, pending Canvas submission |
 | Design review package (W4) | 2026-05-30 → 2026-06-07 | **Prepared 2026-05-30**, pending Canvas submission |
 | Implementation sprint I check-in (W5) | 2026-06-06 → 2026-06-15 | **Baseline implemented 2026-06-09**, DOCX/PDF package prepared |
-| Implementation sprints II-IV (W6–W8) | 2026-06-13 → 2026-07-03 | Pending |
+| Hard Stop 3 early implementation validation (W6) | 2026-06-13 → 2026-06-22 | **Validated 2026-06-17**, Docker/gVisor target-host rerun passed |
+| Implementation sprints III-IV (W7–W8) | 2026-06-20 → 2026-07-03 | Pending |
 | Midpoint demo (W7) | 2026-06-26 | Pending |
 | Hardening & report (W9–W11) | 2026-07-11 → 2026-07-31 | Pending |
 | Revision & defense (W12–W14) | 2026-08-01 → 2026-08-14 | Pending |
@@ -119,6 +137,7 @@ Detailed milestone map: [`CLAUDE.md`](CLAUDE.md) and [`docs/01-launch-packet/pro
 │   ├── 03-lit-req-brief/     W3 literature synthesis, requirements, use cases
 │   ├── 04-design-review-package/ W4 design review package
 │   ├── 05-implementation-sprint-i/ W5 implementation check-in package
+│   ├── 06-hard-stop-3/       W6 early implementation validation package
 │   ├── design/               W3–W4 architecture, threat model, eval plan
 │   ├── reports/              Midpoint & final technical report
 │   └── ai-use-log.md         Running AI-use disclosure (graded appendix source)

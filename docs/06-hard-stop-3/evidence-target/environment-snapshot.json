@@ -1,0 +1,114 @@
+{
+  "captured_at": "2026-06-17T23:46:35.711414+00:00",
+  "platform": {
+    "machine": "x86_64",
+    "platform": "Linux-5.15.0-179-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]",
+    "python_executable": "/usr/bin/python3",
+    "release": "5.15.0-179-generic",
+    "system": "Linux"
+  },
+  "repository": {
+    "branch": {
+      "available": true,
+      "command": [
+        "git",
+        "branch",
+        "--show-current"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "main"
+    },
+    "docker_path": "/usr/bin/docker",
+    "head": {
+      "available": true,
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "674fa58f5a21b35a7121fdfcf990725a761cce23"
+    },
+    "latest_commits": {
+      "available": true,
+      "command": [
+        "git",
+        "log",
+        "--oneline",
+        "--decorate",
+        "--max-count=8"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "674fa58 (HEAD -> main, origin/main, origin/HEAD) Add W6 validation harness\ne501323 Add W5 evidence addendum\n3475ccf (tag: w5-baseline) Add W5 implementation sprint baseline\nb5b2702 Add W4 design review package\na9d9e76 Record W2 proposal feedback\n075bcc3 Record W3 advisor decisions\n38da239 w2\n38affc3 w2"
+    },
+    "runsc_path": "/usr/bin/runsc",
+    "status": {
+      "available": true,
+      "command": [
+        "git",
+        "status",
+        "--short",
+        "--branch"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "## main...origin/main"
+    }
+  },
+  "tools": {
+    "docker_client": {
+      "available": true,
+      "command": [
+        "docker",
+        "version"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "Client: Docker Engine - Community\n Version:           29.5.0\n API version:       1.54\n Go version:        go1.26.3\n Git commit:        98f1464\n Built:             Thu May 14 14:40:28 2026\n OS/Arch:           linux/amd64\n Context:           default\n\nServer: Docker Engine - Community\n Engine:\n  Version:          29.5.0\n  API version:      1.54 (minimum version 1.40)\n  Go version:       go1.26.3\n  Git commit:       ff8d90a\n  Built:            Thu May 14 14:40:28 2026\n  OS/Arch:          linux/amd64\n  Experimental:     false\n containerd:\n  Version:          v2.2.3\n  GitCommit:        77c84241c7cbdd9b4eca2591793e3d4f4317c590\n runc:\n  Version:          1.3.5\n  GitCommit:        v1.3.5-0-g488fc13e\n docker-init:\n  Version:          0.19.0\n  GitCommit:        de40ad0"
+    },
+    "docker_info": {
+      "available": true,
+      "command": [
+        "docker",
+        "info"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "Client: Docker Engine - Community\n Version:    29.5.0\n Context:    default\n Debug Mode: false\n Plugins:\n  buildx: Docker Buildx (Docker Inc.)\n    Version:  v0.34.0\n    Path:     /usr/libexec/docker/cli-plugins/docker-buildx\n  compose: Docker Compose (Docker Inc.)\n    Version:  v5.1.3\n    Path:     /usr/libexec/docker/cli-plugins/docker-compose\n\nServer:\n Containers: 1\n  Running: 0\n  Paused: 0\n  Stopped: 1\n Images: 1\n Server Version: 29.5.0\n Storage Driver: overlayfs\n  driver-type: io.containerd.snapshotter.v1\n Logging Driver: json-file\n Cgroup Driver: systemd\n Cgroup Version: 2\n Plugins:\n  Volume: local\n  Network: bridge host ipvlan macvlan null overlay\n  Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog\n CDI spec directories:\n  /etc/cdi\n  /var/run/cdi\n Swarm: inactive\n Runtimes: io.containerd.runc.v2 runc runsc\n Default Runtime: runc\n Init Binary: docker-init\n containerd version: 77c84241c7cbdd9b4eca2591793e3d4f4317c590\n runc version: v1.3.5-0-g488fc13e\n init version: de40ad0\n Security Options:\n  apparmor\n  seccomp\n   Profile: builtin\n  cgroupns\n Kernel Version: 5.15.0-179-generic\n Operating System: Ubuntu 22.04.5 LTS\n OSType: linux\n Architecture: x86_64\n CPUs: 2\n Total Memory: 3.82GiB\n Name: safeexec-dev\n ID: 4ce22314-9008-4bc2-8ad3-c33fde91bed4\n Docker Root Dir: /var/lib/docker\n Debug Mode: false\n Experimental: false\n Insecure Registries:\n  ::1/128\n  127.0.0.0/8\n Live Restore Enabled: false\n Firewall Backend: iptables\n  EnableUserlandProxy: true\n  UserlandProxyPath: /usr/bin/docker-proxy"
+    },
+    "git": {
+      "available": true,
+      "command": [
+        "git",
+        "--version"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "git version 2.34.1"
+    },
+    "make": {
+      "available": false,
+      "command": [
+        "make",
+        "--version"
+      ],
+      "returncode": null,
+      "stderr": "[Errno 2] No such file or directory: 'make'",
+      "stdout": ""
+    },
+    "runsc": {
+      "available": true,
+      "command": [
+        "runsc",
+        "--version"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "runsc version release-20260511.0\nspec: 1.2.1"
+    }
+  }
+}

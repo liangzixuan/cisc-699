@@ -1,0 +1,22 @@
+SafeExec validation workflow
+captured_at: 2026-06-17T23:55:12.898310+00:00
+include_docker: False
+all_passed: True
+
+Backend summary:
+- local: 12/12 passed
+- api_trace: passed
+
+Case details:
+- local::hello_stdout#1 PASS status=ok exit=0 reason=dev_subprocess_completed
+- local::deterministic_arithmetic#1 PASS status=ok exit=0 reason=dev_subprocess_completed
+- local::stderr_and_exit_code#1 PASS status=error exit=3 reason=dev_subprocess_completed
+- local::timeout_control#1 PASS status=timeout exit=None reason=wall_timeout
+- local::hello_stdout#2 PASS status=ok exit=0 reason=dev_subprocess_completed
+- local::deterministic_arithmetic#2 PASS status=ok exit=0 reason=dev_subprocess_completed
+- local::stderr_and_exit_code#2 PASS status=error exit=3 reason=dev_subprocess_completed
+- local::timeout_control#2 PASS status=timeout exit=None reason=wall_timeout
+- local::hello_stdout#3 PASS status=ok exit=0 reason=dev_subprocess_completed
+- local::deterministic_arithmetic#3 PASS status=ok exit=0 reason=dev_subprocess_completed
+- local::stderr_and_exit_code#3 PASS status=error exit=3 reason=dev_subprocess_completed
+- local::timeout_control#3 PASS status=timeout exit=None reason=wall_timeout

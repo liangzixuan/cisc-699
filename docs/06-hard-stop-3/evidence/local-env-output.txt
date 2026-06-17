@@ -1,0 +1,3 @@
+PYTHONPATH=src python3 scripts/capture_environment.py --output-dir docs/06-hard-stop-3/evidence
+docs/06-hard-stop-3/evidence/environment-snapshot.json
+docs/06-hard-stop-3/evidence/environment-snapshot.txt

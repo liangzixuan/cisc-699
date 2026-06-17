@@ -98,6 +98,14 @@ The block is intentionally short (2–3 lines) so the document remains readable;
 | 39 | `docs/05-implementation-sprint-i/git-log-w5.txt`, `repository-snapshot.txt`, `smoke-output-2026-06-17.txt`, `test-output-2026-06-17.txt` | Local shell commands advised by Codex | Captured direct evidence for the W5 addendum | "Capture git log, repository file snapshot, fresh smoke output, and fresh test output" | AI-advised, student-executed | Outputs were generated locally from the repository and should be attached if resubmitting |
 | 40 | `docs/05-implementation-sprint-i/Implementation-Sprint-I-Evidence-Addendum.docx`, `Implementation-Sprint-I-Evidence-Addendum.pdf` | `python-docx`, LibreOffice, `qpdf`, and render QA | Canvas-ready evidence addendum DOCX/PDF | "Build and visually verify the revised W5 evidence addendum" | AI-advised, student-executed; content authorship per row 38 | Student reviews the final rendered addendum before Canvas upload |
 
+## 4e. Audit table — W6 early implementation validation package (2026-06-17)
+
+| # | Artifact | Tool | Purpose | Prompts / tasks (summary) | Authorship label | Extent of student modification |
+|---|---|---|---|---|---|---|
+| 41 | `scripts/capture_environment.py`, `scripts/run_validation_workflow.py`, `tests/functional/test_validation_workflow.py`, `Makefile` W6 targets | Codex (GPT-5, Codex desktop app) | Repeatable W6 environment and validation harness for local/API/Docker/gVisor evidence | "Create scripts that capture environment state, run repeatable validation, emit JSON/text evidence, and test the API trace helper" | AI-drafted, student-revised | Student should review validation cases and confirm they match project claims before using in the report |
+| 42 | `docs/06-hard-stop-3/evidence*/` | Local shell and SSH commands advised by Codex | Captured local and Ubuntu droplet validation evidence, including first-run Docker image-pull timeout and clean rerun | "Run local validation, clone W6 harness on target host, run Docker/gVisor validation, download evidence outputs" | AI-advised, student-executed | Outputs are generated from actual command runs; student should inspect before submission |
+| 43 | `docs/06-hard-stop-3/early-implementation-validation-package.md`, `known-issues-risk-log.md`, `canvas-submission-checklist.md`, DOCX/PDF package | Codex (GPT-5, Codex desktop app) | Hard Stop 3 technical memo and Canvas package | "Interpret W6 validation results honestly, map evidence to assignment rubric, and generate DOCX/PDF with render QA" | AI-drafted, student-revised | Student should verify final wording, limitations, and attachment list before Canvas upload |
+
 ### Workspace screenshots (`docs/01-launch-packet/screenshots/`)
 
 | # | File | Authorship label | Notes |
@@ -130,6 +138,7 @@ The block is intentionally short (2–3 lines) so the document remains readable;
 | 2026-05-30 | Codex (GPT-5, Codex desktop app) + local shell | Prepare W4 Design Review Package; generate diagrams; create DOCX/PDF; render pages for visual QA; update README/logs | AI-drafted, student-revised | See rows 28-32 in §4c |
 | 2026-06-09 | Codex (GPT-5, Codex desktop app) + local shell | Prepare W5 Implementation Sprint I baseline; add source/tests/Makefile/deploy notes; run smoke and unit tests; prepare check-in package | AI-drafted, student-revised | See rows 33-37 in §4d |
 | 2026-06-17 | Codex (GPT-5, Codex desktop app) + local shell | Respond to W5 grading feedback by preparing a verifiable evidence addendum, enhanced risk log, architecture notes, changelog, and fresh command-output evidence | AI-drafted, student-revised | See rows 38-40 in §4d |
+| 2026-06-17 | Codex (GPT-5, Codex desktop app) + local shell + SSH to student-controlled DigitalOcean droplet | Prepare W6 Hard Stop 3 validation package; run local and target-host validation; generate DOCX/PDF; visually QA rendered pages | AI-drafted, student-revised | See rows 41-43 in §4e |
 
 ## 6. Decisions that were human-only (no AI assistance)
 
@@ -179,3 +188,4 @@ The disclosure rigor introduced in W2 will be carried through to W14:
 | 2026-05-30 | Appended §4c (W4 audit rows 28-32) and one row in §5; bumped Last-updated to 2026-05-30. | W4 design review package preparation. |
 | 2026-06-09 | Appended §4d (W5 audit rows 33-37), added the W5 operational-use row, and bumped Last-updated to 2026-06-09. | W5 implementation sprint I baseline and check-in package preparation. |
 | 2026-06-17 | Extended §4d with W5 resubmission-evidence rows 38-40 and added a W5 feedback-response operational-use row. | W5 grading feedback response and evidence addendum preparation. |
+| 2026-06-17 | Added §4e with W6 validation harness, evidence, package-generation, and operational-use rows 41-43. | Hard Stop 3 early implementation validation package preparation. |

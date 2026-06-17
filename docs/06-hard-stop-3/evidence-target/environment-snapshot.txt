@@ -1,0 +1,13 @@
+SafeExec environment snapshot
+captured_at: 2026-06-17T23:46:35.711414+00:00
+system: Linux 5.15.0-179-generic x86_64
+python: 3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]
+git_head: 674fa58f5a21b35a7121fdfcf990725a761cce23
+branch: main
+
+Tool status:
+- git: ok git version 2.34.1
+- docker_client: ok Client: Docker Engine - Community
+- docker_info: ok Client: Docker Engine - Community
+- runsc: ok runsc version release-20260511.0
+- make: not-ready [Errno 2] No such file or directory: 'make'

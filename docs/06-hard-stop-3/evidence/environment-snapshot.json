@@ -1,0 +1,114 @@
+{
+  "captured_at": "2026-06-17T23:55:11.299120+00:00",
+  "platform": {
+    "machine": "arm64",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "python_executable": "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "release": "25.5.0",
+    "system": "Darwin"
+  },
+  "repository": {
+    "branch": {
+      "available": true,
+      "command": [
+        "git",
+        "branch",
+        "--show-current"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "main"
+    },
+    "docker_path": "/opt/homebrew/bin/docker",
+    "head": {
+      "available": true,
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "674fa58f5a21b35a7121fdfcf990725a761cce23"
+    },
+    "latest_commits": {
+      "available": true,
+      "command": [
+        "git",
+        "log",
+        "--oneline",
+        "--decorate",
+        "--max-count=8"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "674fa58 (HEAD -> main, origin/main) Add W6 validation harness\ne501323 Add W5 evidence addendum\n3475ccf (tag: w5-baseline) Add W5 implementation sprint baseline\nb5b2702 Add W4 design review package\na9d9e76 Record W2 proposal feedback\n075bcc3 Record W3 advisor decisions\n38da239 w2\n38affc3 w2"
+    },
+    "runsc_path": null,
+    "status": {
+      "available": true,
+      "command": [
+        "git",
+        "status",
+        "--short",
+        "--branch"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "## main...origin/main\n M README.md\n M docs/ai-use-log.md\n M engineering-log.md\n M scripts/build_implementation_sprint_i.py\n?? docs/06-hard-stop-3/"
+    }
+  },
+  "tools": {
+    "docker_client": {
+      "available": true,
+      "command": [
+        "docker",
+        "version"
+      ],
+      "returncode": 1,
+      "stderr": "Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?",
+      "stdout": "Client: Docker Engine - Community\n Version:           27.5.1\n API version:       1.47\n Go version:        go1.23.5\n Git commit:        9f9e405801\n Built:             Tue Jan 21 23:46:20 2025\n OS/Arch:           darwin/arm64\n Context:           default"
+    },
+    "docker_info": {
+      "available": true,
+      "command": [
+        "docker",
+        "info"
+      ],
+      "returncode": 1,
+      "stderr": "WARNING: Plugin \"/Users/ericliang/.docker/cli-plugins/docker-buildx\" is not valid: failed to fetch metadata: fork/exec /Users/ericliang/.docker/cli-plugins/docker-buildx: no such file or directory\nWARNING: Plugin \"/Users/ericliang/.docker/cli-plugins/docker-compose\" is not valid: failed to fetch metadata: fork/exec /Users/ericliang/.docker/cli-plugins/docker-compose: no such file or directory\nERROR: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?\nerrors pretty printing info",
+      "stdout": "Client: Docker Engine - Community\n Version:    27.5.1\n Context:    default\n Debug Mode: false\n Plugins:\n\nServer:"
+    },
+    "git": {
+      "available": true,
+      "command": [
+        "git",
+        "--version"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "git version 2.50.1 (Apple Git-155)"
+    },
+    "make": {
+      "available": true,
+      "command": [
+        "make",
+        "--version"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "GNU Make 3.81\nCopyright (C) 2006  Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.\nThere is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE.\n\nThis program built for i386-apple-darwin11.3.0"
+    },
+    "runsc": {
+      "available": false,
+      "command": [
+        "runsc",
+        "--version"
+      ],
+      "returncode": null,
+      "stderr": "[Errno 2] No such file or directory: 'runsc'",
+      "stdout": ""
+    }
+  }
+}

@@ -1,0 +1,4 @@
+cloned_commit=674fa58f5a21b35a7121fdfcf990725a761cce23
+branch=main
+## main...origin/main
+?? docs/06-hard-stop-3/

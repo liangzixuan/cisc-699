@@ -1,0 +1,724 @@
+{
+  "api_trace": {
+    "duration_ms": 522.697,
+    "passed": true,
+    "request": {
+      "code": "print('api validation')",
+      "limits": {
+        "wall_seconds": 2.0
+      }
+    },
+    "response": {
+      "backend": "local",
+      "contained": true,
+      "containment_reason": "dev_subprocess_completed",
+      "duration_ms": 19.494,
+      "exit_code": 0,
+      "limits": {
+        "cpus": 1.0,
+        "memory_mb": 128,
+        "output_limit_bytes": 20000,
+        "pids": 64,
+        "tmpfs_mb": 64,
+        "wall_seconds": 2.0
+      },
+      "status": "ok",
+      "stderr": "",
+      "stdout": "api validation\n"
+    },
+    "status_code": 200,
+    "url": "http://127.0.0.1:44697/execute"
+  },
+  "captured_at": "2026-06-17T23:47:49.222471+00:00",
+  "include_docker": true,
+  "records": [
+    {
+      "backend": "local",
+      "case": "hello_stdout",
+      "expectation": {
+        "expect_status": "ok",
+        "expect_stdout": "hello validation\n"
+      },
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 21.648,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "hello validation\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "deterministic_arithmetic",
+      "expectation": {
+        "expect_status": "ok",
+        "expect_stdout": "285\n"
+      },
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 26.203,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "285\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "stderr_and_exit_code",
+      "expectation": {
+        "expect_exit_code": 3,
+        "expect_status": "error",
+        "expect_stderr": "warn\n"
+      },
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 20.496,
+        "exit_code": 3,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "error",
+        "stderr": "warn\n",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "local",
+      "case": "timeout_control",
+      "expectation": {
+        "expect_status": "timeout"
+      },
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "wall_timeout",
+        "duration_ms": 201.546,
+        "exit_code": null,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 0.2
+        },
+        "status": "timeout",
+        "stderr": "",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "local",
+      "case": "hello_stdout",
+      "expectation": {
+        "expect_status": "ok",
+        "expect_stdout": "hello validation\n"
+      },
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 20.064,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "hello validation\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "deterministic_arithmetic",
+      "expectation": {
+        "expect_status": "ok",
+        "expect_stdout": "285\n"
+      },
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 20.635,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "285\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "stderr_and_exit_code",
+      "expectation": {
+        "expect_exit_code": 3,
+        "expect_status": "error",
+        "expect_stderr": "warn\n"
+      },
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 20.877,
+        "exit_code": 3,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "error",
+        "stderr": "warn\n",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "local",
+      "case": "timeout_control",
+      "expectation": {
+        "expect_status": "timeout"
+      },
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "wall_timeout",
+        "duration_ms": 201.836,
+        "exit_code": null,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 0.2
+        },
+        "status": "timeout",
+        "stderr": "",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "local",
+      "case": "hello_stdout",
+      "expectation": {
+        "expect_status": "ok",
+        "expect_stdout": "hello validation\n"
+      },
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 20.658,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "hello validation\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "deterministic_arithmetic",
+      "expectation": {
+        "expect_status": "ok",
+        "expect_stdout": "285\n"
+      },
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 20.131,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "285\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "stderr_and_exit_code",
+      "expectation": {
+        "expect_exit_code": 3,
+        "expect_status": "error",
+        "expect_stderr": "warn\n"
+      },
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 20.203,
+        "exit_code": 3,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "error",
+        "stderr": "warn\n",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "local",
+      "case": "timeout_control",
+      "expectation": {
+        "expect_status": "timeout"
+      },
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "wall_timeout",
+        "duration_ms": 201.65,
+        "exit_code": null,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 0.2
+        },
+        "status": "timeout",
+        "stderr": "",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "container_hello",
+      "expectation": {
+        "expect_status": "ok"
+      },
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 386.066,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "uid=65534\npython=3.11.15\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "network_disabled_probe",
+      "expectation": {
+        "expect_not_stdout": "network-open\n",
+        "expect_status": "ok"
+      },
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 316.924,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 3.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "OSError\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "container_hello",
+      "expectation": {
+        "expect_status": "ok"
+      },
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 329.352,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "uid=65534\npython=3.11.15\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "network_disabled_probe",
+      "expectation": {
+        "expect_not_stdout": "network-open\n",
+        "expect_status": "ok"
+      },
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 298.986,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 3.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "OSError\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "container_hello",
+      "expectation": {
+        "expect_status": "ok"
+      },
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 303.179,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "uid=65534\npython=3.11.15\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "network_disabled_probe",
+      "expectation": {
+        "expect_not_stdout": "network-open\n",
+        "expect_status": "ok"
+      },
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 287.379,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 3.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "OSError\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "container_hello",
+      "expectation": {
+        "expect_status": "ok"
+      },
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 507.419,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "uid=65534\npython=3.11.15\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "network_disabled_probe",
+      "expectation": {
+        "expect_not_stdout": "network-open\n",
+        "expect_status": "ok"
+      },
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 490.749,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 3.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "OSError\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "container_hello",
+      "expectation": {
+        "expect_status": "ok"
+      },
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 496.47,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "uid=65534\npython=3.11.15\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "network_disabled_probe",
+      "expectation": {
+        "expect_not_stdout": "network-open\n",
+        "expect_status": "ok"
+      },
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 512.048,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 3.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "OSError\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "container_hello",
+      "expectation": {
+        "expect_status": "ok"
+      },
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 488.621,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "uid=65534\npython=3.11.15\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "network_disabled_probe",
+      "expectation": {
+        "expect_not_stdout": "network-open\n",
+        "expect_status": "ok"
+      },
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 474.483,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 3.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "OSError\n"
+      }
+    }
+  ],
+  "summary": {
+    "all_passed": true,
+    "api_trace_passed": true,
+    "by_backend": {
+      "docker": {
+        "failed": 0,
+        "passed": 6,
+        "total": 6
+      },
+      "gvisor": {
+        "failed": 0,
+        "passed": 6,
+        "total": 6
+      },
+      "local": {
+        "failed": 0,
+        "passed": 12,
+        "total": 12
+      }
+    },
+    "total_records": 24
+  }
+}
