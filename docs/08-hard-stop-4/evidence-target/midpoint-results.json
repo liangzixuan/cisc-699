@@ -1,0 +1,3867 @@
+{
+  "all_passed": false,
+  "captured_at": "2026-06-19T18:24:37.050033+00:00",
+  "case_count": 10,
+  "record_count": 130,
+  "records": [
+    {
+      "backend": "local",
+      "case": "functional_hello",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 22.409,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 22.363,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "midpoint evidence\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "functional_hello",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 298.959,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 298.916,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "midpoint evidence\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "functional_hello",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 434.3,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 434.255,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "midpoint evidence\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "deterministic_arithmetic",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 27.336,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 27.294,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "16008\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "deterministic_arithmetic",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 269.775,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 269.726,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "16008\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "deterministic_arithmetic",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 472.745,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 472.696,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "16008\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "json_serialization",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 34.851,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 34.784,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "{\"status\": \"ok\", \"values\": [0, 3, 6, 9]}\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "json_serialization",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 347.789,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 347.738,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "{\"status\": \"ok\", \"values\": [0, 3, 6, 9]}\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "json_serialization",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 539.348,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 539.309,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "{\"status\": \"ok\", \"values\": [0, 3, 6, 9]}\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "stderr_exit_code",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 21.581,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 21.535,
+        "exit_code": 7,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "error",
+        "stderr": "controlled failure\n",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "stderr_exit_code",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 234.174,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 234.128,
+        "exit_code": 7,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "error",
+        "stderr": "controlled failure\n",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "stderr_exit_code",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 417.201,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 417.154,
+        "exit_code": 7,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "error",
+        "stderr": "controlled failure\n",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "local",
+      "case": "wall_timeout",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 402.07,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "wall_timeout",
+        "duration_ms": 401.843,
+        "exit_code": null,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 0.4
+        },
+        "status": "timeout",
+        "stderr": "",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "wall_timeout",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 1403.565,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "wall_timeout",
+        "duration_ms": 1403.51,
+        "exit_code": null,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 0.4
+        },
+        "status": "timeout",
+        "stderr": "",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "wall_timeout",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 1403.438,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "wall_timeout",
+        "duration_ms": 1403.382,
+        "exit_code": null,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 0.4
+        },
+        "status": "timeout",
+        "stderr": "",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "local",
+      "case": "output_truncation",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 29.286,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 29.185,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 2048,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n...[truncated]"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "output_truncation",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 441.336,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 441.276,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 2048,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n...[truncated]"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "output_truncation",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 793.229,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 793.154,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 2048,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n...[truncated]"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "container_nonroot_uid",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 456.229,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 456.183,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "65534\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "container_nonroot_uid",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 718.838,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 718.8,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "65534\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "container_readonly_root",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 462.141,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 462.099,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "OSError\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "container_readonly_root",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 735.706,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 735.664,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "PermissionError\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "tmpfs_write_allowed",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 729.561,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 729.521,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "ok\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "tmpfs_write_allowed",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 1115.987,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1115.933,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "ok\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "network_disabled_probe",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 554.501,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 554.46,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.5
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "OSError\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "network_disabled_probe",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 927.725,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 927.686,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.5
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "OSError\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "functional_hello",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 30.012,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 29.971,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "midpoint evidence\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "functional_hello",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 429.476,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 429.425,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "midpoint evidence\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "functional_hello",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 672.897,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 672.855,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "midpoint evidence\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "deterministic_arithmetic",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 33.263,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 33.223,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "16008\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "deterministic_arithmetic",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 463.144,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 463.103,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "16008\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "deterministic_arithmetic",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 706.188,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 706.138,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "16008\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "json_serialization",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 42.496,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 42.442,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "{\"status\": \"ok\", \"values\": [0, 3, 6, 9]}\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "json_serialization",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 637.71,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 637.65,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "{\"status\": \"ok\", \"values\": [0, 3, 6, 9]}\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "json_serialization",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 1174.922,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1174.865,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "{\"status\": \"ok\", \"values\": [0, 3, 6, 9]}\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "stderr_exit_code",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 47.418,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 47.374,
+        "exit_code": 7,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "error",
+        "stderr": "controlled failure\n",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "stderr_exit_code",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 469.854,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 469.8,
+        "exit_code": 7,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "error",
+        "stderr": "controlled failure\n",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "stderr_exit_code",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 701.677,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 701.633,
+        "exit_code": 7,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "error",
+        "stderr": "controlled failure\n",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "local",
+      "case": "wall_timeout",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 402.183,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "wall_timeout",
+        "duration_ms": 401.938,
+        "exit_code": null,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 0.4
+        },
+        "status": "timeout",
+        "stderr": "",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "wall_timeout",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 1403.304,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "wall_timeout",
+        "duration_ms": 1403.25,
+        "exit_code": null,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 0.4
+        },
+        "status": "timeout",
+        "stderr": "",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "wall_timeout",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 1403.496,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "wall_timeout",
+        "duration_ms": 1403.433,
+        "exit_code": null,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 0.4
+        },
+        "status": "timeout",
+        "stderr": "",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "local",
+      "case": "output_truncation",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 36.939,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 36.824,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 2048,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n...[truncated]"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "output_truncation",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 737.635,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 737.556,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 2048,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n...[truncated]"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "output_truncation",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 1055.741,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1055.679,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 2048,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n...[truncated]"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "container_nonroot_uid",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 672.217,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 672.165,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "65534\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "container_nonroot_uid",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 1018.308,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1018.261,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "65534\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "container_readonly_root",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 638.454,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 638.413,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "OSError\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "container_readonly_root",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 983.302,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 983.252,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "PermissionError\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "tmpfs_write_allowed",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 794.624,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 794.58,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "ok\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "tmpfs_write_allowed",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 1665.62,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1665.579,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "ok\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "network_disabled_probe",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 794.927,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 794.885,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.5
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "OSError\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "network_disabled_probe",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 1162.856,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1162.814,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.5
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "OSError\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "functional_hello",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 21.045,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 21.002,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "midpoint evidence\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "functional_hello",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 598.346,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 598.26,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "midpoint evidence\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "functional_hello",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 862.314,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 862.261,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "midpoint evidence\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "deterministic_arithmetic",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 25.746,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 25.704,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "16008\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "deterministic_arithmetic",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 503.474,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 503.412,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "16008\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "deterministic_arithmetic",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 927.404,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 927.342,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "16008\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "json_serialization",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 30.661,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 30.616,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "{\"status\": \"ok\", \"values\": [0, 3, 6, 9]}\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "json_serialization",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 770.768,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 770.719,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "{\"status\": \"ok\", \"values\": [0, 3, 6, 9]}\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "json_serialization",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 1444.246,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1444.206,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "{\"status\": \"ok\", \"values\": [0, 3, 6, 9]}\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "stderr_exit_code",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 33.865,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 33.812,
+        "exit_code": 7,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "error",
+        "stderr": "controlled failure\n",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "stderr_exit_code",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 509.258,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 509.206,
+        "exit_code": 7,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "error",
+        "stderr": "controlled failure\n",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "stderr_exit_code",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 992.47,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 992.427,
+        "exit_code": 7,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "error",
+        "stderr": "controlled failure\n",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "local",
+      "case": "wall_timeout",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 402.002,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "wall_timeout",
+        "duration_ms": 401.741,
+        "exit_code": null,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 0.4
+        },
+        "status": "timeout",
+        "stderr": "",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "wall_timeout",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 1402.097,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "wall_timeout",
+        "duration_ms": 1402.04,
+        "exit_code": null,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 0.4
+        },
+        "status": "timeout",
+        "stderr": "",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "wall_timeout",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 1403.28,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "wall_timeout",
+        "duration_ms": 1403.22,
+        "exit_code": null,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 0.4
+        },
+        "status": "timeout",
+        "stderr": "",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "local",
+      "case": "output_truncation",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 30.494,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 30.397,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 2048,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n...[truncated]"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "output_truncation",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 682.3,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 682.234,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 2048,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n...[truncated]"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "output_truncation",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 1188.222,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1188.161,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 2048,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n...[truncated]"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "container_nonroot_uid",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 660.66,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 660.62,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "65534\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "container_nonroot_uid",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 1522.641,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1522.599,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "65534\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "container_readonly_root",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 772.664,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 772.613,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "OSError\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "container_readonly_root",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 1278.223,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1278.169,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "PermissionError\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "tmpfs_write_allowed",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 1119.39,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1119.347,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "ok\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "tmpfs_write_allowed",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 1941.199,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1941.147,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "ok\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "network_disabled_probe",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 1040.453,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1040.402,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.5
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "OSError\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "network_disabled_probe",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 1263.798,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1263.758,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.5
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "OSError\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "functional_hello",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 32.935,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 32.895,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "midpoint evidence\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "functional_hello",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 696.499,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 696.459,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "midpoint evidence\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "functional_hello",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 1311.397,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1311.355,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "midpoint evidence\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "deterministic_arithmetic",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 27.862,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 27.814,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "16008\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "deterministic_arithmetic",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 705.779,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 705.726,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "16008\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "deterministic_arithmetic",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 1343.608,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1343.565,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "16008\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "json_serialization",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 32.91,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 32.872,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "{\"status\": \"ok\", \"values\": [0, 3, 6, 9]}\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "json_serialization",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 1142.002,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1141.963,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "{\"status\": \"ok\", \"values\": [0, 3, 6, 9]}\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "json_serialization",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 2053.921,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 2053.873,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "{\"status\": \"ok\", \"values\": [0, 3, 6, 9]}\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "stderr_exit_code",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 35.664,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 35.606,
+        "exit_code": 7,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "error",
+        "stderr": "controlled failure\n",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "stderr_exit_code",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 695.613,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 695.57,
+        "exit_code": 7,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "error",
+        "stderr": "controlled failure\n",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "stderr_exit_code",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 1404.052,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1404.001,
+        "exit_code": 7,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "error",
+        "stderr": "controlled failure\n",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "local",
+      "case": "wall_timeout",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 402.26,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "wall_timeout",
+        "duration_ms": 401.992,
+        "exit_code": null,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 0.4
+        },
+        "status": "timeout",
+        "stderr": "",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "wall_timeout",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 1403.89,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "wall_timeout",
+        "duration_ms": 1403.823,
+        "exit_code": null,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 0.4
+        },
+        "status": "timeout",
+        "stderr": "",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "wall_timeout",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 1403.767,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "wall_timeout",
+        "duration_ms": 1403.707,
+        "exit_code": null,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 0.4
+        },
+        "status": "timeout",
+        "stderr": "",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "local",
+      "case": "output_truncation",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 38.428,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 38.341,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 2048,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n...[truncated]"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "output_truncation",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 1038.196,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1038.105,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 2048,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n...[truncated]"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "output_truncation",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 1777.948,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1777.884,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 2048,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n...[truncated]"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "container_nonroot_uid",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 1014.967,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1014.93,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "65534\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "container_nonroot_uid",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 1682.155,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1682.076,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "65534\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "container_readonly_root",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 933.629,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 933.577,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "OSError\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "container_readonly_root",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 1487.827,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1487.784,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "PermissionError\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "tmpfs_write_allowed",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 1536.652,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1536.602,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "ok\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "tmpfs_write_allowed",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 2842.69,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 2842.64,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "ok\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "network_disabled_probe",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 1270.148,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1270.089,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.5
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "OSError\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "network_disabled_probe",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 3167.274,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 3167.215,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.5
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "OSError\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "functional_hello",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 28.725,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 28.667,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "midpoint evidence\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "functional_hello",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 1021.402,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1021.336,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "midpoint evidence\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "functional_hello",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 1218.204,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1218.162,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "midpoint evidence\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "deterministic_arithmetic",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 30.322,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 30.271,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "16008\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "deterministic_arithmetic",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 926.247,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 926.205,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "16008\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "deterministic_arithmetic",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 1532.234,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1532.192,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "16008\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "json_serialization",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 37.433,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 37.388,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "{\"status\": \"ok\", \"values\": [0, 3, 6, 9]}\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "json_serialization",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 1157.224,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1157.181,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "{\"status\": \"ok\", \"values\": [0, 3, 6, 9]}\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "json_serialization",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 2352.514,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 2352.462,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "{\"status\": \"ok\", \"values\": [0, 3, 6, 9]}\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "stderr_exit_code",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 32.781,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 32.726,
+        "exit_code": 7,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "error",
+        "stderr": "controlled failure\n",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "stderr_exit_code",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 833.922,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 833.886,
+        "exit_code": 7,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "error",
+        "stderr": "controlled failure\n",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "stderr_exit_code",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 1728.568,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1728.517,
+        "exit_code": 7,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "error",
+        "stderr": "controlled failure\n",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "local",
+      "case": "wall_timeout",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 402.067,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "wall_timeout",
+        "duration_ms": 401.683,
+        "exit_code": null,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 0.4
+        },
+        "status": "timeout",
+        "stderr": "",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "wall_timeout",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 1402.612,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "wall_timeout",
+        "duration_ms": 1402.552,
+        "exit_code": null,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 0.4
+        },
+        "status": "timeout",
+        "stderr": "",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "wall_timeout",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 1403.494,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "wall_timeout",
+        "duration_ms": 1403.43,
+        "exit_code": null,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 0.4
+        },
+        "status": "timeout",
+        "stderr": "",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "local",
+      "case": "output_truncation",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 23.713,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 23.652,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 2048,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n...[truncated]"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "output_truncation",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 985.418,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 985.348,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 2048,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n...[truncated]"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "output_truncation",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 1720.064,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1719.994,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 2048,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n...[truncated]"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "container_nonroot_uid",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 1515.852,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1515.812,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "65534\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "container_nonroot_uid",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 1825.504,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1825.464,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "65534\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "container_readonly_root",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 1053.637,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1053.59,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "OSError\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "container_readonly_root",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 1690.257,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1690.191,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "PermissionError\n"
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "tmpfs_write_allowed",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 1826.188,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1826.136,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "ok\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "tmpfs_write_allowed",
+      "category": "containment",
+      "failures": [
+        "status expected 'ok', got 'timeout'",
+        "stdout expected 'ok\\n', got ''"
+      ],
+      "harness_duration_ms": 3005.19,
+      "iteration": 5,
+      "passed": false,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "wall_timeout",
+        "duration_ms": 3005.129,
+        "exit_code": null,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "timeout",
+        "stderr": "",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "docker",
+      "case": "network_disabled_probe",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 1985.406,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "hardened-docker",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 1985.366,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.5
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "OSError\n"
+      }
+    },
+    {
+      "backend": "gvisor",
+      "case": "network_disabled_probe",
+      "category": "containment",
+      "failures": [],
+      "harness_duration_ms": 2213.41,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "gvisor",
+        "contained": true,
+        "containment_reason": "container_completed",
+        "duration_ms": 2213.346,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.5
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "OSError\n"
+      }
+    }
+  ],
+  "repeat": 5,
+  "requested_backends": [
+    "local",
+    "docker",
+    "gvisor"
+  ],
+  "summary": [
+    {
+      "backend": "docker",
+      "case": "container_nonroot_uid",
+      "category": "containment",
+      "max_ms": 1515.812,
+      "mean_ms": 863.942,
+      "median_ms": 672.165,
+      "min_ms": 456.183,
+      "p95_ms": 1415.636,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    },
+    {
+      "backend": "docker",
+      "case": "container_readonly_root",
+      "category": "containment",
+      "max_ms": 1053.59,
+      "mean_ms": 772.058,
+      "median_ms": 772.613,
+      "min_ms": 462.099,
+      "p95_ms": 1029.587,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    },
+    {
+      "backend": "docker",
+      "case": "network_disabled_probe",
+      "category": "containment",
+      "max_ms": 1985.366,
+      "mean_ms": 1129.04,
+      "median_ms": 1040.402,
+      "min_ms": 554.46,
+      "p95_ms": 1842.311,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    },
+    {
+      "backend": "docker",
+      "case": "tmpfs_write_allowed",
+      "category": "containment",
+      "max_ms": 1826.136,
+      "mean_ms": 1201.237,
+      "median_ms": 1119.347,
+      "min_ms": 729.521,
+      "p95_ms": 1768.229,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    },
+    {
+      "backend": "docker",
+      "case": "deterministic_arithmetic",
+      "category": "correctness",
+      "max_ms": 926.205,
+      "mean_ms": 573.634,
+      "median_ms": 503.412,
+      "min_ms": 269.726,
+      "p95_ms": 882.109,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    },
+    {
+      "backend": "docker",
+      "case": "functional_hello",
+      "category": "correctness",
+      "max_ms": 1021.336,
+      "mean_ms": 608.879,
+      "median_ms": 598.26,
+      "min_ms": 298.916,
+      "p95_ms": 956.361,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    },
+    {
+      "backend": "docker",
+      "case": "json_serialization",
+      "category": "correctness",
+      "max_ms": 1157.181,
+      "mean_ms": 811.05,
+      "median_ms": 770.719,
+      "min_ms": 347.738,
+      "p95_ms": 1154.137,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    },
+    {
+      "backend": "docker",
+      "case": "stderr_exit_code",
+      "category": "correctness",
+      "max_ms": 833.886,
+      "mean_ms": 548.518,
+      "median_ms": 509.206,
+      "min_ms": 234.128,
+      "p95_ms": 806.223,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    },
+    {
+      "backend": "docker",
+      "case": "output_truncation",
+      "category": "failure-control",
+      "max_ms": 1038.105,
+      "mean_ms": 776.904,
+      "median_ms": 737.556,
+      "min_ms": 441.276,
+      "p95_ms": 1027.554,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    },
+    {
+      "backend": "docker",
+      "case": "wall_timeout",
+      "category": "failure-control",
+      "max_ms": 1403.823,
+      "mean_ms": 1403.035,
+      "median_ms": 1403.25,
+      "min_ms": 1402.04,
+      "p95_ms": 1403.76,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    },
+    {
+      "backend": "gvisor",
+      "case": "container_nonroot_uid",
+      "category": "containment",
+      "max_ms": 1825.464,
+      "mean_ms": 1353.44,
+      "median_ms": 1522.599,
+      "min_ms": 718.8,
+      "p95_ms": 1796.786,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    },
+    {
+      "backend": "gvisor",
+      "case": "container_readonly_root",
+      "category": "containment",
+      "max_ms": 1690.191,
+      "mean_ms": 1235.012,
+      "median_ms": 1278.169,
+      "min_ms": 735.664,
+      "p95_ms": 1649.71,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    },
+    {
+      "backend": "gvisor",
+      "case": "network_disabled_probe",
+      "category": "containment",
+      "max_ms": 3167.215,
+      "mean_ms": 1746.964,
+      "median_ms": 1263.758,
+      "min_ms": 927.686,
+      "p95_ms": 2976.441,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    },
+    {
+      "backend": "gvisor",
+      "case": "tmpfs_write_allowed",
+      "category": "containment",
+      "max_ms": 3005.129,
+      "mean_ms": 2114.086,
+      "median_ms": 1941.147,
+      "min_ms": 1115.933,
+      "p95_ms": 2972.631,
+      "pass_rate": 0.8,
+      "passed": 4,
+      "total": 5
+    },
+    {
+      "backend": "gvisor",
+      "case": "deterministic_arithmetic",
+      "category": "correctness",
+      "max_ms": 1532.192,
+      "mean_ms": 996.387,
+      "median_ms": 927.342,
+      "min_ms": 472.696,
+      "p95_ms": 1494.467,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    },
+    {
+      "backend": "gvisor",
+      "case": "functional_hello",
+      "category": "correctness",
+      "max_ms": 1311.355,
+      "mean_ms": 899.778,
+      "median_ms": 862.261,
+      "min_ms": 434.255,
+      "p95_ms": 1292.716,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    },
+    {
+      "backend": "gvisor",
+      "case": "json_serialization",
+      "category": "correctness",
+      "max_ms": 2352.462,
+      "mean_ms": 1512.943,
+      "median_ms": 1444.206,
+      "min_ms": 539.309,
+      "p95_ms": 2292.744,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    },
+    {
+      "backend": "gvisor",
+      "case": "stderr_exit_code",
+      "category": "correctness",
+      "max_ms": 1728.517,
+      "mean_ms": 1048.746,
+      "median_ms": 992.427,
+      "min_ms": 417.154,
+      "p95_ms": 1663.614,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    },
+    {
+      "backend": "gvisor",
+      "case": "output_truncation",
+      "category": "failure-control",
+      "max_ms": 1777.884,
+      "mean_ms": 1306.974,
+      "median_ms": 1188.161,
+      "min_ms": 793.154,
+      "p95_ms": 1766.306,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    },
+    {
+      "backend": "gvisor",
+      "case": "wall_timeout",
+      "category": "failure-control",
+      "max_ms": 1403.707,
+      "mean_ms": 1403.434,
+      "median_ms": 1403.43,
+      "min_ms": 1403.22,
+      "p95_ms": 1403.652,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    },
+    {
+      "backend": "local",
+      "case": "deterministic_arithmetic",
+      "category": "correctness",
+      "max_ms": 33.223,
+      "mean_ms": 28.861,
+      "median_ms": 27.814,
+      "min_ms": 25.704,
+      "p95_ms": 32.633,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    },
+    {
+      "backend": "local",
+      "case": "functional_hello",
+      "category": "correctness",
+      "max_ms": 32.895,
+      "mean_ms": 26.98,
+      "median_ms": 28.667,
+      "min_ms": 21.002,
+      "p95_ms": 32.31,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    },
+    {
+      "backend": "local",
+      "case": "json_serialization",
+      "category": "correctness",
+      "max_ms": 42.442,
+      "mean_ms": 35.62,
+      "median_ms": 34.784,
+      "min_ms": 30.616,
+      "p95_ms": 41.431,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    },
+    {
+      "backend": "local",
+      "case": "stderr_exit_code",
+      "category": "correctness",
+      "max_ms": 47.374,
+      "mean_ms": 34.211,
+      "median_ms": 33.812,
+      "min_ms": 21.535,
+      "p95_ms": 45.02,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    },
+    {
+      "backend": "local",
+      "case": "output_truncation",
+      "category": "failure-control",
+      "max_ms": 38.341,
+      "mean_ms": 31.68,
+      "median_ms": 30.397,
+      "min_ms": 23.652,
+      "p95_ms": 38.038,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    },
+    {
+      "backend": "local",
+      "case": "wall_timeout",
+      "category": "failure-control",
+      "max_ms": 401.992,
+      "mean_ms": 401.839,
+      "median_ms": 401.843,
+      "min_ms": 401.683,
+      "p95_ms": 401.981,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    }
+  ]
+}

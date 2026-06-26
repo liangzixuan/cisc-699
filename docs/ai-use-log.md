@@ -2,7 +2,7 @@
 
 **Owner:** Zixuan Liang
 **Course:** CISC 699 — Applied Project in Computer Information Sciences (Summer 2026)
-**Last updated:** 2026-06-17
+**Last updated:** 2026-06-19
 
 ## 1. Purpose and policy
 
@@ -106,6 +106,14 @@ The block is intentionally short (2–3 lines) so the document remains readable;
 | 42 | `docs/06-hard-stop-3/evidence*/` | Local shell and SSH commands advised by Codex | Captured local and Ubuntu droplet validation evidence, including first-run Docker image-pull timeout and clean rerun | "Run local validation, clone W6 harness on target host, run Docker/gVisor validation, download evidence outputs" | AI-advised, student-executed | Outputs are generated from actual command runs; student should inspect before submission |
 | 43 | `docs/06-hard-stop-3/early-implementation-validation-package.md`, `known-issues-risk-log.md`, `canvas-submission-checklist.md`, DOCX/PDF package | Codex (GPT-5, Codex desktop app) | Hard Stop 3 technical memo and Canvas package | "Interpret W6 validation results honestly, map evidence to assignment rubric, and generate DOCX/PDF with render QA" | AI-drafted, student-revised | Student should verify final wording, limitations, and attachment list before Canvas upload |
 
+## 4f. Audit table — W8 midpoint technical evidence review (2026-06-19)
+
+| # | Artifact | Tool | Purpose | Prompts / tasks (summary) | Authorship label | Extent of student modification |
+|---|---|---|---|---|---|---|
+| 44 | `scripts/run_midpoint_evidence.py`, `Makefile` W8 targets | Codex (GPT-5, Codex desktop app) | Repeatable midpoint benchmark/evidence harness for correctness, failure-control, and containment-oriented cases across local, Docker, and gVisor backends | "Create a W8 evidence runner that emits JSON/CSV/Markdown summaries and maps evidence to the midpoint technical-review rubric" | AI-drafted, student-revised | Student should review case definitions, expected outputs, and timeout assumptions before using results in final report |
+| 45 | `docs/08-hard-stop-4/evidence-local/`, `docs/08-hard-stop-4/evidence-target/` | Local shell and SSH commands advised by Codex | Captured local unit-test/environment evidence and target-host Docker/gVisor midpoint benchmark evidence | "Run local benchmark, copy benchmark script to the Ubuntu target host, run Docker/gVisor benchmark, capture metadata, and download evidence" | AI-advised, student-executed | Outputs were generated from actual command runs; student should inspect raw JSON/CSV and the gVisor timeout before submission |
+| 46 | `docs/08-hard-stop-4/midpoint-technical-evidence-review.md`, `known-issues-risk-log.md`, `canvas-submission-checklist.md`, DOCX/PDF package | Codex (GPT-5, Codex desktop app) | Hard Stop 4 technical memo, updated risk log, Canvas checklist, and rendered submission artifacts | "Interpret midpoint evidence, link results to success criteria, document weaknesses, and generate DOCX/PDF with visual QA" | AI-drafted, student-revised | Student should verify final wording, attachment list, and the decision to frame the gVisor timeout as a limitation rather than hide it |
+
 ### Workspace screenshots (`docs/01-launch-packet/screenshots/`)
 
 | # | File | Authorship label | Notes |
@@ -139,6 +147,7 @@ The block is intentionally short (2–3 lines) so the document remains readable;
 | 2026-06-09 | Codex (GPT-5, Codex desktop app) + local shell | Prepare W5 Implementation Sprint I baseline; add source/tests/Makefile/deploy notes; run smoke and unit tests; prepare check-in package | AI-drafted, student-revised | See rows 33-37 in §4d |
 | 2026-06-17 | Codex (GPT-5, Codex desktop app) + local shell | Respond to W5 grading feedback by preparing a verifiable evidence addendum, enhanced risk log, architecture notes, changelog, and fresh command-output evidence | AI-drafted, student-revised | See rows 38-40 in §4d |
 | 2026-06-17 | Codex (GPT-5, Codex desktop app) + local shell + SSH to student-controlled DigitalOcean droplet | Prepare W6 Hard Stop 3 validation package; run local and target-host validation; generate DOCX/PDF; visually QA rendered pages | AI-drafted, student-revised | See rows 41-43 in §4e |
+| 2026-06-19 | Codex (GPT-5, Codex desktop app) + local shell + SSH to student-controlled DigitalOcean droplet | Prepare W8 Midpoint Technical Evidence Review; add benchmark harness; run local and target-host evidence; generate DOCX/PDF; visually QA rendered pages | AI-drafted, student-revised | See rows 44-46 in §4f |
 
 ## 6. Decisions that were human-only (no AI assistance)
 
@@ -189,3 +198,4 @@ The disclosure rigor introduced in W2 will be carried through to W14:
 | 2026-06-09 | Appended §4d (W5 audit rows 33-37), added the W5 operational-use row, and bumped Last-updated to 2026-06-09. | W5 implementation sprint I baseline and check-in package preparation. |
 | 2026-06-17 | Extended §4d with W5 resubmission-evidence rows 38-40 and added a W5 feedback-response operational-use row. | W5 grading feedback response and evidence addendum preparation. |
 | 2026-06-17 | Added §4e with W6 validation harness, evidence, package-generation, and operational-use rows 41-43. | Hard Stop 3 early implementation validation package preparation. |
+| 2026-06-19 | Added §4f with W8 midpoint benchmark harness, evidence, package-generation, and operational-use rows 44-46; bumped Last-updated. | Hard Stop 4 midpoint technical evidence review preparation. |

@@ -1,0 +1,15 @@
+SafeExec midpoint technical evidence
+captured_at: 2026-06-19T18:21:57.395411+00:00
+repeat: 5
+requested_backends: local
+record_count: 30
+all_passed: True
+
+| Backend | Category | Case | Pass | Mean ms | Median ms | P95 ms | Range ms |
+|---|---|---|---:|---:|---:|---:|---:|
+| local | correctness | deterministic_arithmetic | 5/5 | 46.789 | 43.680 | 62.312 | 38.229-66.787 |
+| local | correctness | functional_hello | 5/5 | 52.071 | 46.999 | 66.700 | 36.036-67.402 |
+| local | correctness | json_serialization | 5/5 | 48.173 | 46.955 | 58.587 | 40.911-61.432 |
+| local | correctness | stderr_exit_code | 5/5 | 43.864 | 41.909 | 51.635 | 38.018-53.381 |
+| local | failure-control | output_truncation | 5/5 | 47.720 | 47.809 | 51.818 | 43.228-52.318 |
+| local | failure-control | wall_timeout | 5/5 | 405.260 | 403.812 | 409.642 | 403.730-411.084 |

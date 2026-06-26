@@ -1,0 +1,2 @@
+IMAGE              ID             DISK USAGE   CONTENT SIZE   EXTRA
+python:3.11-slim   ae52c5bef62a        188MB         47.7MB   U    

@@ -88,6 +88,22 @@ The W6 deliverables required by the Early Implementation Validation Package assi
 
 This package validates that SafeExec is technically alive beyond scaffold: local service/API validation passed, target-host unit tests passed, and the Ubuntu droplet clean rerun passed local 12/12, Docker 6/6, gVisor 6/6, and API trace. The first target-host Docker run exposed a reproducibility defect: the timed run included the first `python:3.11-slim` image pull and hit the wall-time limit. The rerun after image caching passed and the image digest is recorded.
 
+## W8 Hard Stop 4: Midpoint Technical Evidence Review
+
+The W8 deliverables required by the Midpoint Technical Evidence Review assignment live under `docs/08-hard-stop-4/`. Canvas submission target: 2026-07-05 23:59.
+
+| Deliverable | File |
+|---|---|
+| **Canvas submission (.docx)** | [`Midpoint-Technical-Evidence-Review.docx`](docs/08-hard-stop-4/Midpoint-Technical-Evidence-Review.docx) |
+| **Canvas submission (.pdf)** | [`Midpoint-Technical-Evidence-Review.pdf`](docs/08-hard-stop-4/Midpoint-Technical-Evidence-Review.pdf) |
+| Editable Markdown master | [`midpoint-technical-evidence-review.md`](docs/08-hard-stop-4/midpoint-technical-evidence-review.md) |
+| Local evidence | [`evidence-local/`](docs/08-hard-stop-4/evidence-local/) |
+| Target-host Docker/gVisor evidence | [`evidence-target/`](docs/08-hard-stop-4/evidence-target/) |
+| W8 risk/issue log | [`known-issues-risk-log.md`](docs/08-hard-stop-4/known-issues-risk-log.md) |
+| Canvas checklist | [`canvas-submission-checklist.md`](docs/08-hard-stop-4/canvas-submission-checklist.md) |
+
+This package moves from demonstration to evidence. The midpoint benchmark generated 130 target-host records across local, hardened Docker, and gVisor backends. Local passed 30/30, Docker passed 50/50, and gVisor passed 49/50. The single gVisor failure was a `tmpfs_write_allowed` timeout at the current wall-time boundary, recorded as a timing-methodology risk for the next sprint.
+
 ## W1 launch packet
 
 The W1 deliverables required by the [launch packet assignment](01%20Project%20Launch%20Packet.pdf) live under `docs/01-launch-packet/`:
@@ -117,7 +133,7 @@ AI-use disclosure for everything above: [`docs/ai-use-log.md`](docs/ai-use-log.m
 | Design review package (W4) | 2026-05-30 → 2026-06-07 | **Prepared 2026-05-30**, pending Canvas submission |
 | Implementation sprint I check-in (W5) | 2026-06-06 → 2026-06-15 | **Baseline implemented 2026-06-09**, DOCX/PDF package prepared |
 | Hard Stop 3 early implementation validation (W6) | 2026-06-13 → 2026-06-22 | **Validated 2026-06-17**, Docker/gVisor target-host rerun passed |
-| Implementation sprints III-IV (W7–W8) | 2026-06-20 → 2026-07-03 | Pending |
+| Implementation sprints III-IV (W7–W8) | 2026-06-20 → 2026-07-03 | **Midpoint evidence package prepared 2026-06-19** |
 | Midpoint demo (W7) | 2026-06-26 | Pending |
 | Hardening & report (W9–W11) | 2026-07-11 → 2026-07-31 | Pending |
 | Revision & defense (W12–W14) | 2026-08-01 → 2026-08-14 | Pending |
@@ -166,6 +182,12 @@ make api
 
 # optional: wrap the API shell in Docker for service inspection
 docker compose -f deploy/docker-compose.yaml up
+
+# run the W8 midpoint evidence harness locally
+make midpoint
+
+# run the W8 midpoint evidence harness on the Linux Docker/gVisor target host
+make midpoint-target
 ```
 
 Manual CLI example:

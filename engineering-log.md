@@ -151,3 +151,15 @@ spec: 1.2.1
 - **[DEFECT]** First target-host Docker validation run failed 1 case because `python:3.11-slim` was not yet cached and image pull time exceeded the validation timeout. Rerun passed after the image was present. W7 mitigation: pre-pull image and record digest before timed validation.
 - **[RISK]** Droplet lacks `make` and host Python is 3.10.12, below the project target. Backend execution uses `python:3.11-slim`, but W7 should install host Python 3.11 or run the harness in a dev container.
 - **W6 package prepared.** Created `docs/06-hard-stop-3/` with DOCX/PDF technical memo, local evidence, target-host first-run evidence, target-host rerun evidence, risk log, and Canvas checklist.
+
+---
+
+## Week 7 (2026-06-19 → 2026-06-25)
+
+### 2026-06-19
+- **W8 midpoint technical evidence package prepared early.** Added `scripts/run_midpoint_evidence.py`, a repeatable evidence harness that runs correctness, failure-control, and containment-oriented cases across local, Docker, and gVisor backends and emits raw JSON, CSV, and Markdown summaries.
+- **Target-host midpoint benchmark completed.** Ubuntu target host produced 130 records: local 30/30 passed, hardened Docker 50/50 passed, and gVisor 49/50 passed. Evidence is stored under `docs/08-hard-stop-4/evidence-target/`.
+- **[DEFECT]** One gVisor `tmpfs_write_allowed` execution timed out under the current wall-time budget. This appears to be a timing-methodology issue caused by gVisor startup/tail latency rather than a functional tmpfs failure, because four other gVisor tmpfs runs passed and Docker passed all five.
+- **[DECISION]** Do not hide the gVisor timeout. Treat it as the key midpoint finding: the project needs cold-start vs warm-start separation and clearer wall-time budgeting before making performance claims.
+- **[RISK]** The W8 case set is still a controlled 10-case batch rather than the final HumanEval/MBPP plus adversarial taxonomy. W9-W10 must expand coverage and record corpus provenance.
+- **[AI]** Used Codex (GPT-5, Codex desktop app) to draft the W8 benchmark harness, run local and target-host evidence commands, interpret the generated results, write the technical memo/risk log/checklist, and prepare DOCX/PDF artifacts. Student must review the final package and decide whether to upload the optional evidence ZIP.

@@ -1,0 +1,7 @@
+backend,category,case,passed,total,pass_rate,mean_ms,median_ms,p95_ms,min_ms,max_ms
+local,correctness,deterministic_arithmetic,5,5,1.0,46.789,43.68,62.312,38.229,66.787
+local,correctness,functional_hello,5,5,1.0,52.071,46.999,66.7,36.036,67.402
+local,correctness,json_serialization,5,5,1.0,48.173,46.955,58.587,40.911,61.432
+local,correctness,stderr_exit_code,5,5,1.0,43.864,41.909,51.635,38.018,53.381
+local,failure-control,output_truncation,5,5,1.0,47.72,47.809,51.818,43.228,52.318
+local,failure-control,wall_timeout,5,5,1.0,405.26,403.812,409.642,403.73,411.084

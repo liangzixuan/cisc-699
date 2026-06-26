@@ -1,0 +1,902 @@
+{
+  "all_passed": true,
+  "captured_at": "2026-06-19T18:21:57.395411+00:00",
+  "case_count": 6,
+  "record_count": 30,
+  "records": [
+    {
+      "backend": "local",
+      "case": "functional_hello",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 67.447,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 67.402,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "midpoint evidence\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "deterministic_arithmetic",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 40.891,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 40.839,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "16008\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "json_serialization",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 44.389,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 44.357,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "{\"status\": \"ok\", \"values\": [0, 3, 6, 9]}\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "stderr_exit_code",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 53.657,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 53.381,
+        "exit_code": 7,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "error",
+        "stderr": "controlled failure\n",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "local",
+      "case": "wall_timeout",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 412.12,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "wall_timeout",
+        "duration_ms": 411.084,
+        "exit_code": null,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 0.4
+        },
+        "status": "timeout",
+        "stderr": "",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "local",
+      "case": "output_truncation",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 45.491,
+      "iteration": 1,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 45.427,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 2048,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n...[truncated]"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "functional_hello",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 36.08,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 36.036,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "midpoint evidence\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "deterministic_arithmetic",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 66.875,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 66.787,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "16008\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "json_serialization",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 61.485,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 61.432,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "{\"status\": \"ok\", \"values\": [0, 3, 6, 9]}\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "stderr_exit_code",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 38.055,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 38.018,
+        "exit_code": 7,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "error",
+        "stderr": "controlled failure\n",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "local",
+      "case": "wall_timeout",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 404.849,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "wall_timeout",
+        "duration_ms": 403.875,
+        "exit_code": null,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 0.4
+        },
+        "status": "timeout",
+        "stderr": "",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "local",
+      "case": "output_truncation",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 52.389,
+      "iteration": 2,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 52.318,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 2048,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n...[truncated]"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "functional_hello",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 63.926,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 63.893,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "midpoint evidence\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "deterministic_arithmetic",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 38.258,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 38.229,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "16008\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "json_serialization",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 40.945,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 40.911,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "{\"status\": \"ok\", \"values\": [0, 3, 6, 9]}\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "stderr_exit_code",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 41.939,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 41.909,
+        "exit_code": 7,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "error",
+        "stderr": "controlled failure\n",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "local",
+      "case": "wall_timeout",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 404.616,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "wall_timeout",
+        "duration_ms": 403.73,
+        "exit_code": null,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 0.4
+        },
+        "status": "timeout",
+        "stderr": "",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "local",
+      "case": "output_truncation",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 49.867,
+      "iteration": 3,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 49.816,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 2048,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n...[truncated]"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "functional_hello",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 47.028,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 46.999,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "midpoint evidence\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "deterministic_arithmetic",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 43.715,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 43.68,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "16008\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "json_serialization",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 46.993,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 46.955,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "{\"status\": \"ok\", \"values\": [0, 3, 6, 9]}\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "stderr_exit_code",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 41.388,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 41.361,
+        "exit_code": 7,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "error",
+        "stderr": "controlled failure\n",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "local",
+      "case": "wall_timeout",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 404.729,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "wall_timeout",
+        "duration_ms": 403.812,
+        "exit_code": null,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 0.4
+        },
+        "status": "timeout",
+        "stderr": "",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "local",
+      "case": "output_truncation",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 47.863,
+      "iteration": 4,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 47.809,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 2048,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n...[truncated]"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "functional_hello",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 46.064,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 46.025,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "midpoint evidence\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "deterministic_arithmetic",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 44.451,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 44.412,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "16008\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "json_serialization",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 47.241,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 47.208,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "{\"status\": \"ok\", \"values\": [0, 3, 6, 9]}\n"
+      }
+    },
+    {
+      "backend": "local",
+      "case": "stderr_exit_code",
+      "category": "correctness",
+      "failures": [],
+      "harness_duration_ms": 44.688,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 44.652,
+        "exit_code": 7,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "error",
+        "stderr": "controlled failure\n",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "local",
+      "case": "wall_timeout",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 404.623,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "wall_timeout",
+        "duration_ms": 403.798,
+        "exit_code": null,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 20000,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 0.4
+        },
+        "status": "timeout",
+        "stderr": "",
+        "stdout": ""
+      }
+    },
+    {
+      "backend": "local",
+      "case": "output_truncation",
+      "category": "failure-control",
+      "failures": [],
+      "harness_duration_ms": 43.277,
+      "iteration": 5,
+      "passed": true,
+      "result": {
+        "backend": "local",
+        "contained": true,
+        "containment_reason": "dev_subprocess_completed",
+        "duration_ms": 43.228,
+        "exit_code": 0,
+        "limits": {
+          "cpus": 1.0,
+          "memory_mb": 128,
+          "output_limit_bytes": 2048,
+          "pids": 64,
+          "tmpfs_mb": 64,
+          "wall_seconds": 2.0
+        },
+        "status": "ok",
+        "stderr": "",
+        "stdout": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n...[truncated]"
+      }
+    }
+  ],
+  "repeat": 5,
+  "requested_backends": [
+    "local"
+  ],
+  "summary": [
+    {
+      "backend": "local",
+      "case": "deterministic_arithmetic",
+      "category": "correctness",
+      "max_ms": 66.787,
+      "mean_ms": 46.789,
+      "median_ms": 43.68,
+      "min_ms": 38.229,
+      "p95_ms": 62.312,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    },
+    {
+      "backend": "local",
+      "case": "functional_hello",
+      "category": "correctness",
+      "max_ms": 67.402,
+      "mean_ms": 52.071,
+      "median_ms": 46.999,
+      "min_ms": 36.036,
+      "p95_ms": 66.7,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    },
+    {
+      "backend": "local",
+      "case": "json_serialization",
+      "category": "correctness",
+      "max_ms": 61.432,
+      "mean_ms": 48.173,
+      "median_ms": 46.955,
+      "min_ms": 40.911,
+      "p95_ms": 58.587,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    },
+    {
+      "backend": "local",
+      "case": "stderr_exit_code",
+      "category": "correctness",
+      "max_ms": 53.381,
+      "mean_ms": 43.864,
+      "median_ms": 41.909,
+      "min_ms": 38.018,
+      "p95_ms": 51.635,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    },
+    {
+      "backend": "local",
+      "case": "output_truncation",
+      "category": "failure-control",
+      "max_ms": 52.318,
+      "mean_ms": 47.72,
+      "median_ms": 47.809,
+      "min_ms": 43.228,
+      "p95_ms": 51.818,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    },
+    {
+      "backend": "local",
+      "case": "wall_timeout",
+      "category": "failure-control",
+      "max_ms": 411.084,
+      "mean_ms": 405.26,
+      "median_ms": 403.812,
+      "min_ms": 403.73,
+      "p95_ms": 409.642,
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5
+    }
+  ]
+}
