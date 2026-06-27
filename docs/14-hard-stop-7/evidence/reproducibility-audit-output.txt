@@ -1,0 +1,4 @@
+$ python3 scripts/audit_reproducibility.py --output-dir docs/14-hard-stop-7/evidence
+
+docs/14-hard-stop-7/evidence/reproducibility-audit.json
+docs/14-hard-stop-7/evidence/reproducibility-audit.md

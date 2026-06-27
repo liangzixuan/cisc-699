@@ -1,0 +1,8 @@
+$ make test
+
+PYTHONPATH=src python3 -m unittest discover -s tests/functional -p 'test_*.py'
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 1.344s
+
+OK

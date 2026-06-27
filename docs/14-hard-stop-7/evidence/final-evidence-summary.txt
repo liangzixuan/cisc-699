@@ -1,0 +1,16 @@
+SafeExec final evidence summary
+captured_at: 2026-06-27T04:43:25.678001+00:00
+repeat: 3
+all_passed: True
+
+Commands:
+- smoke: PASS returncode=0 transcript=smoke-output.txt
+- unit-tests: PASS returncode=0 transcript=unit-tests-output.txt
+- local-validation: PASS returncode=0 transcript=local-validation-output.txt
+- reproducibility-audit: PASS returncode=0 transcript=reproducibility-audit-output.txt
+
+Referenced prior target-host evidence:
+- w8-target-midpoint-summary.md
+- w8-target-midpoint-summary.csv
+- w8-target-runsc-version.txt
+- w10-clean-run-output.txt

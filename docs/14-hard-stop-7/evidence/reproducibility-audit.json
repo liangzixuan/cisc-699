@@ -1,0 +1,57 @@
+{
+  "all_required_paths_present": true,
+  "captured_at": "2026-06-27T04:43:25.404324+00:00",
+  "commands": {
+    "docker_version": {
+      "command": [
+        "docker",
+        "--version"
+      ],
+      "ok": true,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "Docker version 27.5.1, build 9f9e405801"
+    },
+    "git_head": {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "ok": true,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "d748147f5591d5816c08bc7490458f4ad89560e8"
+    },
+    "git_status": {
+      "command": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "ok": true,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "M Makefile\n M scripts/run_final_evidence.py\n?? docs/06-hard-stop-3/evidence-target-rerun.zip\n?? docs/06-hard-stop-3/evidence-target.zip\n?? docs/06-hard-stop-3/evidence.zip\n?? docs/14-hard-stop-7/\n?? scripts/package_final_submission.py"
+    },
+    "python_version": {
+      "ok": true,
+      "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+      "stdout": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]"
+    },
+    "runsc_version": {
+      "error": "runsc not found",
+      "ok": false
+    }
+  },
+  "dependency_policy": "standard library only",
+  "findings": [],
+  "make_targets_present": true,
+  "missing_make_targets": [],
+  "missing_readme_keywords": [],
+  "missing_required_paths": [],
+  "passed": true,
+  "pyproject_requires_python": true,
+  "readme_keywords_present": true,
+  "root": "/Users/ericliang/PycharmProjects/CISC-699"
+}

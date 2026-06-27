@@ -128,7 +128,7 @@ def main() -> int:
         encoding="utf-8",
     )
     lines = [
-        "SafeExec W12 final evidence summary",
+        "SafeExec final evidence summary",
         f"captured_at: {summary['captured_at']}",
         f"repeat: {args.repeat}",
         f"all_passed: {summary['all_passed']}",

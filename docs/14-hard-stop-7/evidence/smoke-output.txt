@@ -1,0 +1,21 @@
+$ make smoke
+
+PYTHONPATH=src python3 scripts/smoke_safeexec.py
+{
+  "backend": "local",
+  "contained": true,
+  "containment_reason": "dev_subprocess_completed",
+  "duration_ms": 37.534,
+  "exit_code": 0,
+  "limits": {
+    "cpus": 1.0,
+    "memory_mb": 128,
+    "output_limit_bytes": 2000,
+    "pids": 64,
+    "tmpfs_mb": 64,
+    "wall_seconds": 2.0
+  },
+  "status": "ok",
+  "stderr": "",
+  "stdout": "hello from safeexec sprint 1\n"
+}

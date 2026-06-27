@@ -1,0 +1,38 @@
+SafeExec midpoint technical evidence
+captured_at: 2026-06-19T18:24:37.050033+00:00
+repeat: 5
+requested_backends: local, docker, gvisor
+record_count: 130
+all_passed: False
+
+| Backend | Category | Case | Pass | Mean ms | Median ms | P95 ms | Range ms |
+|---|---|---|---:|---:|---:|---:|---:|
+| docker | containment | container_nonroot_uid | 5/5 | 863.942 | 672.165 | 1415.636 | 456.183-1515.812 |
+| docker | containment | container_readonly_root | 5/5 | 772.058 | 772.613 | 1029.587 | 462.099-1053.590 |
+| docker | containment | network_disabled_probe | 5/5 | 1129.040 | 1040.402 | 1842.311 | 554.460-1985.366 |
+| docker | containment | tmpfs_write_allowed | 5/5 | 1201.237 | 1119.347 | 1768.229 | 729.521-1826.136 |
+| docker | correctness | deterministic_arithmetic | 5/5 | 573.634 | 503.412 | 882.109 | 269.726-926.205 |
+| docker | correctness | functional_hello | 5/5 | 608.879 | 598.260 | 956.361 | 298.916-1021.336 |
+| docker | correctness | json_serialization | 5/5 | 811.050 | 770.719 | 1154.137 | 347.738-1157.181 |
+| docker | correctness | stderr_exit_code | 5/5 | 548.518 | 509.206 | 806.223 | 234.128-833.886 |
+| docker | failure-control | output_truncation | 5/5 | 776.904 | 737.556 | 1027.554 | 441.276-1038.105 |
+| docker | failure-control | wall_timeout | 5/5 | 1403.035 | 1403.250 | 1403.760 | 1402.040-1403.823 |
+| gvisor | containment | container_nonroot_uid | 5/5 | 1353.440 | 1522.599 | 1796.786 | 718.800-1825.464 |
+| gvisor | containment | container_readonly_root | 5/5 | 1235.012 | 1278.169 | 1649.710 | 735.664-1690.191 |
+| gvisor | containment | network_disabled_probe | 5/5 | 1746.964 | 1263.758 | 2976.441 | 927.686-3167.215 |
+| gvisor | containment | tmpfs_write_allowed | 4/5 | 2114.086 | 1941.147 | 2972.631 | 1115.933-3005.129 |
+| gvisor | correctness | deterministic_arithmetic | 5/5 | 996.387 | 927.342 | 1494.467 | 472.696-1532.192 |
+| gvisor | correctness | functional_hello | 5/5 | 899.778 | 862.261 | 1292.716 | 434.255-1311.355 |
+| gvisor | correctness | json_serialization | 5/5 | 1512.943 | 1444.206 | 2292.744 | 539.309-2352.462 |
+| gvisor | correctness | stderr_exit_code | 5/5 | 1048.746 | 992.427 | 1663.614 | 417.154-1728.517 |
+| gvisor | failure-control | output_truncation | 5/5 | 1306.974 | 1188.161 | 1766.306 | 793.154-1777.884 |
+| gvisor | failure-control | wall_timeout | 5/5 | 1403.434 | 1403.430 | 1403.652 | 1403.220-1403.707 |
+| local | correctness | deterministic_arithmetic | 5/5 | 28.861 | 27.814 | 32.633 | 25.704-33.223 |
+| local | correctness | functional_hello | 5/5 | 26.980 | 28.667 | 32.310 | 21.002-32.895 |
+| local | correctness | json_serialization | 5/5 | 35.620 | 34.784 | 41.431 | 30.616-42.442 |
+| local | correctness | stderr_exit_code | 5/5 | 34.211 | 33.812 | 45.020 | 21.535-47.374 |
+| local | failure-control | output_truncation | 5/5 | 31.680 | 30.397 | 38.038 | 23.652-38.341 |
+| local | failure-control | wall_timeout | 5/5 | 401.839 | 401.843 | 401.981 | 401.683-401.992 |
+
+Failures:
+- gvisor::tmpfs_write_allowed#5: status expected 'ok', got 'timeout'; stdout expected 'ok\n', got ''

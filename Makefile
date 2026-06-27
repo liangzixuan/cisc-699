@@ -1,4 +1,4 @@
-.PHONY: help smoke test api env validate validate-docker midpoint midpoint-target repro-audit package-artifact final-evidence
+.PHONY: help smoke test api env validate validate-docker midpoint midpoint-target repro-audit package-artifact final-evidence final-artifact
 
 PYTHON ?= python3
 PYTHONPATH := src
@@ -16,6 +16,7 @@ help:
 	@echo "  make repro-audit - audit reproducibility materials"
 	@echo "  make package-artifact - build reproducibility source package"
 	@echo "  make final-evidence - capture W12 final local evidence bundle"
+	@echo "  make final-artifact - build W14 final artifact ZIP"
 
 smoke:
 	PYTHONPATH=$(PYTHONPATH) $(PYTHON) scripts/smoke_safeexec.py
@@ -49,3 +50,6 @@ package-artifact:
 
 final-evidence:
 	PYTHONPATH=$(PYTHONPATH) $(PYTHON) scripts/run_final_evidence.py --output-dir docs/12-hard-stop-6/evidence --repeat 3
+
+final-artifact:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) scripts/package_final_submission.py --output docs/14-hard-stop-7/safeexec-final-artifact-package.zip

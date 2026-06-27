@@ -2,7 +2,7 @@
 
 **Owner:** Zixuan Liang
 **Course:** CISC 699 — Applied Project in Computer Information Sciences (Summer 2026)
-**Last updated:** 2026-06-26
+**Last updated:** 2026-06-27
 
 ## 1. Purpose and policy
 
@@ -130,6 +130,14 @@ The block is intentionally short (2–3 lines) so the document remains readable;
 | 51 | `docs/12-hard-stop-6/near-final-technical-report-draft.md`, `draft-report-deck-final-test-evidence.md`, `final-test-evidence-appendix.md`, risk log, checklist, README, walkthrough script | Codex (GPT-5, Codex desktop app) | Draft report, Canvas-facing synthesis, evidence appendix, final-readiness risk log, checklist, and recording script for Hard Stop 6 | "Use the W12 Canvas assignment and current repo evidence to align the report, deck, and final-test appendix around one evidence story" | AI-drafted, student-revised | Student should verify final prose, remaining-work statements, and attachment list before submission |
 | 52 | `docs/12-hard-stop-6/*.docx`, `*.pdf`, `SafeExec-Draft-Report-and-Demo-Deck.pptx`, `w12-evidence.zip` | Codex (GPT-5, Codex desktop app), python-docx builder, LibreOffice, qpdf, artifact-tool presentation library, render QA | Generated submission artifacts, deck, PDF checks, DOCX page-render QA, slide-preview QA, and zipped evidence folder | "Build and visually verify W12 DOCX/PDF documents and an editable PPTX deck; fix layout issues before delivery" | AI-advised, student-executed; content authorship per rows 50-51 | Student should open the final files and record the walkthrough before Canvas upload |
 
+## 4i. Audit table — W14 final integrated submission and presentation/demo (2026-06-27)
+
+| # | Artifact | Tool | Purpose | Prompts / tasks (summary) | Authorship label | Extent of student modification |
+|---|---|---|---|---|---|---|
+| 53 | `scripts/package_final_submission.py`, `Makefile` `final-artifact` target, `docs/14-hard-stop-7/evidence/`, `safeexec-final-artifact-package.zip`, `final-evidence.zip` | Codex (GPT-5, Codex desktop app) + local shell | Final artifact packaging, manifest generation, W14 evidence capture, and evidence archive creation | "Use the W14 Canvas assignment to build a final package that includes verifiable code, tests, logs, evidence, reproducibility docs, and manifests" | AI-drafted and AI-advised, student-executed | Outputs were generated from the local repository; student should inspect ZIP manifests and evidence files before Canvas upload |
+| 54 | `docs/14-hard-stop-7/final-technical-report.md`, `final-integrated-submission.md`, `final-test-evidence-appendix.md`, `final-release-notes.md`, `canvas-submission-checklist.md`, `final-presentation-demo-script.md`, W14 README | Codex (GPT-5, Codex desktop app) | Final report source, Canvas-facing summary, evidence appendix, release/archive note, submission checklist, and walkthrough script | "Assemble the final integrated submission from prior W2-W12 artifacts, fresh W14 evidence, and the final Canvas rubric" | AI-drafted, student-revised | Student remains responsible for final report claims, submission choices, and the recorded walkthrough delivery |
+| 55 | `Final-Technical-Report.docx/.pdf`, `Final-Integrated-Submission.docx/.pdf`, `Final-Presentation-and-Demo-Deck.pptx/.pdf` | Codex (GPT-5, Codex desktop app), python-docx builder, LibreOffice, qpdf, artifact-tool presentation library, render QA | Generated final submission documents and presentation/demo deck with PDF checks and visual QA | "Build and verify the final report, integrated summary, and final presentation/demo deck" | AI-advised, student-executed; content authorship per rows 53-54 | Student should open the final files, record the final walkthrough/demo, and upload the selected attachments to Canvas |
+
 ### Workspace screenshots (`docs/01-launch-packet/screenshots/`)
 
 | # | File | Authorship label | Notes |
@@ -166,6 +174,7 @@ The block is intentionally short (2–3 lines) so the document remains readable;
 | 2026-06-19 | Codex (GPT-5, Codex desktop app) + local shell + SSH to student-controlled DigitalOcean droplet | Prepare W8 Midpoint Technical Evidence Review; add benchmark harness; run local and target-host evidence; generate DOCX/PDF; visually QA rendered pages | AI-drafted, student-revised | See rows 44-46 in §4f |
 | 2026-06-26 | Codex (GPT-5, Codex desktop app) + local shell | Prepare W10 Artifact Hardening and Reproducibility Check; add reproducibility docs/scripts; run local and clean-package evidence; generate DOCX/PDF; visually QA rendered pages | AI-drafted, student-revised | See rows 47-49 in §4g |
 | 2026-06-26 | Codex (GPT-5, Codex desktop app) + local shell + artifact-tool presentation library | Prepare W12 Draft Report, Deck, and Final Test Evidence package; add final-evidence runner; run local evidence; draft near-final report and appendix; generate DOCX/PDF/PPTX; visually QA rendered pages and slides | AI-drafted, student-revised | See rows 50-52 in §4h |
+| 2026-06-27 | Codex (GPT-5, Codex desktop app) + local shell + artifact-tool presentation library | Prepare W14 Final Integrated Submission and Presentation/Demo package; run final evidence; build artifact/evidence ZIPs; draft final report/supporting documents; generate DOCX/PDF/PPTX; visually QA documents and slides | AI-drafted, student-revised | See rows 53-55 in §4i |
 
 ## 6. Decisions that were human-only (no AI assistance)
 
@@ -219,3 +228,4 @@ The disclosure rigor introduced in W2 will be carried through to W14:
 | 2026-06-19 | Added §4f with W8 midpoint benchmark harness, evidence, package-generation, and operational-use rows 44-46; bumped Last-updated. | Hard Stop 4 midpoint technical evidence review preparation. |
 | 2026-06-26 | Added §4g with W10 reproducibility docs, audit/package scripts, clean-run evidence, package-generation, and operational-use rows 47-49; bumped Last-updated. | Hard Stop 5 artifact hardening and reproducibility package preparation. |
 | 2026-06-26 | Added §4h with W12 final-evidence runner, report/deck/evidence appendix, generated DOCX/PDF/PPTX artifacts, and operational-use rows 50-52. | Hard Stop 6 draft report, deck, and final test evidence package preparation. |
+| 2026-06-27 | Added §4i with W14 final package, evidence/archive generation, final report/deck artifacts, and operational-use row 53-55; bumped Last-updated. | Hard Stop 7 final integrated submission and presentation/demo package preparation. |

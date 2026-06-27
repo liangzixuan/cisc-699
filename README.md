@@ -138,6 +138,27 @@ The W12 deliverables required by the Draft Report, Deck, and Final Test Evidence
 
 This package aligns the near-final report, presentation deck, and evidence appendix. Fresh W12 local evidence was captured with `make final-evidence` and passed smoke, unit tests, local validation/API trace, and reproducibility audit. The package also brings forward W8 Docker/gVisor target-host evidence and W10 clean-run reproducibility evidence.
 
+## W14 Hard Stop 7: Final Integrated Submission and Presentation/Demo
+
+The W14 final integrated deliverables live under `docs/14-hard-stop-7/`. Canvas submission target: 2026-08-09 23:59.
+
+| Deliverable | File |
+|---|---|
+| **Final technical report (.docx)** | [`Final-Technical-Report.docx`](docs/14-hard-stop-7/Final-Technical-Report.docx) |
+| **Final technical report (.pdf)** | [`Final-Technical-Report.pdf`](docs/14-hard-stop-7/Final-Technical-Report.pdf) |
+| **Final integrated submission summary (.docx)** | [`Final-Integrated-Submission.docx`](docs/14-hard-stop-7/Final-Integrated-Submission.docx) |
+| **Final integrated submission summary (.pdf)** | [`Final-Integrated-Submission.pdf`](docs/14-hard-stop-7/Final-Integrated-Submission.pdf) |
+| **Final presentation/demo deck** | [`Final-Presentation-and-Demo-Deck.pptx`](docs/14-hard-stop-7/Final-Presentation-and-Demo-Deck.pptx) |
+| **Final presentation/demo deck (.pdf)** | [`Final-Presentation-and-Demo-Deck.pdf`](docs/14-hard-stop-7/Final-Presentation-and-Demo-Deck.pdf) |
+| Final computational artifact package | [`safeexec-final-artifact-package.zip`](docs/14-hard-stop-7/safeexec-final-artifact-package.zip) |
+| Final evidence bundle | [`final-evidence.zip`](docs/14-hard-stop-7/final-evidence.zip) |
+| Final evidence appendix | [`final-test-evidence-appendix.md`](docs/14-hard-stop-7/final-test-evidence-appendix.md) |
+| Final release/archive notes | [`final-release-notes.md`](docs/14-hard-stop-7/final-release-notes.md) |
+| Walkthrough/demo script | [`final-presentation-demo-script.md`](docs/14-hard-stop-7/final-presentation-demo-script.md) |
+| Canvas checklist | [`canvas-submission-checklist.md`](docs/14-hard-stop-7/canvas-submission-checklist.md) |
+
+This package closes the capstone by aligning the final report, computational artifact, reproducibility package, final evidence, and presentation/demo materials. Fresh W14 local evidence passed smoke, unit tests, local validation/API trace, and reproducibility audit; the final evidence folder also carries forward the W8 Docker/gVisor target-host benchmark and the W10 clean-run reproducibility transcript.
+
 ## W1 launch packet
 
 The W1 deliverables required by the [launch packet assignment](01%20Project%20Launch%20Packet.pdf) live under `docs/01-launch-packet/`:
@@ -170,7 +191,7 @@ AI-use disclosure for everything above: [`docs/ai-use-log.md`](docs/ai-use-log.m
 | Implementation sprints III-IV (W7–W8) | 2026-06-20 → 2026-07-03 | **Midpoint evidence package prepared 2026-06-19** |
 | Midpoint demo (W7) | 2026-06-26 | Pending |
 | Hardening & report (W9–W11) | 2026-07-11 → 2026-07-31 | **W10 reproducibility package prepared 2026-06-26** |
-| Revision & defense (W12–W14) | 2026-08-01 → 2026-08-14 | **W12 draft report/deck/evidence package prepared 2026-06-26** |
+| Revision & defense (W12–W14) | 2026-08-01 → 2026-08-14 | **W14 final integrated package prepared 2026-06-27** |
 
 Detailed milestone map: [`CLAUDE.md`](CLAUDE.md) and [`docs/01-launch-packet/project-charter.md`](docs/01-launch-packet/project-charter.md).
 
@@ -229,6 +250,9 @@ make package-artifact
 
 # capture W12 draft-final local evidence bundle
 make final-evidence
+
+# build the W14 final artifact ZIP and manifest
+make final-artifact
 ```
 
 Manual CLI example:
