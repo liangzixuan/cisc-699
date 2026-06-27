@@ -1,0 +1,67 @@
+{
+  "all_passed": true,
+  "captured_at": "2026-06-27T01:51:47.453702+00:00",
+  "commands": [
+    {
+      "command": [
+        "make",
+        "smoke"
+      ],
+      "name": "smoke",
+      "passed": true,
+      "returncode": 0,
+      "started_at": "2026-06-27T01:51:43.564604+00:00",
+      "stdout_file": "smoke-output.txt",
+      "timed_out": false
+    },
+    {
+      "command": [
+        "make",
+        "test"
+      ],
+      "name": "unit-tests",
+      "passed": true,
+      "returncode": 0,
+      "started_at": "2026-06-27T01:51:43.689068+00:00",
+      "stdout_file": "unit-tests-output.txt",
+      "timed_out": false
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/run_validation_workflow.py",
+        "--output-dir",
+        "docs/12-hard-stop-6/evidence",
+        "--repeat",
+        "3"
+      ],
+      "name": "local-validation",
+      "passed": true,
+      "returncode": 0,
+      "started_at": "2026-06-27T01:51:45.257816+00:00",
+      "stdout_file": "local-validation-output.txt",
+      "timed_out": false
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/audit_reproducibility.py",
+        "--output-dir",
+        "docs/12-hard-stop-6/evidence"
+      ],
+      "name": "reproducibility-audit",
+      "passed": true,
+      "returncode": 0,
+      "started_at": "2026-06-27T01:51:46.959495+00:00",
+      "stdout_file": "reproducibility-audit-output.txt",
+      "timed_out": false
+    }
+  ],
+  "referenced_prior_evidence": [
+    "w8-target-midpoint-summary.md",
+    "w8-target-midpoint-summary.csv",
+    "w8-target-runsc-version.txt",
+    "w10-clean-run-output.txt"
+  ],
+  "repeat": 3
+}

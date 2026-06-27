@@ -175,3 +175,11 @@ spec: 1.2.1
 - **[DECISION]** Keep Docker/gVisor reproduction documented as target-host validation rather than pretending the local macOS machine can produce containment evidence. This preserves the W8 evidence boundary and avoids overstating the local backend.
 - **[RISK]** Full corpus packaging remains future work: HumanEval/MBPP task IDs, license notes, and adversarial-program provenance must be added before final report submission.
 - **[AI]** Used Codex (GPT-5, Codex desktop app) to draft reproducibility docs/scripts, run local evidence commands, generate the W10 technical package, and prepare DOCX/PDF artifacts. Student must review the source package and record the short walkthrough before Canvas submission.
+
+### 2026-06-26
+- **W12 draft report, deck, and final-test evidence package prepared.** Added `docs/12-hard-stop-6/` with the near-final technical report draft, Canvas narrative package, final-test evidence appendix, PPTX deck, walkthrough script, final-readiness risk log, Canvas checklist, evidence folder, and evidence ZIP.
+- **Fresh W12 evidence captured.** Added `scripts/run_final_evidence.py` and `make final-evidence`; the run passed smoke, unit tests, local validation/API trace, and reproducibility audit. Evidence is stored under `docs/12-hard-stop-6/evidence/`.
+- **Report/deck convergence checked.** The W12 report draft, deck, and evidence appendix all use the same core interpretation: SafeExec is technically on track, with final success dependent on HumanEval/MBPP corpus completion, adversarial-suite expansion, and final Docker/gVisor benchmark refresh.
+- **Document/deck QA completed.** Generated DOCX/PDF artifacts, ran `qpdf --check`, rendered DOCX pages to PNG for visual inspection, built an editable PPTX deck with artifact-tool, and fixed slide layout issues found in preview QA.
+- **[RISK]** W12 remains a draft package. Final W14 claims must wait for the expanded functional/adversarial corpus and final target-host benchmark run.
+- **[AI]** Used Codex (GPT-5, Codex desktop app) to draft the W12 report/deck/evidence package, generate the final-evidence runner, run local evidence, build DOCX/PDF/PPTX artifacts, and update disclosure logs. Student must review the files, record the walkthrough, and decide exact Canvas attachments.

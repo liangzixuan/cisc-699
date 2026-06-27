@@ -119,6 +119,25 @@ The W10 deliverables required by the Artifact Hardening and Reproducibility Chec
 
 This package hardens the artifact handoff path: `.env.example`, `docs/reproducibility/` runbook and manifest files, `make repro-audit`, and `make package-artifact` now provide a reviewer-facing setup, audit, and packaging route.
 
+## W12 Hard Stop 6: Draft Report, Deck, and Final Test Evidence
+
+The W12 deliverables required by the Draft Report, Deck, and Final Test Evidence assignment live under `docs/12-hard-stop-6/`. Canvas submission target: 2026-08-02 23:59.
+
+| Deliverable | File |
+|---|---|
+| **Canvas narrative package (.docx)** | [`Draft-Report-Deck-Final-Test-Evidence.docx`](docs/12-hard-stop-6/Draft-Report-Deck-Final-Test-Evidence.docx) |
+| **Canvas narrative package (.pdf)** | [`Draft-Report-Deck-Final-Test-Evidence.pdf`](docs/12-hard-stop-6/Draft-Report-Deck-Final-Test-Evidence.pdf) |
+| **Near-final report draft (.docx)** | [`SafeExec-Near-Final-Technical-Report-Draft.docx`](docs/12-hard-stop-6/SafeExec-Near-Final-Technical-Report-Draft.docx) |
+| **Near-final report draft (.pdf)** | [`SafeExec-Near-Final-Technical-Report-Draft.pdf`](docs/12-hard-stop-6/SafeExec-Near-Final-Technical-Report-Draft.pdf) |
+| **Presentation/demo deck** | [`SafeExec-Draft-Report-and-Demo-Deck.pptx`](docs/12-hard-stop-6/SafeExec-Draft-Report-and-Demo-Deck.pptx) |
+| **Presentation/demo deck (.pdf)** | [`SafeExec-Draft-Report-and-Demo-Deck.pdf`](docs/12-hard-stop-6/SafeExec-Draft-Report-and-Demo-Deck.pdf) |
+| Final-test evidence appendix | [`final-test-evidence-appendix.md`](docs/12-hard-stop-6/final-test-evidence-appendix.md) |
+| Evidence bundle | [`evidence/`](docs/12-hard-stop-6/evidence/) |
+| Evidence ZIP | [`w12-evidence.zip`](docs/12-hard-stop-6/w12-evidence.zip) |
+| Walkthrough script | [`walkthrough-script.md`](docs/12-hard-stop-6/walkthrough-script.md) |
+
+This package aligns the near-final report, presentation deck, and evidence appendix. Fresh W12 local evidence was captured with `make final-evidence` and passed smoke, unit tests, local validation/API trace, and reproducibility audit. The package also brings forward W8 Docker/gVisor target-host evidence and W10 clean-run reproducibility evidence.
+
 ## W1 launch packet
 
 The W1 deliverables required by the [launch packet assignment](01%20Project%20Launch%20Packet.pdf) live under `docs/01-launch-packet/`:
@@ -151,7 +170,7 @@ AI-use disclosure for everything above: [`docs/ai-use-log.md`](docs/ai-use-log.m
 | Implementation sprints III-IV (W7–W8) | 2026-06-20 → 2026-07-03 | **Midpoint evidence package prepared 2026-06-19** |
 | Midpoint demo (W7) | 2026-06-26 | Pending |
 | Hardening & report (W9–W11) | 2026-07-11 → 2026-07-31 | **W10 reproducibility package prepared 2026-06-26** |
-| Revision & defense (W12–W14) | 2026-08-01 → 2026-08-14 | Pending |
+| Revision & defense (W12–W14) | 2026-08-01 → 2026-08-14 | **W12 draft report/deck/evidence package prepared 2026-06-26** |
 
 Detailed milestone map: [`CLAUDE.md`](CLAUDE.md) and [`docs/01-launch-packet/project-charter.md`](docs/01-launch-packet/project-charter.md).
 
@@ -207,6 +226,9 @@ make midpoint-target
 # audit reproducibility materials and build a source package for handoff
 make repro-audit
 make package-artifact
+
+# capture W12 draft-final local evidence bundle
+make final-evidence
 ```
 
 Manual CLI example:

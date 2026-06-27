@@ -1,4 +1,4 @@
-.PHONY: help smoke test api env validate validate-docker midpoint midpoint-target repro-audit package-artifact
+.PHONY: help smoke test api env validate validate-docker midpoint midpoint-target repro-audit package-artifact final-evidence
 
 PYTHON ?= python3
 PYTHONPATH := src
@@ -15,6 +15,7 @@ help:
 	@echo "  make midpoint-target - run Docker/gVisor W8 midpoint evidence workflow"
 	@echo "  make repro-audit - audit reproducibility materials"
 	@echo "  make package-artifact - build reproducibility source package"
+	@echo "  make final-evidence - capture W12 final local evidence bundle"
 
 smoke:
 	PYTHONPATH=$(PYTHONPATH) $(PYTHON) scripts/smoke_safeexec.py
@@ -45,3 +46,6 @@ repro-audit:
 
 package-artifact:
 	PYTHONPATH=$(PYTHONPATH) $(PYTHON) scripts/package_artifact.py --output docs/10-hard-stop-5/safeexec-reproducibility-package.tar.gz
+
+final-evidence:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) scripts/run_final_evidence.py --output-dir docs/12-hard-stop-6/evidence --repeat 3

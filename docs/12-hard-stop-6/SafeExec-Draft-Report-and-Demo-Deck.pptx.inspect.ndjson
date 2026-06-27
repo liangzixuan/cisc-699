@@ -1,0 +1,144 @@
+{"kind":"deck","id":"pr/p9sc2q","name":"Deck"}
+{"kind":"layout","layoutId":"db91cf29-c9d6-4717-a73d-6715de0dac50","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"e6e85f75-59a2-4c85-ba5d-9c789f4f9a9c","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/ps0h0k","slide":1,"title":"SafeExec","textShapes":18}
+{"kind":"textbox","id":"sh/ylc7u54z","slide":1,"text":"SafeExec","textPreview":"SafeExec","textChars":8,"textLines":1,"bbox":[42,40,310,76]}
+{"kind":"textbox","id":"sh/9cvixcze","slide":1,"text":"Draft Report, Deck, and Final Test Evidence","textPreview":"Draft Report, Deck, and Final Test Evidence","textChars":43,"textLines":1,"bbox":[42,128,920,56]}
+{"kind":"shape","id":"sh/gr2p8nqx","slide":1,"bbox":[42,214,820,2]}
+{"kind":"textbox","id":"sh/nih4byhg","slide":1,"text":"A hardened, threat-modeled Python execution sandbox for LLM-agent tool use.","textPreview":"A hardened, threat-modeled Python execution sandbox for LLM-agent tool use.","textChars":75,"textLines":1,"bbox":[42,250,720,90]}
+{"kind":"shape","id":"sh/yxobm58z","slide":1,"bbox":[42,438,245,152]}
+{"kind":"textbox","id":"sh/5o7qpg3e","slide":1,"text":"4/4","textPreview":"4/4","textChars":3,"textLines":1,"bbox":[60,458,209,48]}
+{"kind":"textbox","id":"sh/g3ex0nux","slide":1,"text":"Fresh W12 checks","textPreview":"Fresh W12 checks","textChars":16,"textLines":1,"bbox":[60,510,209,38]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":1,"text":"smoke, tests, validation, audit","textPreview":"smoke, tests, validation, audit","textChars":31,"textLines":1,"bbox":[60,556,209,22]}
+{"kind":"shape","id":"sh/y1kre1w7","slide":1,"bbox":[317,438,245,152]}
+{"kind":"textbox","id":"sh/kjm1cfa9","slide":1,"text":"50/50","textPreview":"50/50","textChars":5,"textLines":1,"bbox":[335,458,209,48]}
+{"kind":"textbox","id":"sh/94fu18jq","slide":1,"text":"Docker target-host probes","textPreview":"Docker target-host probes","textChars":25,"textLines":1,"bbox":[335,510,209,38]}
+{"kind":"textbox","id":"sh/2hwfyxob","slide":1,"text":"W8 hardened Docker","textPreview":"W8 hardened Docker","textChars":18,"textLines":1,"bbox":[335,556,209,22]}
+{"kind":"shape","id":"sh/r2p8nqxs","slide":1,"bbox":[592,438,245,152]}
+{"kind":"textbox","id":"sh/gvy90je9","slide":1,"text":"49/50","textPreview":"49/50","textChars":5,"textLines":1,"bbox":[610,458,209,48]}
+{"kind":"textbox","id":"sh/9gr2p8nq","slide":1,"text":"gVisor target-host probes","textPreview":"gVisor target-host probes","textChars":25,"textLines":1,"bbox":[610,510,209,38]}
+{"kind":"textbox","id":"sh/2p8nqxs7","slide":1,"text":"one timing miss","textPreview":"one timing miss","textChars":15,"textLines":1,"bbox":[610,556,209,22]}
+{"kind":"shape","id":"sh/ra5gbq1o","slide":1,"bbox":[910,40,288,610]}
+{"kind":"textbox","id":"sh/kzupwb2h","slide":1,"text":"Hard Stop 6","textPreview":"Hard Stop 6","textChars":11,"textLines":1,"bbox":[940,78,230,38]}
+{"kind":"textbox","id":"sh/9knih4by","slide":1,"text":"Student: Zixuan Liang\nAdvisor: Prof. Khalid Lateef\nInstructor: Dr. Majid Shaalan\nPrepared: 2026-06-26","textPreview":"Student: Zixuan Liang | Advisor: Prof. Khalid Lateef | Instructor: Dr. Majid Shaalan | Prepared: 2026-06-26","textChars":101,"textLines":4,"bbox":[940,132,230,170]}
+{"kind":"textbox","id":"sh/d8v6psfi","slide":1,"text":"Message","textPreview":"Message","textChars":7,"textLines":1,"bbox":[940,368,230,28]}
+{"kind":"textbox","id":"sh/onyd0z61","slide":1,"text":"The artifact is technically alive and reproducible locally; the remaining work is corpus depth and final benchmark refresh.","textPreview":"The artifact is technically alive and reproducible locally; the remaining work is corpus depth and final benchmark refresh.","textChars":123,"textLines":1,"bbox":[940,405,230,134]}
+{"kind":"textbox","id":"sh/z25kb6xk","slide":1,"text":"SafeExec W12 evidence package","textPreview":"SafeExec W12 evidence package","textChars":29,"textLines":1,"bbox":[42,668,420,22]}
+{"kind":"textbox","id":"sh/6hcrmhk3","slide":1,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[1195,668,42,22]}
+{"kind":"notes","id":"nt/ps0h0k","slide":1,"text":""}
+{"kind":"slide","id":"sl/9w189b","slide":2,"title":"PROBLEM","textShapes":10}
+{"kind":"textbox","id":"sh/gn29gr2p","slide":2,"text":"PROBLEM","textPreview":"PROBLEM","textChars":7,"textLines":1,"bbox":[42,40,420,22]}
+{"kind":"textbox","id":"sh/n29gr2p8","slide":2,"text":"The problem is where generated text becomes process execution.","textPreview":"The problem is where generated text becomes process execution.","textChars":62,"textLines":1,"bbox":[42,78,920,88]}
+{"kind":"textbox","id":"sh/yhgn29gr","slide":2,"text":"SafeExec W12 evidence package","textPreview":"SafeExec W12 evidence package","textChars":29,"textLines":1,"bbox":[42,668,420,22]}
+{"kind":"textbox","id":"sh/5wjudg7a","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1195,668,42,22]}
+{"kind":"shape","id":"sh/gbq1oryt","slide":2,"bbox":[42,205,350,330]}
+{"kind":"textbox","id":"sh/nuxc3ylc","slide":2,"text":"Agent risk","textPreview":"Agent risk","textChars":10,"textLines":1,"bbox":[66,232,290,30]}
+{"kind":"textbox","id":"sh/y90je9cv","slide":2,"text":"Prompt injection, excessive agency, and ordinary model errors can become filesystem, network, or resource actions when code is executed.","textPreview":"Prompt injection, excessive agency, and ordinary model errors can become filesystem, network, or resource actions when code is executed.","textChars":136,"textLines":1,"bbox":[66,282,290,160]}
+{"kind":"shape","id":"sh/5sneloj2","slide":2,"bbox":[465,205,350,330]}
+{"kind":"textbox","id":"sh/cbulwval","slide":2,"text":"Project response","textPreview":"Project response","textChars":16,"textLines":1,"bbox":[489,232,290,30]}
+{"kind":"textbox","id":"sh/e9cvixcz","slide":2,"text":"Keep the artifact narrow: Python-only execution, visible limits, explicit backends, repeatable tests, and honest containment evidence.","textPreview":"Keep the artifact narrow: Python-only execution, visible limits, explicit backends, repeatable tests, and honest containment evidence.","textChars":134,"textLines":1,"bbox":[489,282,290,160]}
+{"kind":"shape","id":"sh/3q5o7qpg","slide":2,"bbox":[888,205,350,330]}
+{"kind":"textbox","id":"sh/wb2hwfyx","slide":2,"text":"Core claim","textPreview":"Core claim","textChars":10,"textLines":1,"bbox":[912,232,290,30]}
+{"kind":"textbox","id":"sh/lwval87e","slide":2,"text":"SafeExec does not assert sandbox safety. It measures the execution boundary and reports what the evidence actually supports.","textPreview":"SafeExec does not assert sandbox safety. It measures the execution boundary and reports what the evidence actually supports.","textChars":124,"textLines":1,"bbox":[912,282,290,160]}
+{"kind":"notes","id":"nt/9w189b","slide":2,"text":""}
+{"kind":"slide","id":"sl/c82d7e","slide":3,"title":"SYSTEM DESIGN","textShapes":11}
+{"kind":"textbox","id":"sh/1kre1w7m","slide":3,"text":"SYSTEM DESIGN","textPreview":"SYSTEM DESIGN","textChars":13,"textLines":1,"bbox":[42,40,420,22]}
+{"kind":"textbox","id":"sh/uxc3ylc7","slide":3,"text":"Architecture: one request model, three execution paths.","textPreview":"Architecture: one request model, three execution paths.","textChars":55,"textLines":1,"bbox":[42,78,920,88]}
+{"kind":"textbox","id":"sh/ji5snelo","slide":3,"text":"SafeExec W12 evidence package","textPreview":"SafeExec W12 evidence package","textChars":29,"textLines":1,"bbox":[42,668,420,22]}
+{"kind":"textbox","id":"sh/crmhk3q5","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1195,668,42,22]}
+{"kind":"shape","id":"sh/1cfa9w3m","slide":3,"bbox":[70,248,210,88]}
+{"kind":"textbox","id":"sh/ulwval87","slide":3,"text":"Request","textPreview":"Request","textChars":7,"textLines":1,"bbox":[112,276,128,30]}
+{"kind":"shape","id":"sh/j6tovaho","slide":3,"bbox":[350,248,210,88]}
+{"kind":"textbox","id":"sh/8nqxs72x","slide":3,"text":"Service","textPreview":"Service","textChars":7,"textLines":1,"bbox":[408,276,100,30]}
+{"kind":"shape","id":"sh/18jqh0fe","slide":3,"bbox":[630,153,220,72]}
+{"kind":"textbox","id":"sh/psfil0rq","slide":3,"text":"Local","textPreview":"Local","textChars":5,"textLines":1,"bbox":[708,175,80,28]}
+{"kind":"shape","id":"sh/w7mp0bi9","slide":3,"bbox":[630,248,220,72]}
+{"kind":"textbox","id":"sh/7mp0bi9s","slide":3,"text":"Docker","textPreview":"Docker","textChars":6,"textLines":1,"bbox":[700,270,90,28]}
+{"kind":"shape","id":"sh/e1w7mp0b","slide":3,"bbox":[630,343,220,72]}
+{"kind":"textbox","id":"sh/pg3ex0nu","slide":3,"text":"gVisor","textPreview":"gVisor","textChars":6,"textLines":1,"bbox":[700,365,90,28]}
+{"kind":"shape","id":"sh/wval87ed","slide":3,"bbox":[940,248,230,88]}
+{"kind":"textbox","id":"sh/7adsji5s","slide":3,"text":"Result","textPreview":"Result","textChars":6,"textLines":1,"bbox":[1016,276,90,30]}
+{"kind":"textbox","id":"sh/epkzupwb","slide":3,"text":"Local is a development smoke path. Docker and gVisor are the containment-relevant paths.","textPreview":"Local is a development smoke path. Docker and gVisor are the containment-relevant paths.","textChars":88,"textLines":1,"bbox":[110,540,850,48]}
+{"kind":"notes","id":"nt/c82d7e","slide":3,"text":""}
+{"kind":"slide","id":"sl/f4389h","slide":4,"title":"CURRENT ARTIFACT","textShapes":17}
+{"kind":"textbox","id":"sh/29gr2p8n","slide":4,"text":"CURRENT ARTIFACT","textPreview":"CURRENT ARTIFACT","textChars":16,"textLines":1,"bbox":[42,40,420,22]}
+{"kind":"textbox","id":"sh/d0z61032","slide":4,"text":"Implementation surface is compact and traceable.","textPreview":"Implementation surface is compact and traceable.","textChars":48,"textLines":1,"bbox":[42,78,920,88]}
+{"kind":"textbox","id":"sh/kf6dcbul","slide":4,"text":"SafeExec W12 evidence package","textPreview":"SafeExec W12 evidence package","textChars":29,"textLines":1,"bbox":[42,668,420,22]}
+{"kind":"textbox","id":"sh/v6psfil0","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1195,668,42,22]}
+{"kind":"shape","id":"sh/2lszqtcj","slide":4,"bbox":[72,200,450,56]}
+{"kind":"textbox","id":"sh/d8bat47y","slide":4,"text":"models.py","textPreview":"models.py","textChars":9,"textLines":1,"bbox":[92,215,210,24]}
+{"kind":"textbox","id":"sh/knih4byh","slide":4,"text":"request, limits, result schema","textPreview":"request, limits, result schema","textChars":30,"textLines":1,"bbox":[318,215,610,24]}
+{"kind":"shape","id":"sh/val87ed8","slide":4,"bbox":[72,266,450,56]}
+{"kind":"textbox","id":"sh/6psfil0r","slide":4,"text":"service.py","textPreview":"service.py","textChars":10,"textLines":1,"bbox":[92,281,210,24]}
+{"kind":"textbox","id":"sh/4r65wjud","slide":4,"text":"backend selection and execution entry","textPreview":"backend selection and execution entry","textChars":37,"textLines":1,"bbox":[318,281,610,24]}
+{"kind":"shape","id":"sh/xc3ylc7u","slide":4,"bbox":[72,332,450,56]}
+{"kind":"textbox","id":"sh/mlkjm1cf","slide":4,"text":"backends/docker.py","textPreview":"backends/docker.py","textChars":18,"textLines":1,"bbox":[92,347,210,24]}
+{"kind":"textbox","id":"sh/f6dcbulw","slide":4,"text":"hardened Docker and gVisor command builder","textPreview":"hardened Docker and gVisor command builder","textChars":42,"textLines":1,"bbox":[318,347,610,24]}
+{"kind":"shape","id":"sh/4zidonyd","slide":4,"bbox":[72,398,450,56]}
+{"kind":"textbox","id":"sh/xkf6dcbu","slide":4,"text":"api/server.py","textPreview":"api/server.py","textChars":13,"textLines":1,"bbox":[92,413,210,24]}
+{"kind":"textbox","id":"sh/mtwra5gb","slide":4,"text":"JSON /health and /execute API shell","textPreview":"JSON /health and /execute API shell","textChars":35,"textLines":1,"bbox":[318,413,610,24]}
+{"kind":"shape","id":"sh/fepkzupw","slide":4,"bbox":[72,464,450,56]}
+{"kind":"textbox","id":"sh/83itgfml","slide":4,"text":"run_* scripts","textPreview":"run_* scripts","textChars":13,"textLines":1,"bbox":[92,479,210,24]}
+{"kind":"textbox","id":"sh/xobm58z2","slide":4,"text":"validation, midpoint evidence, final evidence","textPreview":"validation, midpoint evidence, final evidence","textChars":45,"textLines":1,"bbox":[318,479,610,24]}
+{"kind":"shape","id":"sh/lszqtcj6","slide":4,"bbox":[72,530,450,56]}
+{"kind":"textbox","id":"sh/s72x4nap","slide":4,"text":"docs/reproducibility","textPreview":"docs/reproducibility","textChars":20,"textLines":1,"bbox":[92,545,210,24]}
+{"kind":"textbox","id":"sh/3m94fu18","slide":4,"text":"runbook, environment, data, manifest","textPreview":"runbook, environment, data, manifest","textChars":36,"textLines":1,"bbox":[318,545,610,24]}
+{"kind":"textbox","id":"sh/a5gbq1or","slide":4,"text":"The small surface helps the final report trace evidence back to source files instead of hiding behavior in framework layers.","textPreview":"The small surface helps the final report trace evidence back to source files instead of hiding behavior in framework layers.","textChars":124,"textLines":1,"bbox":[835,230,330,210]}
+{"kind":"notes","id":"nt/f4389h","slide":4,"text":""}
+{"kind":"slide","id":"sl/1ts8yx","slide":5,"title":"FINAL TEST EVIDENCE","textShapes":18}
+{"kind":"textbox","id":"sh/je9cvixc","slide":5,"text":"FINAL TEST EVIDENCE","textPreview":"FINAL TEST EVIDENCE","textChars":19,"textLines":1,"bbox":[42,40,420,22]}
+{"kind":"textbox","id":"sh/8z25kb6x","slide":5,"text":"Fresh W12 local evidence passed.","textPreview":"Fresh W12 local evidence passed.","textChars":32,"textLines":1,"bbox":[42,78,920,88]}
+{"kind":"textbox","id":"sh/1gvy90je","slide":5,"text":"SafeExec W12 evidence package","textPreview":"SafeExec W12 evidence package","textChars":29,"textLines":1,"bbox":[42,668,420,22]}
+{"kind":"textbox","id":"sh/q1orytsv","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1195,668,42,22]}
+{"kind":"shape","id":"sh/fmlkjm1c","slide":5,"bbox":[72,205,245,152]}
+{"kind":"textbox","id":"sh/87ed8bat","slide":5,"text":"PASS","textPreview":"PASS","textChars":4,"textLines":1,"bbox":[90,225,209,48]}
+{"kind":"textbox","id":"sh/xs72x4na","slide":5,"text":"Smoke","textPreview":"Smoke","textChars":5,"textLines":1,"bbox":[90,277,209,38]}
+{"kind":"textbox","id":"sh/qd4vmtwr","slide":5,"text":"structured execution result","textPreview":"structured execution result","textChars":27,"textLines":1,"bbox":[90,323,209,22]}
+{"kind":"shape","id":"sh/fyxobm58","slide":5,"bbox":[347,205,245,152]}
+{"kind":"textbox","id":"sh/7mp0bi9s","slide":5,"text":"PASS","textPreview":"PASS","textChars":4,"textLines":1,"bbox":[365,225,209,48]}
+{"kind":"textbox","id":"sh/e1w7mp0b","slide":5,"text":"Unit tests","textPreview":"Unit tests","textChars":10,"textLines":1,"bbox":[365,277,209,38]}
+{"kind":"textbox","id":"sh/psfil0rq","slide":5,"text":"functional test suite","textPreview":"functional test suite","textChars":21,"textLines":1,"bbox":[365,323,209,22]}
+{"kind":"shape","id":"sh/w7mp0bi9","slide":5,"bbox":[622,205,245,152]}
+{"kind":"textbox","id":"sh/7adsji5s","slide":5,"text":"12/12","textPreview":"12/12","textChars":5,"textLines":1,"bbox":[640,225,209,48]}
+{"kind":"textbox","id":"sh/epkzupwb","slide":5,"text":"Validation","textPreview":"Validation","textChars":10,"textLines":1,"bbox":[640,277,209,38]}
+{"kind":"textbox","id":"sh/pg3ex0nu","slide":5,"text":"local cases plus API trace","textPreview":"local cases plus API trace","textChars":26,"textLines":1,"bbox":[640,323,209,22]}
+{"kind":"shape","id":"sh/wval87ed","slide":5,"bbox":[897,205,245,152]}
+{"kind":"textbox","id":"sh/36hcrmhk","slide":5,"text":"PASS","textPreview":"PASS","textChars":4,"textLines":1,"bbox":[915,225,209,48]}
+{"kind":"textbox","id":"sh/eloj2t83","slide":5,"text":"Repro audit","textPreview":"Repro audit","textChars":11,"textLines":1,"bbox":[915,277,209,38]}
+{"kind":"textbox","id":"sh/mp0bi9s3","slide":5,"text":"no blocking findings","textPreview":"no blocking findings","textChars":20,"textLines":1,"bbox":[915,323,209,22]}
+{"kind":"textbox","id":"sh/bat47y1k","slide":5,"text":"Generated by `make final-evidence` into docs/12-hard-stop-6/evidence/.","textPreview":"Generated by `make final-evidence` into docs/12-hard-stop-6/evidence/.","textChars":70,"textLines":1,"bbox":[72,410,980,38]}
+{"kind":"textbox","id":"sh/4vmtwra5","slide":5,"text":"This is the current local evidence. Docker/gVisor evidence remains target-host evidence because local macOS is not the official container benchmark environment.","textPreview":"This is the current local evidence. Docker/gVisor evidence remains target-host evidence because local macOS is not the official container...","textChars":160,"textLines":1,"bbox":[72,470,1010,84]}
+{"kind":"notes","id":"nt/1ts8yx","slide":5,"text":""}
+{"kind":"slide","id":"sl/twkcld","slide":6,"title":"DOCKER / GVISOR","textShapes":7}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":6,"text":"DOCKER / GVISOR","textPreview":"DOCKER / GVISOR","textChars":15,"textLines":1,"bbox":[42,40,420,22]}
+{"kind":"textbox","id":"sh/w3m94fu1","slide":6,"text":"Target-host benchmark evidence: Docker stable, gVisor mostly passing.","textPreview":"Target-host benchmark evidence: Docker stable, gVisor mostly passing.","textChars":69,"textLines":1,"bbox":[42,78,920,88]}
+{"kind":"textbox","id":"sh/loj2t83i","slide":6,"text":"SafeExec W12 evidence package","textPreview":"SafeExec W12 evidence package","textChars":29,"textLines":1,"bbox":[42,668,420,22]}
+{"kind":"textbox","id":"sh/e9cvixcz","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1195,668,42,22]}
+{"kind":"shape","id":"sh/wb2hwfyx","slide":6,"bbox":[710,210,430,320]}
+{"kind":"textbox","id":"sh/lwval87e","slide":6,"text":"W8 target-host result","textPreview":"W8 target-host result","textChars":21,"textLines":1,"bbox":[736,238,360,34]}
+{"kind":"textbox","id":"sh/ahoza1gv","slide":6,"text":"Local: 30/30\nDocker: 50/50\ngVisor: 49/50","textPreview":"Local: 30/30 | Docker: 50/50 | gVisor: 49/50","textChars":40,"textLines":3,"bbox":[736,300,340,108]}
+{"kind":"textbox","id":"sh/32lszqtc","slide":6,"text":"Interpretation: gVisor is integrated, but final timing needs cold-start and warm-run separation.","textPreview":"Interpretation: gVisor is integrated, but final timing needs cold-start and warm-run separation.","textChars":96,"textLines":1,"bbox":[736,435,350,68]}
+{"kind":"chart","id":"ch/3ylc7u54","slide":6,"name":"","chartType":"bar","bbox":[70,210,580,320]}
+{"kind":"notes","id":"nt/twkcld","slide":6,"text":""}
+{"kind":"slide","id":"sl/qyh7y9","slide":7,"title":"LIMITATIONS","textShapes":9}
+{"kind":"textbox","id":"sh/5sneloj2","slide":7,"text":"LIMITATIONS","textPreview":"LIMITATIONS","textChars":11,"textLines":1,"bbox":[42,40,420,22]}
+{"kind":"textbox","id":"sh/u54zidon","slide":7,"text":"Final strength depends on evidence growth.","textPreview":"Final strength depends on evidence growth.","textChars":42,"textLines":1,"bbox":[42,78,920,88]}
+{"kind":"textbox","id":"sh/nqxs72x4","slide":7,"text":"SafeExec W12 evidence package","textPreview":"SafeExec W12 evidence package","textChars":29,"textLines":1,"bbox":[42,668,420,22]}
+{"kind":"textbox","id":"sh/czed8v6p","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1195,668,42,22]}
+{"kind":"textbox","id":"sh/5kb6xkf6","slide":7,"text":"Known gaps","textPreview":"Known gaps","textChars":10,"textLines":1,"bbox":[72,225,450,34]}
+{"kind":"textbox","id":"sh/ytsvu9kn","slide":7,"text":"• HumanEval/MBPP subset manifest still needs finalization.\n• Adversarial suite still needs approved count/category coverage.\n• gVisor timing needs cold-start vs warm-run separation.","textPreview":"• HumanEval/MBPP subset manifest still needs finalization. | • Adversarial suite still needs approved count/category coverage. | • gVisor...","textChars":181,"textLines":3,"bbox":[72,285,500,210]}
+{"kind":"textbox","id":"sh/neloj2t8","slide":7,"text":"Final-week response","textPreview":"Final-week response","textChars":19,"textLines":1,"bbox":[700,225,450,34]}
+{"kind":"textbox","id":"sh/gn29gr2p","slide":7,"text":"• Re-run Docker/gVisor after corpus expansion.\n• Update report/deck tables from final outputs.\n• Rebuild source package and record final walkthrough.","textPreview":"• Re-run Docker/gVisor after corpus expansion. | • Update report/deck tables from final outputs. | • Rebuild source package and record fi...","textChars":149,"textLines":3,"bbox":[700,285,500,210]}
+{"kind":"shape","id":"sh/58z25kb6","slide":7,"bbox":[72,555,1030,74]}
+{"kind":"textbox","id":"sh/d8bat47y","slide":7,"text":"Current conclusion: technically on track, with final success dependent on corpus and benchmark completion.","textPreview":"Current conclusion: technically on track, with final success dependent on corpus and benchmark completion.","textChars":106,"textLines":1,"bbox":[96,574,980,34]}
+{"kind":"notes","id":"nt/qyh7y9","slide":7,"text":""}
+{"kind":"slide","id":"sl/hgg7il","slide":8,"title":"CANVAS PACKAGE","textShapes":7}
+{"kind":"textbox","id":"sh/0je9cvix","slide":8,"text":"CANVAS PACKAGE","textPreview":"CANVAS PACKAGE","textChars":14,"textLines":1,"bbox":[42,40,420,22]}
+{"kind":"textbox","id":"sh/byhgn29g","slide":8,"text":"What I will submit for this checkpoint.","textPreview":"What I will submit for this checkpoint.","textChars":39,"textLines":1,"bbox":[42,78,920,88]}
+{"kind":"textbox","id":"sh/idonyd0z","slide":8,"text":"SafeExec W12 evidence package","textPreview":"SafeExec W12 evidence package","textChars":29,"textLines":1,"bbox":[42,668,420,22]}
+{"kind":"textbox","id":"sh/tcj6tova","slide":8,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1195,668,42,22]}
+{"kind":"shape","id":"sh/0rqd4vmt","slide":8,"bbox":[72,205,1040,320]}
+{"kind":"textbox","id":"sh/b6xkf6dc","slide":8,"text":"• Draft-Report-Deck-Final-Test-Evidence.pdf / .docx\n• SafeExec-Near-Final-Technical-Report-Draft.pdf / .docx\n• SafeExec-Draft-Report-and-Demo-Deck.pptx\n• final-test-evidence-appendix.md and evidence/\n• walkthrough-script.md, risk log, AI-use log","textPreview":"• Draft-Report-Deck-Final-Test-Evidence.pdf / .docx | • SafeExec-Near-Final-Technical-Report-Draft.pdf / .docx | • SafeExec-Draft-Report-...","textChars":245,"textLines":5,"bbox":[112,245,960,220]}
+{"kind":"textbox","id":"sh/il0rqd4v","slide":8,"text":"Closing message","textPreview":"Closing message","textChars":15,"textLines":1,"bbox":[72,570,260,30]}
+{"kind":"textbox","id":"sh/tovahoza","slide":8,"text":"The written report, deck, and test evidence now tell the same story.","textPreview":"The written report, deck, and test evidence now tell the same story.","textChars":68,"textLines":1,"bbox":[350,570,710,36]}
+{"kind":"notes","id":"nt/hgg7il","slide":8,"text":""}

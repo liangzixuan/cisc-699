@@ -1,0 +1,31 @@
+clean_dir: /tmp/safeexec-w10-final-clean-1782517330/safeexec
+Python 3.14.5
+PYTHONPATH=src python3 scripts/smoke_safeexec.py
+{
+  "backend": "local",
+  "contained": true,
+  "containment_reason": "dev_subprocess_completed",
+  "duration_ms": 36.13,
+  "exit_code": 0,
+  "limits": {
+    "cpus": 1.0,
+    "memory_mb": 128,
+    "output_limit_bytes": 2000,
+    "pids": 64,
+    "tmpfs_mb": 64,
+    "wall_seconds": 2.0
+  },
+  "status": "ok",
+  "stderr": "",
+  "stdout": "hello from safeexec sprint 1\n"
+}
+PYTHONPATH=src python3 -m unittest discover -s tests/functional -p 'test_*.py'
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 1.383s
+
+OK
+docs/10-hard-stop-5/evidence-clean/validation-results.json
+docs/10-hard-stop-5/evidence-clean/validation-summary.txt
+docs/10-hard-stop-5/evidence-clean/reproducibility-audit.json
+docs/10-hard-stop-5/evidence-clean/reproducibility-audit.md

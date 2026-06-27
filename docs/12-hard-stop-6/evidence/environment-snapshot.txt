@@ -1,0 +1,13 @@
+SafeExec environment snapshot
+captured_at: 2026-06-27T01:51:47.179610+00:00
+system: Darwin 25.5.0 arm64
+python: 3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]
+git_head: b5a8a703506b14bb954fcc5ce1ad32c518763cc7
+branch: main
+
+Tool status:
+- git: ok git version 2.53.0
+- docker_client: ok Client: Docker Engine - Community
+- docker_info: ok Client: Docker Engine - Community
+- runsc: not-ready [Errno 2] No such file or directory: 'runsc'
+- make: ok GNU Make 3.81
