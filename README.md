@@ -104,6 +104,21 @@ The W8 deliverables required by the Midpoint Technical Evidence Review assignmen
 
 This package moves from demonstration to evidence. The midpoint benchmark generated 130 target-host records across local, hardened Docker, and gVisor backends. Local passed 30/30, Docker passed 50/50, and gVisor passed 49/50. The single gVisor failure was a `tmpfs_write_allowed` timeout at the current wall-time boundary, recorded as a timing-methodology risk for the next sprint.
 
+## W10 Hard Stop 5: Artifact Hardening and Reproducibility Check
+
+The W10 deliverables required by the Artifact Hardening and Reproducibility Check assignment live under `docs/10-hard-stop-5/`. Canvas submission target: 2026-07-19 23:59.
+
+| Deliverable | File |
+|---|---|
+| **Canvas submission (.docx)** | [`Artifact-Hardening-and-Reproducibility-Check.docx`](docs/10-hard-stop-5/Artifact-Hardening-and-Reproducibility-Check.docx) |
+| **Canvas submission (.pdf)** | [`Artifact-Hardening-and-Reproducibility-Check.pdf`](docs/10-hard-stop-5/Artifact-Hardening-and-Reproducibility-Check.pdf) |
+| Editable Markdown master | [`artifact-hardening-and-reproducibility-check.md`](docs/10-hard-stop-5/artifact-hardening-and-reproducibility-check.md) |
+| Reproducibility evidence | [`evidence/`](docs/10-hard-stop-5/evidence/) |
+| Reproducibility source package | [`safeexec-reproducibility-package.tar.gz`](docs/10-hard-stop-5/safeexec-reproducibility-package.tar.gz) |
+| Canvas checklist | [`canvas-submission-checklist.md`](docs/10-hard-stop-5/canvas-submission-checklist.md) |
+
+This package hardens the artifact handoff path: `.env.example`, `docs/reproducibility/` runbook and manifest files, `make repro-audit`, and `make package-artifact` now provide a reviewer-facing setup, audit, and packaging route.
+
 ## W1 launch packet
 
 The W1 deliverables required by the [launch packet assignment](01%20Project%20Launch%20Packet.pdf) live under `docs/01-launch-packet/`:
@@ -135,7 +150,7 @@ AI-use disclosure for everything above: [`docs/ai-use-log.md`](docs/ai-use-log.m
 | Hard Stop 3 early implementation validation (W6) | 2026-06-13 → 2026-06-22 | **Validated 2026-06-17**, Docker/gVisor target-host rerun passed |
 | Implementation sprints III-IV (W7–W8) | 2026-06-20 → 2026-07-03 | **Midpoint evidence package prepared 2026-06-19** |
 | Midpoint demo (W7) | 2026-06-26 | Pending |
-| Hardening & report (W9–W11) | 2026-07-11 → 2026-07-31 | Pending |
+| Hardening & report (W9–W11) | 2026-07-11 → 2026-07-31 | **W10 reproducibility package prepared 2026-06-26** |
 | Revision & defense (W12–W14) | 2026-08-01 → 2026-08-14 | Pending |
 
 Detailed milestone map: [`CLAUDE.md`](CLAUDE.md) and [`docs/01-launch-packet/project-charter.md`](docs/01-launch-packet/project-charter.md).
@@ -188,6 +203,10 @@ make midpoint
 
 # run the W8 midpoint evidence harness on the Linux Docker/gVisor target host
 make midpoint-target
+
+# audit reproducibility materials and build a source package for handoff
+make repro-audit
+make package-artifact
 ```
 
 Manual CLI example:
@@ -205,6 +224,22 @@ curl -s http://127.0.0.1:8080/execute \
 ```
 
 W5 caveat: the `local` backend is a development smoke-test shim, not a security boundary. It exists to stabilize the request/result/API/test harness before the Docker and gVisor backends are exercised on the Linux target host. Reproducibility is a graded dimension; setup commands and pinned versions will continue to be tightened as components land.
+
+Fresh reviewer setup:
+
+```bash
+git clone https://github.com/liangzixuan/cisc-699.git
+cd cisc-699
+python3 --version
+cp .env.example .env
+make smoke
+make test
+make validate
+make repro-audit
+```
+
+If `make` is unavailable, use the equivalent direct Python commands in
+[`docs/reproducibility/runbook.md`](docs/reproducibility/runbook.md).
 
 ## Evaluation (planned)
 

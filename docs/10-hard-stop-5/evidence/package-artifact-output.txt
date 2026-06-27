@@ -1,0 +1,2 @@
+PYTHONPATH=src python3 scripts/package_artifact.py --output docs/10-hard-stop-5/safeexec-reproducibility-package.tar.gz
+docs/10-hard-stop-5/safeexec-reproducibility-package.tar.gz

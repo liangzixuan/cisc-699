@@ -1,0 +1,3 @@
+PYTHONPATH=src python3 scripts/audit_reproducibility.py --output-dir docs/10-hard-stop-5/evidence
+docs/10-hard-stop-5/evidence/reproducibility-audit.json
+docs/10-hard-stop-5/evidence/reproducibility-audit.md

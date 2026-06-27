@@ -1,0 +1,2 @@
+docs/10-hard-stop-5/evidence/environment-snapshot.json
+docs/10-hard-stop-5/evidence/environment-snapshot.txt

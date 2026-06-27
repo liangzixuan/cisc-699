@@ -1,0 +1,57 @@
+{
+  "all_required_paths_present": true,
+  "captured_at": "2026-06-26T23:52:41.385397+00:00",
+  "commands": {
+    "docker_version": {
+      "command": [
+        "docker",
+        "--version"
+      ],
+      "ok": true,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "Docker version 27.5.1, build 9f9e405801"
+    },
+    "git_head": {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "ok": true,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "88f23ec9543bf0175f064f0f0da4fce4cf1884b0"
+    },
+    "git_status": {
+      "command": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "ok": true,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "M Makefile\n M README.md\n M deploy/README.md\n M docs/06-hard-stop-3/evidence/api-trace.json\n M docs/06-hard-stop-3/evidence/validation-results.json\n M docs/06-hard-stop-3/evidence/validation-summary.txt\n M docs/ai-use-log.md\n M engineering-log.md\n?? .env.example\n?? docs/06-hard-stop-3/evidence-target-rerun.zip\n?? docs/06-hard-stop-3/evidence-target.zip\n?? docs/06-hard-stop-3/evidence.zip\n?? docs/10-hard-stop-5/\n?? docs/reproducibility/\n?? scripts/audit_reproducibility.py\n?? scripts/package_artifact.py"
+    },
+    "python_version": {
+      "ok": true,
+      "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+      "stdout": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]"
+    },
+    "runsc_version": {
+      "error": "runsc not found",
+      "ok": false
+    }
+  },
+  "dependency_policy": "standard library only",
+  "findings": [],
+  "make_targets_present": true,
+  "missing_make_targets": [],
+  "missing_readme_keywords": [],
+  "missing_required_paths": [],
+  "passed": true,
+  "pyproject_requires_python": true,
+  "readme_keywords_present": true,
+  "root": "/Users/ericliang/PycharmProjects/CISC-699"
+}

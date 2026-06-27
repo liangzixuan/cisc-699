@@ -2,7 +2,7 @@
 
 **Owner:** Zixuan Liang
 **Course:** CISC 699 — Applied Project in Computer Information Sciences (Summer 2026)
-**Last updated:** 2026-06-19
+**Last updated:** 2026-06-26
 
 ## 1. Purpose and policy
 
@@ -114,6 +114,14 @@ The block is intentionally short (2–3 lines) so the document remains readable;
 | 45 | `docs/08-hard-stop-4/evidence-local/`, `docs/08-hard-stop-4/evidence-target/` | Local shell and SSH commands advised by Codex | Captured local unit-test/environment evidence and target-host Docker/gVisor midpoint benchmark evidence | "Run local benchmark, copy benchmark script to the Ubuntu target host, run Docker/gVisor benchmark, capture metadata, and download evidence" | AI-advised, student-executed | Outputs were generated from actual command runs; student should inspect raw JSON/CSV and the gVisor timeout before submission |
 | 46 | `docs/08-hard-stop-4/midpoint-technical-evidence-review.md`, `known-issues-risk-log.md`, `canvas-submission-checklist.md`, DOCX/PDF package | Codex (GPT-5, Codex desktop app) | Hard Stop 4 technical memo, updated risk log, Canvas checklist, and rendered submission artifacts | "Interpret midpoint evidence, link results to success criteria, document weaknesses, and generate DOCX/PDF with visual QA" | AI-drafted, student-revised | Student should verify final wording, attachment list, and the decision to frame the gVisor timeout as a limitation rather than hide it |
 
+## 4g. Audit table — W10 artifact hardening and reproducibility check (2026-06-26)
+
+| # | Artifact | Tool | Purpose | Prompts / tasks (summary) | Authorship label | Extent of student modification |
+|---|---|---|---|---|---|---|
+| 47 | `.env.example`, `docs/reproducibility/*.md`, `deploy/README.md`, `README.md`, `Makefile` reproducibility targets | Codex (GPT-5, Codex desktop app) | Harden reviewer setup, configuration transparency, environment notes, data/redistribution policy, artifact manifest, and Make targets | "Use the W10 Canvas assignment to add practical reproducibility docs and setup/run/package commands without broad refactoring" | AI-drafted, student-revised | Student should verify that the setup commands match the environment they want graders to follow |
+| 48 | `scripts/audit_reproducibility.py`, `scripts/package_artifact.py`, `docs/10-hard-stop-5/evidence/` | Codex (GPT-5, Codex desktop app) + local shell | Reproducibility audit, source-package builder, command transcripts, clean package run evidence, and environment snapshots | "Create audit/package scripts; run smoke, tests, validation, audit, package export, and clean /tmp unpack run; save outputs" | AI-drafted and AI-advised, student-executed | Outputs were generated from actual commands; student should inspect `clean-run-output.txt` and package contents before submission |
+| 49 | `docs/10-hard-stop-5/artifact-hardening-and-reproducibility-check.md`, `known-issues-risk-log.md`, `canvas-submission-checklist.md`, `walkthrough-script.md`, DOCX/PDF package | Codex (GPT-5, Codex desktop app) | Hard Stop 5 technical memo, risk log, Canvas checklist, recording script, and rendered submission artifacts | "Interpret W10 reproducibility results, map them to rubric dimensions, and generate DOCX/PDF with render QA" | AI-drafted, student-revised | Student should verify final wording, attachment list, and walkthrough recording before Canvas upload |
+
 ### Workspace screenshots (`docs/01-launch-packet/screenshots/`)
 
 | # | File | Authorship label | Notes |
@@ -148,6 +156,7 @@ The block is intentionally short (2–3 lines) so the document remains readable;
 | 2026-06-17 | Codex (GPT-5, Codex desktop app) + local shell | Respond to W5 grading feedback by preparing a verifiable evidence addendum, enhanced risk log, architecture notes, changelog, and fresh command-output evidence | AI-drafted, student-revised | See rows 38-40 in §4d |
 | 2026-06-17 | Codex (GPT-5, Codex desktop app) + local shell + SSH to student-controlled DigitalOcean droplet | Prepare W6 Hard Stop 3 validation package; run local and target-host validation; generate DOCX/PDF; visually QA rendered pages | AI-drafted, student-revised | See rows 41-43 in §4e |
 | 2026-06-19 | Codex (GPT-5, Codex desktop app) + local shell + SSH to student-controlled DigitalOcean droplet | Prepare W8 Midpoint Technical Evidence Review; add benchmark harness; run local and target-host evidence; generate DOCX/PDF; visually QA rendered pages | AI-drafted, student-revised | See rows 44-46 in §4f |
+| 2026-06-26 | Codex (GPT-5, Codex desktop app) + local shell | Prepare W10 Artifact Hardening and Reproducibility Check; add reproducibility docs/scripts; run local and clean-package evidence; generate DOCX/PDF; visually QA rendered pages | AI-drafted, student-revised | See rows 47-49 in §4g |
 
 ## 6. Decisions that were human-only (no AI assistance)
 
@@ -199,3 +208,4 @@ The disclosure rigor introduced in W2 will be carried through to W14:
 | 2026-06-17 | Extended §4d with W5 resubmission-evidence rows 38-40 and added a W5 feedback-response operational-use row. | W5 grading feedback response and evidence addendum preparation. |
 | 2026-06-17 | Added §4e with W6 validation harness, evidence, package-generation, and operational-use rows 41-43. | Hard Stop 3 early implementation validation package preparation. |
 | 2026-06-19 | Added §4f with W8 midpoint benchmark harness, evidence, package-generation, and operational-use rows 44-46; bumped Last-updated. | Hard Stop 4 midpoint technical evidence review preparation. |
+| 2026-06-26 | Added §4g with W10 reproducibility docs, audit/package scripts, clean-run evidence, package-generation, and operational-use rows 47-49; bumped Last-updated. | Hard Stop 5 artifact hardening and reproducibility package preparation. |

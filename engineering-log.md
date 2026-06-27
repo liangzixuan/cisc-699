@@ -163,3 +163,15 @@ spec: 1.2.1
 - **[DECISION]** Do not hide the gVisor timeout. Treat it as the key midpoint finding: the project needs cold-start vs warm-start separation and clearer wall-time budgeting before making performance claims.
 - **[RISK]** The W8 case set is still a controlled 10-case batch rather than the final HumanEval/MBPP plus adversarial taxonomy. W9-W10 must expand coverage and record corpus provenance.
 - **[AI]** Used Codex (GPT-5, Codex desktop app) to draft the W8 benchmark harness, run local and target-host evidence commands, interpret the generated results, write the technical memo/risk log/checklist, and prepare DOCX/PDF artifacts. Student must review the final package and decide whether to upload the optional evidence ZIP.
+
+---
+
+## Week 8 (2026-06-26 → 2026-07-02)
+
+### 2026-06-26
+- **W10 artifact hardening package prepared.** Added `.env.example`, `docs/reproducibility/` runbook/environment/data/manifest docs, `scripts/audit_reproducibility.py`, `scripts/package_artifact.py`, Make targets `repro-audit` and `package-artifact`, and an expanded README setup path.
+- **Clean package run completed.** Built `/tmp/safeexec-w10-clean-package.tar.gz`, unpacked it into `/tmp/safeexec-w10-clean-*`, copied `.env.example` to `.env`, and ran smoke, unit tests, local validation, and reproducibility audit from the unpacked package. Clean-run transcript is stored in `docs/10-hard-stop-5/evidence/clean-run-output.txt`.
+- **Validation evidence:** local smoke returned `status: ok`; functional tests passed (`Ran 7 tests ... OK`); local validation passed local 12/12 plus API trace; reproducibility audit passed with no blocking findings.
+- **[DECISION]** Keep Docker/gVisor reproduction documented as target-host validation rather than pretending the local macOS machine can produce containment evidence. This preserves the W8 evidence boundary and avoids overstating the local backend.
+- **[RISK]** Full corpus packaging remains future work: HumanEval/MBPP task IDs, license notes, and adversarial-program provenance must be added before final report submission.
+- **[AI]** Used Codex (GPT-5, Codex desktop app) to draft reproducibility docs/scripts, run local evidence commands, generate the W10 technical package, and prepare DOCX/PDF artifacts. Student must review the source package and record the short walkthrough before Canvas submission.
